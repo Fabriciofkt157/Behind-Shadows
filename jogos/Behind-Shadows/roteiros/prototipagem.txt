@@ -1,0 +1,166 @@
+prototipagem.txt: Este é o arquivo dedicado às anotações de idéias para um melhor formulamento. São idéias vagas, desconexas, auxiliares ou redundantes mas que contribuem para o desenvolvimento da história e/ou formam a mesma mas não foram corretamente interligadas.
+
+niveis de importância: As ideias que virão a seguir terão níveis que indicam o quanto interferem na história. Níveis:
+1- Interferem diferetamente na história, e/ou são de fundamental importância para o bom compreendinento da história.
+2- Complementares a história, podem ou não interferir na história, no entanto sua existência não altera profundamente o rumo da mesma.
+3- Redundantes, somam a história em fatos complementares, estes ajudam o jogador a entender melhor a história. Funcionam como intermediadores externos aos eventos da história. Não interferem diretamente na história. 
+4- Idéia de complemento ao jogo. Estas podem ser sugestões de mecânicas, interfaces, ferramentas e etc.
+5- Sugestões de plataformas / ferramentas de desenvolvimento do jogo
+Os mesmos níveis citados acima são validos para mecânicas e demais itens dentro do jogo.
+
+
+-------------/////////----------------
+
+Pacote de recursos base{
+    
+    [] = indica uma explicação de uma mecânica, podendo ser uma referência a um pacote
+    [ref= 'nomeDoPacote/classe/#númeroDoÍndice']
+    índice é um item dentro de um pacote
+        
+  A história se passará no decorrer de 120 dias (virtuais). Após o término da história principal o jogador estará livre pra jogar por conta própria.
+  O jogo por conta terá um conjunto de coisas novas para o jogador. Entre elas: Novos Bosses, o jogador poderá circular livremente por todos os cenários de todas as realidades.
+  
+}
+Pacotes de mecânicas {
+  HP = Pontos de vida
+  CP = Pontos de magia
+  ATK = Dano médio por ataque
+  VELATK = Velocidade de ataque
+  VEL = Velocidade de movimento
+  IA = Inteligência artificial, variações nos níveis indicam o quão inteligente é.
+  
+  Mike#1{
+      dificuldade = easy{
+        HP = 200
+        CP = 0
+        ATK = 50
+        VELATK = 25
+        VEL = 30
+      }
+      dificuldade = normal{
+        HP = 100
+        CP = 0
+        ATK = 25
+        VELATK = 20
+        VEL = 30
+      }
+      dificuldade = hard{
+        HP = 75
+        CP = 0
+        ATK = 15
+        VELATK = 20
+        VEL = 30
+      }
+      dificuldade = very hard{
+        HP = 50
+        CP = 0
+        ATK = 10
+        VELATK = 15
+        VEL = 30
+      }
+  }
+  Alan#1{
+      dificuldade = easy{
+        HP = 200
+        CP = 0
+        ATK = 75
+        VELATK = 20
+        VEL = 25
+      }
+      dificuldade = normal{
+        HP = 100
+        CP = 0
+        ATK = 55
+        VELATK = 15
+        VEL = 25
+      }
+      dificuldade = hard{
+        HP = 75
+        CP = 0
+        ATK = 30
+        VELATK = 15
+        VEL = 20
+      }
+      dificuldade = very hard{
+        HP = 50
+        CP = 0
+        ATK = 25
+        VELATK = 10
+        VEL = 15
+      }
+  }
+  boss#1{
+    dificuldade = easy{
+        HP = 200
+        CP = 50
+        ATK = 30
+        VELATK = 15
+        VEL = 30
+        IA = LOW 
+    }
+    dificuldade = normal{
+        HP = 300
+        CP = 100
+        ATK = 50
+        VELATK = 20
+        VEL = 35
+        IA = MEDIUM
+    }
+    dificuldade = hard{
+        HP = 500
+        CP = 200
+        ATK = 100
+        VELATK = 50
+        VEL = 40
+        IA = HARD
+    }
+    dificuldade = very hard{
+        HP = 1000
+        CP = infinity
+        ATK = 250
+        VELATK = 100
+        VEL = 50
+        IA = VERY HARD
+    }
+  }
+  Habilidades-Mágicas{
+    Existem 5 tipos de magias (fogo, água, vento, terra e raio/elétrico), cada magia possuí um tipo de essência para evoluir a magia no personagem. Existem 5 tipos de níveis de essências: Essência base, essência de renascimento, essência de vida, essência de evolução e essência de dragão. Cada um deles confere uma quantidade de 'XP' para evoluir a magia.
+    Níveis de magia{
+        1{
+            Aspecto leve de determinada magia, aumenta em 2 o dano
+        }
+        2{
+            Aspecto médio de determinada magia, faz com que o inimigo 
+        }
+    }
+  }
+}
+Idéias para a história{
+  2- Quando uma sombra corrompe um humano, a mesma se dissipa- seguindo a lógica: Uma sombra comum possuí força e estatísticas e forças mais baixas, ao possuir um humano, a sombra assume a vitalidade do humano e assim se torna mais forte.
+  1- Alan será corrompido por uma sombra no dia 6. 
+  2- Na cena, Mike, Rit e Deni estarão indo até a área de cavernas da vila - local onde Alan está situado, - Quando avistam Alan, o mesmo está lutando com um pequeno grupo de sombras (3), (Alan já teria adquirido habilidade o suficiente para enfrentar sombras, no entanto, os três ainda não tinham lutado diretamente com uma), Mike desesperadamente vai em direção a Alan e o ajuda a lutar, Rit exita, Deni no entando vai junto a eles, Rit em seguida se junta. 
+  2- Os 4 conseguem se livrar de 2 das 3 sombras, Deni para acabar com a última lança fogo contra ela. No entanto, as sombras absorvem o poder de quaisquer magias (exceto elétrico). A sombra ao absorver o fogo fica gigante, Rit anuncia para eles irem embora, no entanto, Alan decide ficar, Rit chama por Mike mas ele decide permanecer e lutar contra a sombra gigante. 
+  2- Os dois se agrupam na caverna onde Alan dormia, fechando a entrada. Aqui o jogador enfrentará o primeiro boss [ref= mec/boss#1]. Os dois ficarão na caverna até o jogador dizer ao Alan para saírem e lutarem.
+  1- Após derrotarem o boss, Alan e Mike estão extremamente cansados - um ao lado do outro - quando uma sombra ataca e acerta em cheio Alan. A sombra se dissipa e lentamente a corrupção toma Alan. Mike se levanta desesperado, Alan se despede de Mike, pedindo-lhe desculpas por ser rude e dizendo-lhe que confiava a ele o destino do mundo.
+  1- No outro dia, o jogador joga com Alan no mundo das sombras, aqui ele encontra Raika, uma garota que também foi corrompida.
+  1- Raika lhe contextualiza sobre o mundo em que está agora. Uma das informações relevantes era a de que para que saíssem dali precisariam de duas coisas: Ajuda externa (mundo dos humanos) e derrotar o General das sombras. 
+  1- Ajuda externa eles precisarão de uma forma de se comunicar com os vivos. Para isso Raika lhe mostra um feixe interdimencional, quando uma sombra passa por ela pode ir para o mundo dos vivos mas os vivos não podem os ver, nem ouvir. Mas ainda podem se comunicar através de escrita, sinais e etc. Raika lhe diz que não havia tentado isso antes pois não tinha ninguém do outro lado que se importasse o suficiente. Raika lhe diz que no máximo em 10 minutos ele precisa voltar ou deixará de existir.
+  1- Alan passa pelo feixe, vai até o Pub e encontra Mike. Ele tenta se comunicar através de escrita na mesa com resquícios de poeira. Mike avista aquilo e não entende. Alan escreve dizendo que é o Alan e que tem pouco tempo. "Mike, sou eu, Alan, eu não morri por completo. Preciso de ajuda. Tenho como voltar mas preciso que faça algumas coisas. Voçê não pode me ver nem me ouvir mas eu estou te vendo. Tenho pouco tempo." (Alan escreve cada palavra separadamente) Mike fala: "Cacete, tá legal. O que precisa? Faço qualquer coisa". Alan escreve: "Preciso que volte na caverna, não deixe minha sombra desaparecer. Também preciso que pegue meu caderno e minha espada dentro da caverna. Também preciso que pegue meu moletom. Todas essas coisas me ligam a esse mundo.". Mike: "Tá legal. O que faço com essas coisas?". Alan: "Guarde com você. Meu tempo tá acabando. Amanhã volto aqui, no mesmo lugar e mesmo horário. Seja o que for esteja aqui.". Mike: "Tá legal."
+  1- Alan volta para o submundo e Raika lhe diz sobre o torneio e que quem vencer terá a chance de lutar contra o general e caso derrote ele, o portal para o outro mundo abrirá. Porém para voltar ao outro mundo precisaria que alguém reunisse 3 coisas que o ligam aquele mundo em volta de sua sombra no mundo dos vivos.
+  1- No outro dia (submundo dia 2 / vivos dia 8), Mike vai atrás de pegar essas coisas. Alan e Raika se preparam para enfrentar o torneio que acontecerá no outro dia. 
+  1- No final do dia, Alan atravessa o feixe e vai até o Pub novamente. Alan:"Mike, sou eu de novo.". Alan:"Pegou as coisas?". Mike:"Peguei - olha pra bolsa - estão aqui". Alan:"Tá legal. Amanhã vou lutar contra o General das Sombras, se vencer volto a esse mundo". Mike:"Você consegue, acredito nisso.". Alan:"Eu vou. Preciso que faça uma coisa. leve tudo até a minha sombra. Abra o caderno com uma mão e aponte para a sombra com a outra. Os outros itens precisam estar ao redor dela. Isso vai paralisar a sombra e impedir que ela te ataque ou tente fugir.". Mike:"Tá legal.". Alan:"Te vejo amanhã quando voltar. Assim que amanhecer faça isso, aguarde.". 
+  1 Outro dia (submundo dia 3 / vivos dia 9). Aqui o jogador joga apenas com Alan. Mike ficará a espera. Aqui o jogador terá que enfrentar uma espécie de torneio-pirâmide em duplas, sendo Alan e Raika. A final do torneio será contra outra dupla. Após derrotarem todas as duplas o jogador terá que enfrentar o general. 
+  1- Quando derrotarem Alan ficará com todas as habilidades dele e volta ao mundo dos vivos podendo controlar sombras (não sombras inimigos, sombras no sentido de habilidades das sombras). Raika diz ser melhor assim, nessa forma ela não poderia ser muito útil - já que não pode voltar ao mundo dos vivos. Alan então, decide trazer ela de volta. (O portal fica aberto por 3 horas depois de derrotar o General, esse é o tempo para que um novo seja escolhido) 
+  1- Raika entrega para Alan um localizador mágico (Raika era uma general das sombras mas virou do bem, isso será explicado no jogo - por isso possuía o localizador), diz para ele pensar nos números 27869-04 e o localizador vai apontar pra onde ele deve ir. Diz para ele que trazer ela de volta não vai funcionar pq ele é metade sombra, é preciso que um 100% vivo faça isso. Alan diz que Mike pode fazer isso. 
+  1- Alan volta a vida podendo controlar o poder das sombras (este poder é bem fraco). Diz pra Mike que precisa trazer uma pessoa de volta mas Alan não pode fazer isso por ser meio sombra. Mike aceita numa boa ... O localizador mostrará uma flecha até chegar nas coordenadas. [mapa 8 direções, Alan].
+  1- [jogador chega ao destino] Alan e Mike ficam ao redor, Mike segura um papel de invocação escrito por Raika e realiza o mesmo processo feito pra trazer o Alan.
+  Raika é trazida de volta (sem os poderes das sombras - esse poder seria adquirido quando derrotassem o General, porém Raika já era uma general e portanto, não pode assumir os poderes de outro)
+  2- Raika, Alan e Mike agora estão juntos. Raika é mais próxima a Alan, indiferente quanto ao Mike. Os três vão morar provisoriamente numa espécie de hotel do vilarejo (cada um em um quarto ...).
+  1- [dia 10] Alan diz para Mike que deveriam buscar formas de ficarem mais fortes. Raika mostra a eles algumas coisas que pode fazer. Alan e Mike vão até o Centro de Combate, aqui o jogador pode escolher uma habilidade mágica que o Mike começará a aprender (fogo, raio, vento, terra ou água)(Mike conseguirá usar coisas como espada e arremessáveis com aspecto do elemento escolhido)[ref= mecânicas/Habilidades-Magicas#1]. No final do dia, os três vão para o Pub.
+  3- Rit e Deni não falaram mais com Mike desde o dia em que lutaram contra o boss sombra. Mike falará algo a respeito no Pub do dia 10.
+  1- [dia 11] o jogador poderá realizar missões secundárias, conseguir itens e minérios - explorar o mundo.
+  1- [dia 12] Nesse dia Mike, Alan e Raika vão treinar juntos. Vão até o Centro de Combate e vão lutar no torneio. Os requisitos são 3 pessoas e ao menos 1 ser cadastrado no Centro. O jogador pode ou não vencer, o resultado não terá interferência na história. A recompensa, caso ganhe, será de 250 moedas de ouro [ref= mecânicas/moedas] e 3 essências da magia escolhida para Mike anteriormente. Ao final do torneio, os 3 vão ao Pub.
+  1- [dia 13] 
+  
+}
+   

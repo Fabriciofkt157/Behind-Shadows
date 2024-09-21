@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'MedievalFonts';
+    src: url('MedievalSharp.ttf') format('truetype');
+}
+body {
+    font-family: 'MedievalFonts', sans-serif;
+    background-color: #5e5e5e;
+    margin: 0;
+    padding: 0;
+}
+.redirect{
+    color:rgb(255, 255, 255);
+}
+nav {
+    position: fixed; /* Fixa a barra de navegação no topo */
+    top: 0; /* Alinha ao topo da página */
+    width: 100%; /* Largura total da página */
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Sombra para destacar */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    display: flex; /* Utiliza flexbox */
+    justify-content: flex-start; /* Espaça os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+.nav {
+    color: #d8d8d8;
+    list-style-type: none; /* Remove marcadores de lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    display: flex; /* Alinha itens horizontalmente */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+/* Estilo para os itens da lista */
+.nav li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para os links */
+.nav a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 5px 10px; /* Espaçamento interno dos links */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo para os links ao passar o mouse */
+.nav a:hover {
+    color: #a3a3a3; /* Muda a cor do texto ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para a imagem na barra de navegação */
+.nav img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Espaçamento para o conteúdo abaixo da navegação fixa */
+.content {
+    margin-top: 90px; /* Ajuste para evitar que o conteúdo fique embaixo da barra de navegação */
+}
+
+.redirect {
+    margin-top: 80px;
+    margin-left: 3%;
+}
+.redImg {
+    background-color: #555; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: 2px solid #333; /* Borda cinza escura */
+    border-radius: 12px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    gap: 10px; /* Espaçamento entre a imagem e o texto */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado se for um link */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave para hover */
+}
+
+/* Estilo para o botão ao passar o mouse */
+.redImg:hover {
+    background-color: #444; /* Muda a cor de fundo ao passar o mouse */
+    border-color: #222; /* Muda a cor da borda ao passar o mouse */
+}
+
+.redImg img {
+    height: 30px; /* Define a altura da imagem */
+    width: auto; /* Mantém a proporção da imagem */
+}
+.BehSha {
+    display: inline-block;
+    border: 2px solid #000;  
+    padding: 10px;          
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.sinopse{
+    margin-left: 7%;
+    margin-right:7%;
+}
+.button-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+}

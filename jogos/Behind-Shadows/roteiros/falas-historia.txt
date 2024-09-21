@@ -1,0 +1,778 @@
+Homem Misterioso: Ele finalmente acordou.
+Mike: Onde eu estou?
+Homem Misterioso: Acredito que podemos começar.
+Alan: ...
+Mike: Quem é esse cara? (aponta para o Alan)
+Mike: E quem é você?
+Homem Misterioso: Bom, vou lhes contar sobre o que aconteceu.
+Homem Misterioso: Primeiramente, Maicon Jousan: Aos 14 anos, 4 meses e 22 dias. Você estava voltando para sua residência e foi atacado por um assaltante. Você estava utilizando um aparelho intra-auricular e portanto não ouviu a voz de assalto. 
+Homem Misterioso: Impacientemente, o assaltante lhe deferiu um golpe com uma faca, você não resistiu ao sangramento.
+Mike: ... 
+Mike: E esse cara? 
+Alan: ... 
+Homem Misterioso: Agora, Alan Dount: Aos 17 anos, 8 meses, 6 dias. Faleceu em decorrência de um infarto do miocárdio.
+Alan: ... 
+Mike: ... Bom ... E agora? ...
+Homem Misterioso: Vou lhes propor duas alternativas à serem postos no Vale do Esquecimento.
+Homem Misterioso: A primeira alternativa: Renacer em uma nova vida e esquecer tudo que vivenciaram até aqui.
+Homem Misterioso: Contrapondo, proponho viverem num mundo paralelo ameaçado pelo Exército das Sombras. Seres cujo integridade é desconhecida, tudo que se sabe é que almejam tomar controle de todo o multiverso. Vocês são a única esperança desse mundo.
+Homem Misterioso: Para incentivá-los vou coneceder alguns benefícios: Vocês terão suas memórias intactas, além de poderem interpretar e se comunicar com os seres deste novo mundo. Concedo também o benefício de um conjunto de ferramentas para que possam sobreviver aos perigos que os aguaradam pela frente.
+Homem Misterioso: Uma vez que consigam derrotar essas entidades, extinguindo-as, concederei qualquer desejo a vocês.
+Mike: ... Eu escolho ... O ... Novo mundo...
+Alan: ...
+Homem Misterioso: Ótima escolha, façam uma boa viagem.
+Alan: Como assim "façam"? Eu não ...
+
+------{ Mike, dia 1 - Desencontro }------
+Mike: Bom ... O que fazemos agora? ...
+Alan: [resmunga] Você fala de mais...
+Mike: A gente parou no meio de uma vila, tem alguma ideia?
+Alan: Escuta, primeiro, "a gente" não existe. Fui arrastado para cá sem ao menos falar uma palavra
+Mike: Eu pensei que ... Você tinha concordado ... Em vir para cá.
+Mike: Por isso está aqui agora.
+Alan: "Concordado"? Me ouviu falar algo a respeito?
+Mike: Bom ... Você tá aqui agora ... Nós estamos aqui ...
+Mike: Vamos ter que viver então ... 
+Mike: Seria melhor se estivesse-mos juntos
+Alan: ... Sem chance ... 
+Alan: Não vem com essa, cada um pra um lado.
+Alan: Não venha até mim. Curta sua "nova vida".
+Mike: ... Ok ...
+Mike: Te vejo por aí
+
+[jogador conhece o mapa com Mike até aparecer uma missão para ir ao Pub [ref= mission#1]
+
+----//----
+
+[Entardecer]
+[Mike entra no Pub]
+[Alan esta situado em uma mesa à direita próximo ao centro]
+[Enquanto caminha até uma mesa, Mike observa Alan - Alan o observa de canto]
+Mike:...
+[Mike vai até Alan]
+Mike: Alan ...
+Mike: Olha ... Vamos conversar? ...
+Alan: ... 
+Mike: Eu ... Olha, foi mal ... Não sabia que ... 
+Mike: ... Foi mal ... 
+Alan: ... "Foi mal" não resolve as coisas. Você é inconsequente, não pensa antes de agir.
+Mike: ... Eu não sabia que ... Você seria arrastado pra cá junto comigo. Pensei que seria só eu ... Ou sei lá.
+Alan: É melhor cada um seguir seu próprio caminho. Assim ninguém será afetado pelas escolhas um do outro. 
+Mike: ... Mas ... 
+Mike: Tá legal ... Só não queria ficar de mal contigo.
+Mike: Te vejo por aí 
+[Mike volta para sua mesa]
+[Passou-se cerca de 40 minutos, Alan foi embora]
+[Um cara se aproxima de Mike]
+[Mike aprenta-se um pouco chateado]
+?: Ei carinha. Vocẽ tá legal?
+Mike: Eu? Sim, sim, estou. Só sou meio novo por aqui.
+?: Posso me juntar a você?
+Mike: Claro, senta aí.
+?: Como se chama?
+Mike: Mike, me chamo Mike. E você?
+Rit: Rit, Ritain, ma prefiro que me chamem de Rit
+Mike: Legal
+Rit: Você disse que é novo por aqui, de onde veio?
+Mike: Eu morava em uma vila muito, muito longe daqui. 
+Rit: Entendo. O que está achando daqui?
+Mike: Interessante. Andei explorando as coisas por aqui, ainda não conheço tudo mas aos poucos vou conhecendo.
+Rit: Bom, acho que vai gostar daqui.
+Mike: É "diferente"
+Rit: Acho que nada é muito igual.
+Rit: Veio sozinho pra cá? Você parece mais novo que as pessoas por aí.
+Mike: Vim com um amigo. Mas ... Nós nos desentendemos hoje mais cedo e desde então não falo mais com ele.
+Rit: Quantos anos tu tem? 
+Mike: 14.
+Rit: Cacete ... Bom, tem onde ficar? 
+Mike: Pra falar a verdade não. Cheguei hoje aqui.
+Rit: Olha, se quiser, tem uma pequena associação de moradores com algumas casas ao lado aqui do centro. É lá onde moro, tem algumas casas livres. Você pode ficar com uma delas. 
+Rit: A associação é como uma parceria, em troca da casa você ajuda os outros moradores quando precisarem. O mesmo vale pra eles. Quando precisar, os mesmos ajudarão você.
+Rit:  As pessoas de lá são muito receptivas, acho que gostarão de ter você lá. 
+Rit: O que acha?
+Mike: Pera. Serio?
+Rit: Sim, sim.
+Mike: Ah, eu topo. 
+Rit: Que bom [sorrisinho] 
+Rit: QUando sairmos daqui te levo lá. Tu pode entrar hoje mesmo. Se quiser, é claro.
+Mike: Claro! [sorrisinho com a mão na nuca]
+Mike: Sempre morou lá? 
+Rit: Não, não. Eu morava com meus pais em uma cidade ao lado.
+Rit: Mas ... A vila em que moravamos foi atacada e então meu tio me trouxe pra cá com meu irmão. Pouco tempo depois, descobri que meus pais foram mortos tentando defender a vila.
+Mike: Nossa ... Eu ... sinto muito.
+Rit: Tá tudo bem, isso já faz muito, muito tempo.
+Rit: Melhor falarmos de algo mais "feliz".
+Mike: [sorrisinho] É.
+Mike: Você trabalha com algo?
+Rit: Eu? Eu sou ferreiro mas desde o ataque das sombras estou servindo ao exército. Eles precisavam de mais gente e então resolvi ir.
+Mike: Entendo.
+Mike: Queria ... Me juntar também.
+Rit: Você só precisa ir até o Centro de Combate, amanhã te levo lá se quiser.
+Mike: Pode ser.
+Rit: Só não sei se te deixam entrar por ser muito novo, mas vamos de qualquer forma. Vai ver eles não ligam.
+Mike: É [sorrisinho]
+Rit: ... Toma, é um mapa ... Você vai precisar disso ... [diz com a mão na nuca]
+Mike: Ah, valeu! [sorrisinho]
+[jogo mostra o mapa]
+Rit: Nós estamos aqui [flecha apontando para o Pub no mapa]
+Rit: Aqui fica a associação [o mesmo para ele]
+Rit: Aqui fica o centro [flecha apontando para o Centro de Combate]
+Mike: Ok, acho que entendi ... 
+[Interface = mapaBtn]
+Rit: Tá ficando meio tarde ... Quer ir conhecer o lugar?
+Mike: Ah ... sim. Bora lá.
+[escurece a tela e reaparece na casa do Mike]
+Rit: É aqui.
+Mike: ... ... É aqui? ...
+Rit: Gostou?
+Mike: Tudo isso pra mim? ...
+Rit: É
+Mike: É enorme.
+Mike: É incrivel
+Rit: Que bom que gostou.
+Mike: Eu ... tô meio que sem um lugar pra morar ...
+Rit: Dorme aí ... 
+Mike: Mas eu não preciso assinar algo, ou dizer que estou aqui? 
+Rit: Tecnicamente eu moro aí. Existe uma lista dos moradores, eu tinha assinado para essa aqui.
+Rit: Amanhã transferimos ela pra você.
+Mike: Certo.
+
+------{ Alan, dia 2 - "Ferrado e sem amigos" }------
+[Alan dormiu em uma caverna e não conheceu nem descobriu nada muito relevante]
+[cena: Alan saindo da caverna]
+Alan: Cacete, dormi muito mal. [diz com a mão na coluna]
+Alan: Ainda tenho que sobreviver a essa droga de novo mundo. Nem se quer posso deixar de existir com tranquilidade. Sempre tem um idiota estragando as coisas.
+Alan: Pelo visto vou ter que ficar aqui por um tempo.
+Alan: Melhor arrumar algo pra fazer: [Escolha do jogador]{
+  1: Devia ir atrás de algumas coisas que eu posso precisar, ou me informar sobre esse lugar.
+     |-> [tela escurece e reaparece na cidade, aqui o jogador pode conseguir alguns itens]
+  2: Melhor fazer algo quanto a esse lugar. Deixa-lo mais seguro e evitar de morrer de novo.
+     |-> [jogador pode explorar a área, modifica-la, construir coisas, limpa-la e etc ...]
+}
+[após um tempo - independente da escolha]
+Alan: Pelo visto o Pub é um dos lugares onde se consegue informações. Acho que deveria dar uma olhada.
+Alan: Talvez eu devesse me juntar a aquele idiota.
+Alan: Não, sem chance.
+Alan: Ele tá certo. Não vou durar muito tempo aqui. Sozinho não.
+Alan: Esquece, vou ficar na minha e tentar alguma coisa.
+Alan: Vou pra aquela taverna, vai ver encontro alguém burro o suficiente pra me ajudar. Ou pelo menos, descubra onde ficam as coisas para quais preciso.
+[tela escurece e reaparece no Pub, mesma mesa da outra cena]
+?: Ei! Você saberia me dizer algum lugar para passar a noite por aqui? 
+Alan: Foi mal, também sou novo por aqui...
+?: Entendo, obrigado de qualquer forma.
+Alan: Estou meio ... Sonolento.
+Alan: Faz sentido, não como nada há um bom tempo.
+Alan: [Checa os bolsos] É, não vai rolar.
+Alan: Aparentemente as pessoas aqui são maníacas por dinheiro.
+Alan: Fala serio ... Esperava .. Encontrar coisas pra comer por aí, mas ...
+Alan: Vou ter que dar um jeito de arrumar dinheiro.
+Alan: Roubar? Sem chance, as pessoas se matam por bem menos que isso. Não tô afim de morrer, de novo não.
+[vozes abafadas]
+Alan: Ah era tudo que faltava. 
+Alan: Pelo visto o "espertão" arrumou outros da laia dele.
+Alan: Seria uma alternativa ir falar com ele? Sem chance.
+------{fim da cena}------
+------{Mike dia 2 - Iniciação}------
+[Cena mostra Rit e Mike indo em direção ao Centro de Combate]
+[ref= locais/centroDeComabate]
+Rit: O Centro fica logo ali.
+Rit: Te trouxe mais cedo para que possa praticar um pouco antes, levei 8 tentativas para passar, então ... 
+Mike: Ah, beleza. Tá legal. - Podia estar dormindo mas ... Enfim 
+[cutscene dos dois chegando no campo de treinamento externo]
+Rit: Tá legal. Vou ser seu oponente.
+Mike: Tá me zoando, né?
+Rit: Ah, vai lá. Você consegue.
+[Rit pega um machado]
+Mike: ... Me ... Sinto em desvantagem ... 
+Rit: [Riso leve] Atrás de você. Pode usar aquelas coisas ali.
+[Mike pega uma espada e algumas facas de arremesso]
+Mike: É ... Pega leve, tá bom? ... 
+[ref= mecanicas/lutaComEspada; mecanicas/arremessaveis]
+[variaveis de fala]
+Rit: QUe tal uma aposta?
+Mike: Como assim?
+Rit: Se eu ganhar, o Pub hoje é por sua conta. Se você ganhar ...
+Mike: Mas eu ...
+Rit: Melhor me vencer então.
+Mike: Ok, ok.
+[Começa a luta]
+[jogador consegue retirar 75% (variavel de acordo com a dificuldade) da vida de Rit]
+Rit: Calma ae. Tá legal. Você ganhou essa... Dessa vez ...
+Rit: Não fica "se achando", tá legal?
+Mike: [Sorrisinho] Tá bom.
+[Vida de Mike = 25%]
+[cena dos dois se encarando, com cara de "mortos"]
+[Mike tenta acertar Rit com a espada, tropeça e cai]
+Rit: Desiste?
+Mike: Não ... 
+Mike: Não dá ... Tá legal, você venceu.
+Rit: Hoje é por sua conta.
+Mike: Tô ferrado [resmunga]
+[cena do portão se abrindo]
+Rit: É chegou a hora.
+Rit: Não se sinta mal se não passar de primeira. Eu levei 8 tentativas, então ... 
+Mike: Tá de boa.
+Rit: Aliás, eu tava "zoando" sobre a aposta. Relaxa.
+Mike: [Sorrisinho] Tá legal 
+[cena de iniciação no centro]
+General: Olá, como vai?
+Mike: Olá
+General: Opa Rit, como vai?
+Rit: Bom?
+Rit: Esse é o Mike, ele queria entrar aqui pro centro.
+General: Entendo. Vamos lá então.
+General: Mike, me acompanhe por favor.
+Rit: Só vou até aqui. Vai levar um tempo até terminar tudo. 
+Rit: Vou ficar ali fora treinando.
+Mike: Ah, beleza. Te vejo depois então.
+[Escurece a tela, mensagem "papeis e mais papeis preenchidos ..."]
+General: Agora a etapa final.
+General: Se me derrotar, você entra.
+Mike: Tá legal.
+[começa a luta, Mike e o General estão ambos com os mesmos equipamentos - espada e arremessaveis]
+[falas paralelas]
+[vida de Mike = 75%]
+General: É só isso que você tem?
+Mike: ...
+[vida de Mike = 50%]
+General: Pelo visto isso vai ser rápido
+Mike: [Resmunga] Velho do karai.
+[vida de Mike = 25%]
+General: Você não tem chance
+Mike: [resmunga] Vou matar esse cara ...
+[vida de Mike = 0%]
+Mike: Porra, não dá.
+[escurece a tela e o jogador pode tentar de novo]
+[vida General = 75%]
+Mike: Ainda falta muito ... 
+[vida General = 50%]
+Mike: Ele não ... Desiste?
+[vida General = 25%]
+Mike: Morre logo ...
+[vida General = 0%]
+General: Ok, você passou.
+[liberou mecânica Centro de Combate]
+[escurece a tela e reaparece com Rit e Mike na frente do Centro]
+Rit: Boa! De primeira ...
+Mike: É, pode crer [sorrisinho]
+Rit: E então, quer ir no Pub?
+Mike: Pode ser.
+Rit: Vai na frente, vou passar buscar o Deni.
+Mike: Quem?
+Mike: Ah é, seu irmão. Beleza.
+[fim da cena]
+[cena Pub]
+Mike: Cacete ... 
+Rit: O que foi?
+Mike: É o Alan.
+Rit: Quem?
+Mike: É o amigo que veio comigo quando me mudei pra cá, mas a gente meio que se desentendeu e agora ele não fala mais comigo.
+Deni: Puts, vai lá falar com ele. Vai que.
+Mike: Não rola, ele não me ouve. Tentei falar com ele mas ...
+Deni: Tenta de novo, vai ver ele te ouve agora.
+Mike: Tá legal.
+[Mike se aproxima de Alan]
+Mike: Alan ... Você tá legal?
+Alan: Pensei ter dito pra cada um seguir seu rumo.
+Mike: É mas ... Você não parece bem. 
+Alan: Eu me viro, não sou tão bom igual você com pessoas.
+Mike: ... 
+Mike: Se ... Tu quiser ... A gente pode se ajudar, tu não precisa nem falar comigo. É só que, não é legal te ver assim.
+Mike: Eu não ... Queria que as coisas fossem assim.
+Alan: Mike, falar com você não é problema. 
+Mike: Então ... Qual é?
+Alan: É só que ... Eu não queria estar aqui, entende?
+Mike: ... Foi mal ... 
+Alan: Tá tudo bem, você não tinha como saber que afetaria nós dois.
+Mike: É, mas ... 
+Alan: É bom conversar com alguém depois de tanto tempo, mas não sobre isso. 
+Mike: Ah ... Pode falar, qualquer coisa ... 
+Alan: Deixa, fica com seus amigos, eu me viro aqui. 
+Mike: Alan ... 
+Alan: Tá tudo bem. Relaxa.
+Mike: Tá bem. Posso ... Vir ver como tu tá de vez em quando? 
+Alan: Pode. [sorrisinho]
+Alan: Te vejo por aí.
+Mike: Tenta não morrer, quero lutar com você um dia. 
+Alan: Tá legal. [sorrinho]
+[Mike volta a mesa com Rit e Deni]
+Deni: E aí, como foi?
+Mike: Bem, melhor que das últimas vezes. Aparentemente ele tá mais "sociável" agora.
+Deni: Que bom. Aos poucos ele ...
+Mike: É ...
+Mike: Posso ... Fazer uma pergunta pra vocês?
+Rit: Fala.
+Mike: Vocês são irmãos de sangue? 
+Rit: Sim? ...
+Mike: Ah é que vocês são um pouco diferentes, então ... 
+Deni: É ...
+Mike: Ou, como consigo ... Dinheiro?
+Rit: Lá no Centro? Tem um quadro de missões lá, tu cumpre elas e eles te pagam. 
+Mike: Entendi.
+[escurece a tela com a mensagem: "Mike continuou fazendo perguntas sobre como viver no novo mundo. Rit tomou alguns copos de cerveja e os três foram pra casa."]
+------/Alan Dia 3 - "Me virando"/------
+Alan: Até que o Mike não é tão idiota assim, ao menos ele é legal - um pouco ...
+Alan: E se ... Eu aceitasse a proposta dele? 
+Alan: Melhor não, eu me viro aqui. Tento pelo menos.
+Alan: Seria legal ... Ter alguém além de mim.
+Alan: Já que vou ficar aqui seria bom explorar essa caverna. Evitar morrer de novo.
+[Alan entra na caverna]
+Alan: Nunca tinha chego até aqui.
+Alan: Sinistro.
+Alan: De qualquer forma não cheguei ao final dela, então vou continuar explorando.
+[falas paralelas]
+[jpgador encontra um minério pela primeira vez]
+Alan: Me parece interessante, vou ver o que consigo com isso. Vai ver um ferreiro ou algo do tipo pode querer.
+[jogador encontra um pergaminho pela primeira vez]
+Alan: Parece umas escrituras, vou dar uma olhada depois.
+[ref= mec/pergaminhos, mec/listagemDePergaminhos, mec/pergaminhosContents]
+[Jogador chega no nível 3 da caverna]
+Alan: Aquilo é ... Uma pessoa? 
+Alan: Por que teria alguém aqui?
+Alan: Achei que estivesse abandonado.
+Alan: Não ... Seja lá o que for, não é uma pessoa.
+Alan: Vou tentar chegar mais perto, espero que não me veja. De qualquer forma, vim até aqui pra deixar o lugar mais seguro.
+[O que o Alan viu é uma sombra, a mesma começa a ataca-lo]
+Alan: Porra!
+[ref= mec/combateAlan]
+[Alan tenta atacar a sombra com a espada algumas vezes]
+Alan: É, não vai funcionar.
+Alan: Vou ter que bolar outro plano.
+Alan: Se ataques diretos não funcionam, talves aprisiona-lo possa resolver.
+[câmera mostra um buraco na caverna]
+Alan: Vou tentar jogar ele ali.
+Alan: Depois derrubar algumas coisas, pedras ou coisas do tipo.
+[Mapa 8 direções, jogador precisa atrair a sombra para o buraco]
+[Quando o jogador conseguir derrubar a sombra]
+Alan: Pronto.
+[Câmera mostra alguns pedregulhos]
+[Alan vai até eles]
+Alan: Preciso ser rápido
+[Jogador precisa derrubar a pedra com Alan, Alan coloca a espada de modo a fazer uma alavanca. Jogador precisa pressionar a tecla 'Q' várias vezes]
+[Ao todo são 8 pedras, jogador tem um tempo limite pra derrubar as pedras ou a sombra escapa e ele terá que derrubar de novo.]
+[Quando Alan derrubar]
+Alan: Boa! Funcionou. [mão na cabeça, suor, sorrisinho]
+Alan: Pelo visto ele se dissipou. Então é assim que se mata essas coisas.
+Alan: Acho que deu por hoje. 
+Alan: Vou fechar as entradas desse lugar, não vai ser nada bom se um desses me atacar de novo.
+[Escurece a tela e reaparece na superfície]
+[Entardecer]
+[câmera mostra a barricada de madeira na entrada a fundo da caverna]
+Alan: Acho que é isso.
+Alan: Vou descansar um pouco e depois vou pro Pub.
+[fim da cena, reaparece no Pub]
+[Alan e Mike estão nos mesmos lugares de sempre]
+[Mike está sozinho]
+Alan: Mike está sozinho, deve ter rolado alguma coisa.
+Alan: Acho que vou lá falar com ele. 
+[Alan se levanta e vai até lá]
+Alan: [com os braçoes atrás da cabeça] Mike ... Você tá legal?
+Mike: Hm? [Olha pra trás e vê Alan - sorrisinho]
+Mike: Tô sim. Você ... Tá bem? 
+Mike: Nunca veio falar comigo, então ...
+Alan: É, eu tô ligado. É só que ... Você tava aqui sozinho - o que não é muito comum - então passei aqui pra saber se não rolou alguma coisa.
+Mike: Tendi. Bom, senta aí, só pra bater papo 
+Alan: Tá legal.
+Mike: ...
+Mike: Não sei sobre o que falar ... 
+Alan: [sorrinho de canto]
+Alan: Você curte beber algo?
+Mike: Nada alcoólico. As pessoas parecem meio viciadas aqui. 
+Alan: Eu curto cerveja mas não sou muito fã.
+Alan: O problema é que não tem nada melhor por aqui.
+Mike: Nunca cheguei a experimentar na verdade.
+Alan: Fez certo, no começo tu diz que não gosta mas quando vê tu já tá no quarto copo.
+Mike: [riso leve]
+Alan: Olha ... Foi mal por ter sido rude contigo antes.
+Mike: Tá de boa.
+[Garçonete passa na mesa]
+Garçonete: Precisam de alguma coisa?
+Alan: Me vê uma cerveja, por favor.
+Garçonete: Claro!
+Alan: Quer uma também? Eu pago uma pra ti.
+Mike: Acho que passo essa.
+Alan: Tá bom [sorrisinho]
+Alan: Só isso por hora.
+Garçonete: Ok!
+Mike: Tenta não ficar bebâdo, vou te jogar no lago se ficar.
+Alan: [risada leve]
+Alan: Relaxa, não vou ficar chapadão.
+Mike: Espero. [riso]
+Garçonete: Aqui!
+[Alan toma um gole]
+Mike: Cacete, metade de uma vez só.
+Alan: [Gargalhada] Só um pouquinho.
+[escurece a tela com a mensagem: "Continuaram a conversar por um tempo, a noite acobou bem e os dois forma pra casa."]
+------{Mike Dia 4 - "Sombras e escuridão"}------
+[Mike está sentado num morro vendo a água de um rio passar]
+Mike: O Alan tava diferente ontem, ele é legal as vezes.
+Mike: Vai ver por ficar muito tempo sozinho, quis conversar um pouco.
+Mike: Espero que ele não volte a ser o rabugento de antes.
+Rit: Mike!
+Mike: Sim?
+Rit: O que tá fazendo aí?
+Mike: Olhando o movimento.
+Mike: Como foi a missão ontem?
+Rit: Deu tudo certo, alarme falso.
+Mike: Que bom então.
+Rit: Terá uma missão em grupo, recomendei você e o Deni.
+Rit: 12h de hoje. Topa ir?
+Mike: Ah ... 
+Mike: Tá bem, eu vou.
+Rit: Melhor se equiparmos antes de ir, vamos passar no centro dar uma olhada.
+Mike: Beleza.
+[Escurece a tela e reaparece no centro]
+Rit: Mike, tu precisa de algo pra se defender. Não vai dar muito certo tu sair na mão com alguém.
+Mike: É [riso]
+Rit: O centro tem algumas coisas mas não é nada muito relevante.
+Rit: Vamos na ferraria, vou tentar fazer alguma coisa pra você.
+[Cena mostrando os três entrando na ferraria]
+Rit: Faz tempo que não trabalho com isso, mas posso tentar alguma coisa.
+Mike: Alan? 
+Alan: Ah, e aí Mike?
+Mike: Vindo na ferraria também?
+Alan: É, evitar de morrer.
+Mike: É [sorrisinho]
+Rit: Mike bora lá?
+[Agora o jogador pode montar a espada]
+[Quando terminar]
+Rit: O que achou?
+Mike: Muito doido, bem legal. [sorrisinho]
+Rit: Bom que gostou.
+Rit: Quando tiver mais materiais, só me chamar e eu tento fazer alguma coisa pra ti.
+Rit: Essa foi o que deu.
+Mike: Belê
+Deni: Mais coisas pra pegar?
+[Escolha do jogador]
+ |-> 1: Acho que deu.
+ |-> 2: Pera aí. Acho que deveríamos ir atrás de mais coisas
+[Caso o jogador escolha 2]
+[Jogador está livre pra andar pela cidade, ir atrás de itens e entre outros]
+[Para dar inicio a missão o jogador precisa clicar em "bora lá" na cai a de falas]
+1/2: [Escurece a tela e reaparece na área inicial da missão]
+
+General: Escutem: Essa área foi tomada por Avadest, há indícios de sombras habitando essa região, além de possíveis pessoas desabrigadas.
+General: Não ataquem se não forem atacados, essas pessoas também estão tentando sobreviver.
+?: Certo!
+[Tela de apresentação das mecânicas de luta em grupo]
+General: Dispersar!
+[esquadrão de 6 pessoas]
+[Rit ficou com o General, Mike ficou com Deni, os outros dois ficaram juntos]
+
+Deni: Tá bem, vamos lá.
+Deni: Mike tá vendo ali? 2 sombras.
+Deni: Não dá pra matar.
+Deni: Mas elas temem a luz, isso não se aplica se formos vistos - elas atacam mesmo assim.
+Mike: E como fazemos isso?
+[Deni pega um taco de madeira e atira fogo]
+Deni: Vamos chegar mais perto e jogar próximo a elas.
+Mike: Tá legal.
+Deni: Cuidado pra não verem a gente.
+Mike: O que acontece se pegarem a gente?
+Deni: Ela nos ataca, se formos pegos viramos sombras - iguais a elas.
+Mike: Ok ...
+[modo de jogo em 8 direções]
+[O objetivo do jogador é chegar perto da sombra da sombra com a tocha, quanto chegar perto o suficiente a sombra começa a se distanciar até se dissipar.]
+[Se forem vistos, a sombra desaparece e em seguida mostra uma cena do personagem ativo sendo pego e em seguida mostra a tela de "você perdeu".]
+[falas paralelas] 
+[sombra a 3 unidades de distância]
+Deni: Um pouco mais.
+[Sombra a 1 unidade de distância]
+Deni: Estamos quase lá.
+[Se o personagem ativo for visto pela primeira vez]
+[Deni/Mike: puxam o outro]
+Deni/Mike: Quase ...
+Mike/Deni: Valeu!
+[Quando o jogador dissipar todas as sombras]
+General: Acabamos por aqui.
+Deni: É isso aí Mike.
+Rit: Boa, continuam vivos [sorrisinho]
+Mike: [com a mão na cabeça] É [sorrisinho]
+
+------{Alan Dia 5 - "Vivendo ..."}------
+Alan: Mike não apareceu Pub ontem
+Alan: Não que me importe mas não vou conseguir derrotar o tal exército sozinho.
+Alan: Não teriam mandado nós dois se não fosse realmente necessário.
+Alan: Enfim, acho que ele não morreria tão fácil assim.
+Alan: De qualquer forma é melhor eu arranjar um jeito de ficar mais forte.
+Alan: Deveria anotar as coisas que descobrir.
+Alan: Enfim esses papéis que comprei vão ser úteis.
+Alan: Agora preciso de novos equipammentos. Ainda sobrou um pouco de dinheiro desde a última vez. Espero ser o suficiente.
+[Escurece a tela e reaparece na ferraria]
+[Alan entrando, Mike está conversando com Rit]
+Alan: Mike?
+Mike: Alan? Nos encontramos de novo [sorrisinho, mão no pescoço]
+Alan: É [sorrisinho]
+Mike: Só dando uma passada? 
+Alan: É, preciso de mais coisas.
+Mike: É eu também.
+Mike: É isso Alan, te vejo por aí.
+Alan: Até.
+[interface para o jogador forjar seus equipamentos a esquerda, a direita animação de Rit forjando]
+[Alan teria 50 de dinheiro + o que o jogador conseguir previamente com Alan]
+Alan: É, acho que serve.
+Rit: Cuidado com isso aí [sorrisinho]
+Alan: Pode deixar. [sorrisinho]
+[cena se volta para Alan no centro da cidade]
+Alan: Tem mais coisas pra olhar por aqui.
+[Aqui o jogador pode escolher ficar e explorar a cidade ou voltar pra caverna.]
+[caso escolha explorar aparecerá um botão para que dar seguida à história.]
+Alan: Acho que vou voltar e explorar aquela caverna, vai ver consigo mais desses pergaminhos e alguns minérios.
+[Escurece a tela e reaparece dentro da caverna]
+Alan: Acho que já tinha chego até aqui.
+Alan: Tenho um tempo até abrir o Pub.
+[Andar = 4]
+[Alan encontra uma sombra de nível 2]
+Alan: Cacete, essa aí é diferente.
+Alan: Parece ter uma espécie de armadura.
+[Modo 8 direções]
+Alan: Vou pelas sombras, com sorte ela não me vê.
+[1 unidade de distância]
+[Alan ataca a sombra com a espada, a parte descoberta é atravessada pela espada, porém a parte com armadura colide]
+[Alan puxa a espada e ataca de novo (mesmo efeito), a sombra começa tomar a espada. Alan pula em direção à sombra e a empurra de onde está, a sombra cai do andar onde Alan está.]
+[Com a espada apontada para a sombra, Alan pula diante da sombra e a perfura violentamente, em seguida a acerta com um pedregulho, dissipando-a]
+Alan: Cacete. não sei como fiz isso.
+Alan: Bora lá, ainda tem mais dessas coisas.
+[jogador continua em combate simples (8 direções), ao derrotar mais duas sombras escurece a tela com a mensagem: "As sombras continuaram a aparecer, dei um jeito de ir embora."]
+
+------{Mike Dia 6 - "Até logo ..."}------
+[Mike está no mesmo morro de sempre observando o curso do rio]
+Deni: Mike!
+Deni: Rit quer dar uma volta numa colina aqui perto. Dizem ter um mercante que chegará em breve, Rit queria comprar algumas coisas. Quer ir com a gente?
+Mike: Ah, bora.
+Deni: Passamos aqui daqui uma hora.
+Mike: Beleza.
+[Jogador pode se preparar, comprar coisas e etc]
+Rit: Mike tá pronto?
+Mike: Bora.
+[Escurece a tela e reaparece no morro onde Alan mora]
+[Os três estão subindo o morro]
+Mike: Onde fica o mercante?
+Rit: Um pouco mais à frente.
+[Os três estão subindo - Alan está lutando contra três sombras]
+Mike: Porra! É o Alan.
+[Rit põe a mãe a frente do Mike]
+Rit: Mike ... Já era, é isso que acontece quando se é pego por uma sombra.
+Mike: Eu não vou deixar ele ali.
+Rit: Mike ... Vamos embora ... Antes que venham até a gente.
+Mike: Eu não ...
+[Uma das sombras avista os três]
+Rit: Vam'bora Mike!
+Mike: Sem chance.
+Rit: Tá legal. Se a gente morrer a culpa a sua.
+Mike: Alan!
+Alan: Mike?
+Alan: Mike cai fora daqui!
+Mike: Não vou deixar você aqui.
+[jogador enfrentará as 3 sombras, [mec/lutasEmGrupo]]
+[Após derrotar 2 sombras]
+[Deni tenta finalizar a última com magia de fogo]
+[A sombra absorve e se torna Boss#1]
+Deni: [Abismado] Ca ... Ce ... Te
+Mike: ...
+Alan: ...
+Rit: Vamos meter o pé!
+Rit: A gente não tem chance contra isso.
+Rit: [assustado] Vam'bora Mike!
+Alan: Mike se manda! Eu me viro com ele.
+Mike: Sem chance, eu tô junto nessa.
+Rit: Deni...
+Deni: Vamos deixar eles aí?
+Rit: Não vou arriscar sua vida nisso.
+[Rit e Deni fogem]
+Alan: Tá legal Mike. Vamos nessa.
+[jogador deverá derrotar o boss. Modo 2 direções, grupo: Alan, Mike; jogador poderá intercalar entre os dois]
+[falas paralelas]
+[caso jogador estiver com Mike e ataque o boss diretamente com espada]
+Alan: Sem efeito Mike.
+[caso jogador estiver com Alan e ataque o boss diretamente com espada]
+Mike: Alan ... 
+Alan: Tô ganhando tempo.
+[Caso jogador realize um combo completo pela primeira vez]
+Alan: Tá legal Mike, ele tá parado.
+Mike: Como se mata uma coisa dessas?
+Alan: Se usarmos força o suficiente a armadura quebra.
+Mike: Vamos nessa!
+[cena mostrando Mike correndo na direção da sombra e a atacando violentamente]
+[sombra segura Mike e o joga no chão]
+Alan: Mike!
+[Alan ataca o tornozelo da sombra por meio de uma rasteira e puxa o Mike de volta]
+Mike: Não vai rolar.
+Alan: A única forma de dissipar é arremeçando algo maior que ela.
+Mike: Como vamos jogar algo maior que essa coisa?
+Alan: Eu não sei Mike.
+[volta do foco em gameplay]
+[Caso jogador realize um combo completo pela terceira vez]
+Alan: Mike, a gente pode derrubar ela do penhasco. [câmera mostra penhasco]
+Mike: Tá legal, não é possível que continue inteira depois de cair de um penhasco.
+[Agora o objetivo do jogador é empurrar a sombra próximo à queda do penhasco e em seguida realizar um combo completo]
+Alan: Agora Mike!
+[Os dois pulam em direção à sombra, a mesma cai.]
+[cena mostrando os dois olhando a sombra cair]
+[uma outra sombra ataca Alan e o perfura com uma espada das sombras]
+Alan: Arh!
+Mike: [assustado] Alan?
+[Alan olha para a espada saíndo de seu torax - a sombra começa tomar o corpo de Alan]
+Mike: Alan!
+[Mike segura a sombra com as mãos e a arremeça do penhasco]
+Mike: Como fazemos pra isso parar? Tem alguma ideia? 
+Alan: ...
+Mike: Porra Alan, fala alguma coisa!
+Alan: Acabou pra mim Mike, eu sabia que não ía durar muito.
+Mike: Do que você tá falando? Começou agora, se fizermos alguma coisa ainda dá pra parar.
+Alan: Já era Mike, agora é com você ... 
+Mike: Alan? 
+Alan: Toma, não vou precisar mais disso.
+[Alan entrega sua espada]
+Alan: Dentro da caverna, encontrei muitas escrituras, você vai precisar delas ...
+Mike: ... ... ...
+Alan: Se manda ... Não vai ser legal ter que atacar o primeiro amigo que fiz em toda minha vida.
+Mike: Eu não vou te deixar aqui pra morrer.
+Alan: ... 
+[a sombra continuou a tomar o corpo de Alan até possuí-lo completamente.]
+Mike: Alan ... Fala comigo ... 
+Mike: Vai logo ... 
+Mike: Fala alguma coisa.
+[Alan (sombra) começa a atacar Mike]
+Mike: Cacete, Alan!
+Mike: Eu vou arranjar um jeito de te trazer de volta ...
+[Escurece a tela]
+
+------{Alan Dia 7 - "Perdido nas sombras"}------
+[submundo]
+Alan: ... ? 
+Alan: Então é isso que acontece quando se é pego por aquilo.
+?: Até que enfim acordou
+Alan: ? 
+?: Você está em uma realidade alternativa, as pessoas que são corrompidas são trazidas para cá.
+Alan: Quem é você?
+?: Pode me chamar de Raika.
+Raika: Deve estar se perguntando se há como sair daqui.
+Alan: Exato.
+Raika: O único jeito de sair daqui é derrotando o General e contando com ajuda externa.
+Alan: Quem é esse tal "General"?
+Raika: É o ser responsável por mandar as pessoas pra esse lugar.
+Alan: O que seria a ajuda externa?
+Raika: Alguém do mundo dos vivos precisa fazer um ritual, isso garante que você consiga passar pelo portal.
+Alan: Que portal?
+Raika: Quando derrotar o General o portal para o mundo dos vivos estará aberto, no entanto quem está aqui não pode passar pelo portal.
+Alan: Onde fica o tal General?
+Raika: Ele não "fica" em um local acessível por sombras desse lugar.
+Raika: A única forma de derrota-lo é no torneio que acontece a cada 10 anos, para vencer você terá que matar um imortal.
+Raika: O torneio acontecerá daqui a três dias. Esse é o tempo que temos. 
+Alan: Tá legal.
+Alan: Como entro em contato com alguém no mundo dos vivos?
+Raika: Não faço ideia, é por isso que ainda estou presa aqui.
+Raika: Existe uma região isolada, conhecida por ser "A Ruína dos Traidores". 
+Raika: Nunca fui até essa parte, mas sei que existe uma pessoa lá que pode nos ajudar com isso. Merlin.
+Alan: Tá legal. Vou até lá.
+Raika: Não vou até essa parte, é com você agora. Vou atrás de algumas coisas.
+Raika: Toma, vai precisar disso. 
+Alan: Valeu.
+[Raika entrega um mapa pro Alan]
+Raika: Te encontro aqui, mesmo lugar, amanhã.
+Alan: Tá legal.
+[jogador precisa andar com Alan até o ponto apontado no mapa]
+
+[Falas paralelas]
+[Caso jogador esteja 1/4 do ponto]
+#1: Alan: Devo estar longe ainda.
+#2: Alan: Faz falta ter alguém apesar de tudo.
+#3: Alan: Não dá pra se arrepender agora.
+[1/2 do caminho]
+#4: Alan: Não consegui nem conhecer o Mike direito.
+#5: Alan: Vou dar uma chance, não pode ser tão ruim assim.
+[Caso jogador esteja a 4/5 do caminho]
+#6: Alan: Já estou quase lá.
+#7: Alan: Vou ter que dar um jeito de falar com o carinha.
+#8: Alan: Espero que ele tope me ajudar com isso.
+#9: Alan: Não tenho certeza, fui muito rude com ele no início.
+#10: Estavamos bem no final, mas ...
+
+[Quando terminar o caminho]
+Alan: Acho que é aqui.
+Alan: Devia ver com outras pessoas sobre esse tal Merlin.
+
+[quest para o jogador, ele deverá falar com os NPCs do local.]
+[Os primeiros 4 serão falas aleatórias, o 5° será um NPC específico.]
+
+[falas aleatórias {
+    #1: ?: Acho que ... Talvez ... É, não tenho ideia.
+        Alan: tranquilo.
+    #2: ?: Talvez na *área norte*, ouvi dizer sobre um Merlin que morava por lá.
+        Alan: Certo, valeu.
+    #3: ?: Não sei ao certo, mas algumas pessoas dizem que ele mora em uma *caverna* - não tenho ideia de onde fica.
+        Alan: Certo, valeu.
+    #4: ?: Nunca ouvi falar de um Merlin, sinto muito.
+        Alan: Tranquilo. Valeu.
+}]
+
+[Após as quatro falas serem exibidas e jogador interagir com o 5° NPC]
+?: Caverna 5 na área norte, apesar dele não gostar muito de companhia.
+Alan: Sabe como chego lá?
+?: Você é novo por aqui certo?
+Alan: Sim ...
+?: Use o teleporte das sombras pra esse ponto no mapa. [mostra o mapa]
+Alan: Como faço isso?
+?: Comece fechando os olhos e concentrando sua raiva, agora direcione ela para esse ponto - como se a origem dela fosse ali.
+?: Deixe as sombras se fundirem em você. 
+?: Agora dissipe.
+[mostra Alan teleportando]
+
+Alan: Cacete, deu certo.
+Alan: Agora preciso encontrar a tal caverna.
+[Mostra a caverna]
+Alan: Acho que é aqui.
+[Alan entra na caverna]
+[mostra Alan sendo pego por uma armadilha mágica e ficando preso com a cabeça para baixo.]
+?: Acho bom ter uma boa razão para estar aqui.
+Alan: Eu ... posso explicar.
+?: É melhor explicar rápido.
+?: O que faz aqui?
+Alan: Raika ... Raika me mandou atrás do Merlin, disse que ele poderia ajudar.
+?: Ajudar com o que?
+Alan: A falar com os vivos.
+Merlin: Infelizmente não posso ajudar. Adeus. [Aponta a espada em direção ao pescoço de Alan - indicando corta-lo]
+Alan: Espera! Espera!
+Alan: Você é o Merlin, certo?
+?: Não, e não o conheço.
+Alan: Ah, qual é. Você disse "não posso", logo você é o Merlin.
+Merlin: Tá legal, mas não tenho o que procura. Adeus.
+[acelera a espada e para assim que encosta no pescoço de Alan]
+Merlin: Tenho algo, mas não acho que comsiga usa-lo.
+Alan: E por que não?
+Merlin: Lhe faltam muitas coisas, entre elas a habilidade.
+Alan: Luta comigo, se eu vencer ...
+Merlin: Certo, se perder será meu escravo.
+
+[começa o combate com cena em modo Imersão]
+[Alan ainda está preso e jogador deve desviar dos golpes de Merlin]
+
+Alan: Calma aí, me tira daqui primeiro!
+Merlin: Você me desafiou pra uma luta, acha que vou facilitar as coisas pra você?
+Alan: Droga.
+[Merlin ataca com a espada - jogador deve usar as teclas de movimento para desviar]
+[fala-pensamento:
+  Alan: Vou ter que fazer me tirar daqui.
+  [Quando jogador desviar pela 3 vez (Merlin usa magia em Alan na 3°):]
+  Alan: É isso, a magia que me segura aqui enfraquece quando ele usa outras magias.
+  Alan: Por enquanto só preciso desviar então. Uma hora ele vai usar a ponto de me soltar.
+]
+[Merlin ataca Alan 5 vezes, se jogador desviar as 5 Alan estará livre.]
+Alan: Certo, agora é acabar com ele.
+[Combate: Alan x Merlin]
+[Jogador tentará atacar Merlin com Alan, porém nenhum surgirá efeito]
+[Após 3 tentativas falhadas]
+Alan: Vou ter que pegar ele desprevinido. Ele bloqueia todos os meus ataques.
+[Alan corre na direção de Merlin e o ataca com a espada, Merlin o bloqueia e lança a espada para longe]
+Alan: Droga!
+Alan: Espero que isso funcione.
+[Alan ataca Merlin novamente, dessa vez desarmado tentando atingi-lo o mais rápido possível.]
+[Alan usa as sombras para arremessar a espada que havia sido derrubada na direção de Merlin, acertando-o em cheio.]
+[Merlin com a espada fincada em suas costas.]
+Merlin: Droga. Melhor lutar a sério com ele.
+Alan: [bufa]
+Alan: Então é assim que funciona, só preciso me concentrar e desejar que as sombras façam. 
+Alan: Ele não consegue se proteger de várias direções pelo visto.
+[tela mostrando os combos com Alan(submundo)]
+[ref="mec/combos/#'Alan (submundo)'"]
