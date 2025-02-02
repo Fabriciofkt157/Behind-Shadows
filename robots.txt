@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /pagina-importante.html
+Allow: /outra-pagina.html
