@@ -1,3 +1,0 @@
-15/08/2023-14:45:
-Adicionado esquema de pastas;
-Adicionado main-version: BH_v01

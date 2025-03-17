@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /jogos/Behind-Shadows/WEB/index.html
-Allow: /main-page/index.html
