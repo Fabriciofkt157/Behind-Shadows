@@ -3,10 +3,7 @@
   src: url('MedievalSharp.ttf') format('truetype');
 }
 
-footer {
-  padding: 20px;
-  text-align: center;
-}
+
 
 body {
   font-family: 'MedievalFonts', sans-serif;
@@ -30,6 +27,12 @@ main {
   background-image: url("assets/backMain.png");
   background-position: center;
   overflow-y: auto;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
 nav {

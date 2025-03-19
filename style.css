@@ -33,7 +33,8 @@ body {
 footer {
     padding: 20px;
     text-align: center;
-  }
+    color: white;
+}
 
 nav {
     position: fixed;
@@ -80,4 +81,3 @@ nav {
     height: 60px;
     border-radius: 10px;
 }
-
