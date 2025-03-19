@@ -27,6 +27,7 @@ main {
   background-image: url("assets/backMain.png");
   background-position: center;
   overflow-y: auto;
+  height: 85wh;
 }
 
 footer {
