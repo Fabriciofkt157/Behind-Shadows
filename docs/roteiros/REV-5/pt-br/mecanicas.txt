@@ -1,9 +1,14 @@
+[REV-5 v1 23/10/24 20:51]
+
 O presente arquivo é responsável por agrupar todas as mecânicas do jogo.
 
 nomenclatura:
 PV: Pontos de vida;
 PA: Pontos de amizade;
-PD: Pontos de defesa;
+PD: Pontos de dano;
+PDEF: Pontos de defesa;
+PH: Pontos de habilidade;
+EXP: Pontos de experiência
 Efeitos: saturação: Aumenta a restauração de PV com o tempo;
 
 Sistemas {
@@ -58,7 +63,7 @@ Sistemas {
         A quantidade de dias não influenciará no avanço da história. O jogador pode realizar todos os eventos necessários para avançar na história em um dia ou levar vários deles.
         O jogador poderá ficar acordado com o personagem ativo até 3 dias. Quando ficar sem dormir o personagem se tornará menos ativo, ou seja, seus ataques causarão menos danos e a taxa de acertividade reduzirá. Quando ultrapassar os 3 dias, o personagem desmaiará.
     } 
-    Sistema de missões: Haverá um painel do centro da cidade onde o jogador poderá verificar e aceitar um não realizar alguma missão, em troca ele receberá dinheiro/itens; também haverão missões ao encontrar determinados personagens no mapa;
+    Sistema de missões: Haverá um painel do centro da cidade onde o jogador poderá verificar e aceitar um não realizar alguma missão, em troca ele receberá dinheiro/itens, PH e EXP; também haverão missões ao encontrar determinados personagens no mapa.
 }
 
 construções {
@@ -86,8 +91,34 @@ construções {
     }
 }
 
+mecânica de experiência (EXP){
+    DEFINIÇÃO: durante o jogo, o jogador irá obter EXP ao interagir e fazer coisas que guiem ele na história, ou seja, é uma forma de mostrar ao jogador que ele está no caminho certo.
+    
+    Exemplos: abrir baús, encontrar dungeons, comprimentar parceiros, completar missões e aprender coisas com os personagens.
+    A quantidade de EXP varia de acordo com a origem dele; funciona na base da recompensa: quanto mais difícil de ser feito, mais EXP.
+    
+    O EXP acumula, conferindo níveis aos personagens. Ao subir de nível, os atributos do personagem melhoram (exemplo: mais PV, PD, PDEF, etc); certas habilidades exigem determinado nível de personagem para ser adquirida.
+}
 
-Fusão {
+interfaces{
+    cartão de personagem{
+        NOTA: após Mike concluir a primeira missão no Centro de Combate, ele ganhará seu cartão; Alan e Raika ganharão o deles quando entrarem para os Grupos de Extermínio; Deni e Rit já possuem, porém só será apresentado ao jogador quando Mike ganhar o dele.
+        
+        DEFINIÇÃO: cartão de personagem é uma interface que mostra ao jogador a quantidade de pontos que ele possui (PA, PD, PDEF, PH, PV, EXP, etc). Aqui o jogador poderá investir seus pontos para adquirir novas habilidades ou melhorar seus atributos.
+        
+        ÁRVORE DE HABILIDADES {
+            NOTA: cada personagem possui a sua própria. 
+            DEFINIÇÃO: para adquirir habilidades o jogador precisará de algumas coisas: nível de personagem (para aquela habilidade) e PH (específico para a habilidade). 
+            A aquisição funciona com dois princípios: 
+                Algumas habilidades (como golpes com espadas) podem ser aprendidas sem a necessidade de alguém ensinar. Nesse caso, o jogador precisa treinar o personagem em questão.
+                Já outras (como magias) precisam que alguém ensine. Nesse caso, a Árvore de Habilidades mostrará ao jogador onde encontrar a pessoa habilitada. Essa pessoa pode ser algum amigo, exigindo PA (não gasta PA, mas precisa ter uma quantidade X), ou a pessoa pode cobrar dinheiro para ensinar.
+        }
+        
+    }
+}
+
+mecânicas de combate {
+    Fusão {
         A fusão é uma técnica de batalha que consiste na conexão máxima entre duas ou mais pessoas. Quando a fusão é a realizada, os pensamentos, visão e habilidades são compartilhadas entre os participantes, de modo que ambos possam utilizar livremente. 
         Quanto maior a afinidade entre os usuários, mais forte será a fusão, resultando em técnicas mais poderosas como o controle um do outro, junção de armas e magias e a substituição mutua (personagem troca de lugar com a outra pessoa na fusão (teleporte)).
         A fusão é uma técnica extremamente instável e exige concentração máxima de todos os usuários. Em casos de menor afinidade entre os usuários pode ser necessário que um deles fique fora da luta para manter a fusão.
@@ -106,7 +137,17 @@ Fusão {
         A fusão será introduzida ao jogo no 4° capítulo.
         Inicialmente apenas Deni e Rit podem fazer a fusão. Os dois ensinarão aos outros personagens quando a organização for formada.
         Detalhes: quando a fusão é realizada, no mesmo local onde a runa do personagem está, as runas de todos os personagens se formarão.
+    }
 }
+
+Magia {
+    A magia funciona baseada nos seguintes princípios {
+        [1]: A magia usa os sentimentos do personagem como "chave de ignição". Cada sentimento libera energia ao entrar em ação, seguindo a seguinte ordem: raiva/ódio > medo > alegria > tristeza; quanto maior a energia liberada, resultados mais rápidos, no entando, magias que partem de sentimentos muito energéticos são fracas quando comparadas com os menos energéticos (o personagem precisa de um esforço emocional maior para conseguir usar). Exemplificando: magias que usam a raiva como ignição são mais fáceis de aprender e conseguem um alto dano em pouco tempo. Porém, o potencial máximo (o dano máximo) de uma magia de raiva é muito inferior ao de tristeza (em outras plavras, magias básicas, raiva é melhor, e magias avançadas, tristeza é melhor).
+        [2]: 
+    }
+}
+
+
 
 
 

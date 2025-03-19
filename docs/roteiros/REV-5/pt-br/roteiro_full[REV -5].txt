@@ -1,4 +1,4 @@
-[REV-5 v3 - 15 07/08/2024]
+[REV-5 v5 - 17/03/2025 00:11]
 
 ------{Novo Mundo}------
 [cutscene = "O fim?";]
@@ -8,9 +8,9 @@ Homem Misterioso: Ele finalmente acordou.
 Mike: Qu...Quem s...são vocês?
 Homem Misterioso: Devem estar se perguntando o que aconteceu. 
 Homem Misterioso: O passado que vocês conheciam deixou de existir há poucos instantes atrás.
-Homem Misterioso: Aquele que vos fala é o ser responsável por encaminhar as almas de todos os seres que um dia viveram no universo.
+Homem Misterioso: Aquele que vos fala, é o ser responsável por encaminhar as almas de todos os seres que um dia viveram no universo.
 Mike: E... E...Espera ... E...Eu morri? E... Quem é esse cara?
-Homem Misterioso: Maicon Jousan, aos 14 anos, 4 meses e 22 dias perdeu sua vida devido a um sangramento após um episódio de violência.
+Homem Misterioso: Maicon Jousan, aos 14 anos, 4 meses e 22 dias, perdeu sua vida devido a um sangramento após um episódio de violência.
 Mike:... Lembro de ter sido atacado mas ... acho que desmaiei antes de perceber...
 Homem Misterioso: Alan Dount, faleceu em decorrência de um infarto do miocárdio aos 17 anos, 8 meses e 6 dias.
 Alan: ...
@@ -21,35 +21,59 @@ Homem Misterioso: A segunda, vocês viverão em uma nova vida, recomeçarão com
 Homem Misterioso: A terceira e última alternativa, vocês continuarão de onde pararam, porém em uma realidade alternativa e com um objetivo: Derrotar o Exército das Sombras cujo integridade é desconhecida, tudo que se sabe é que almeja tomar controle de todo o multiverso.
 Homem Misterioso: Nessa realidade nada do que viram até aqui será o mesmo - vejam isso como uma chance de recomeço, será como uma vida nova, no entanto, suas memórias e personalidades permanecerão intactas.
 Homem Misterioso: De início, concederei alguns benefícios:
-Homem Misterioso: Vocês não terão dificuldades em se comunicar com os habitantes, além de conseguirem facilmente uma moradia. 
+Homem Misterioso: Vocês não terão dificuldades em se comunicar com os habitantes, além de conseguirem facilmente uma moradia.
+Homem Misterioso: Proponho um desejo: vocês podem escolher algo, qualquer coisa existente no universo, para levarem consigo ao novo mundo.  
 Homem Misterioso: Não se preocupem, se morrerem novamente nesta realidade ainda poderão escolher uma das outras alternativas.
-Homem Misterioso: Levem o tempo que precisarem para se decidirem.
-Mike: Eu... escolho o ... Novo Mundo...
-Homem Misterioso: Ótima escolha! Façam uma boa viagem.
-Alan: COMO ASSIM "FAÇAM"? Eu não ...
+Homem Misterioso: Levem o tempo que precisarem para decidirem. Pronunciem-se assim que estiverem prontos.
+Alan: Desejo renascer. Não estou afim de viver por mais tempo.
+Homem Misterioso: Certo. E quanto a você, Maicon Jousan? 
+Mike: O que a gente ganha se derrotar o tal Exército? 
+Homem Misterioso: Essa resposta não pode ser concedida.
+Mike: Alan, né? 
+Alan: Sim. O que tem?
+Mike: Bom... Meio que não ligo se isso é certo ou não.
+Mike: Quero o Novo Mundo, porém, não vou sozinho.
+Mike: Seria legal se você ... fosse por vontade própria.
+Alan: Pretende desejar que eu vá com você? 
+Mike: É ... 
+Alan: Maicon ... Você nem me conhece... 
+Alan: Não precisa ser eu. Você pode escolher qualquer um, *qualquer pessoa.*
+Alan: Você pode pedir pra ele te juntar com alguém que realmente queira ir pra lá. Não eu. 
+Mike: Nah... Tô afim não.
+Alan [bravo]: QUAL É! Dá um tempo.
+Mike: Eu me decidi: Quero o novo mundo, meu desejo é Alan Dount, em outras palavras, quero que ele (aponta para Alan) vá comigo.  
+Homem Misterioso: Desejo concedido. Que as linhas do tempo se curvem à sua vitória! Faça uma boa viagem.
  
 [escurece a tela e fim da cutscene]
 [cutscene = "Chegada ao Novo Mundo"]
 Mike: ... Isso é ...
-Alan [bravo]: VOCÊ!
-Alan: EU NEM TE CONHEÇO E ME ARRASTOU PRA ESSE FIM DE MUNDO COM VOCÊ!
-Mike: Olha, olha, calma aí...
-Mike: Eu não ... sabia que ...
-Alan: Você nem se quer se perguntou o porquê de ter um cara que você nunca viu contigo em sabe-se lá onde estavamos agora?
-Mike: ... Eu não sabia que isso afetaria nós dois, e de qualquer forma, pensei que se você viesse junto seria porque concordou com isso.
-Alan: "Concordou"? Eu não disse uma palavra se quer. Eu não consegui escolher o que acontece com a minha vida nem no final dela.
-Mike: ... 
-Mike: Olha, nós ... estamos aqui, não tem nada que possa ser feito. De qualquer forma, se morrer de novo, você ainda pode escolher uma das outras coisas, como aquele cara falou.
-Alan: ...
-Mike: Vamos ter que viver, querendo você ou não.
-Alan: Você fala como se EU fosse ficar com você.
-Mike: A gente tem que derrotar o tal exército, seria melhor se estivéssemos juntos, não?
-Alan: Sem chance, não vem com essa, cada um segue seu rumo. Se manda.
-Alan: Curta seu "novo mundo".
-Mike: Tá legal ... 
-Mike: Mas ... se precisar de mim pra algo é só ... me procurar.
-Mike: Te vejo por aí.
-Alan: Cai fora.
+Alan [ódio]: VOCÊ!
+[Alan acerta um soco no rosto de Mike, em seguida o segura pelo braço]
+Alan [ódio]: EU NEM TE CONHEÇO E ME ARRASTOU PRA ESSE FIM DE MUNDO COM VOCÊ!
+Mike: Sério que prefere renascer? 
+Alan [bravo]: IDIOTA.
+Mike: Escuta, o que te garante que renascer vai resolver teus problemas? 
+Alan [triste]: Eu nunca pude escolher o que aconteceria com a minha vida, nem no final dela.
+Mike: Ah é? Então vem cá. O que acha que aconteceria se escolhesse renascer, mas na verdade, sua "mãe" te abortasse?
+Mike: Acha que poderia escolher alguma coisa? Acha que aquele cara teria dado uma atenção especial? Ele te jogaria naquele rio.
+Mike: Imagina como seria renascer, porém, com alguma deficiência? 
+Mike: Ao invés disso, você está aqui, "perfeitinho" bem na minha frente.
+Alan [ódio]: DE QUE MERDA ISSO TE IMPORTA? NÃO É A SUA VIDA, É A MINHA. QUEM PASSARIA POR ISSO SERIA EU.
+Mike: Olha bem a sua volta. Essa é a verdadeira vida nova.
+Mike: Esse lugar enfrenta problemas completamente diferentes daqueles que você passava. 
+Mike [olhar sério]: Se prefere renascer naquele mundo e enfrentar os mesmos problemas, apresentados de forma diferente na sua vidinha miserável... 
+Mike: Se prefere isso, o problema nunca foi o mundo em que vivia, e sim você. 
+Alan: ... 
+Mike [amigável]: Vamos de novo. 
+Mike: Olha, de qualquer forma, a gente está aqui. 
+Mike: Você ainda vai poder renascer.
+Mike: Tenta dar uma chance, se morrer de novo, é só renascer e pronto.
+Mike: Vamo' tentar achar um lugar pr...
+[Alan vira as costas e começa a andar; Mike o segue]
+Mike: Onde tá indo?
+Alan [bravo]: CAI FORA! Cada um pra um lado.
+Mike [triste]: Tá ... Se quiser conversar, me encontra por aí. 
+Alan: Se manda.
 
 [fim da cutscene, inicio do gameplay]
 [jogador estará jogando com Mike e poderá explorar o mapa, guiado por algumas missões ele irá em busca de informações; a última missão será ir até o PUB quando for 18:00h (o horário vai avançar normalmente até as 19h, quando der essa hora o tempo será pausado)]
@@ -57,7 +81,7 @@ Alan: Cai fora.
 [jogador entra no PUB com Mike]
 
 [Mike entra no PUB]
-[Alan esta situado em uma mesa à direita próximo ao centro]
+[Alan está sentado em uma mesa à direita próximo ao centro]
 [Enquanto caminha até uma mesa, Mike observa Alan - Alan o observa de canto]
 Mike:...
 [Mike vai até Alan]
@@ -66,17 +90,17 @@ Mike: Olha, vamos conversar?
 Alan: Disse pra cada um seguir seu rumo.
 Mike: Eu sei, eu sei, só queria saber se você tá legal.
 Alan: ...
-Mike: Foi mal, se eu soubesse que ...
+Mike: Foi mal, eu não devia ...
 Mike: Deixa pra lá, não tem como justificar.
 Mike: Só não queria ficar de mal contigo.
 Alan: ...
 Mike: Eu vou seguir meu rumo, tenta ficar bem aí, tá legal?
 [Mike se vira]
-Alan: Eu tô legal Maicon, só ... 
+Alan: Eu tô legal Maicon, só que... 
 [Mike volta a olhar pro Alan]
 Alan: Eu ... 
-Mike: Quer conversar?
-Alan: Não. Mas eu estou bem.
+Mike: Fala... 
+Alan: Agora não. Mas eu tô bem.
 Mike: Certo. Te vejo por aí.
 [Mike vai até uma das mesas e fica lá por um tempo, escurece a tela com "passou-se 40 minutos"]
 [Mike permanece na mesma mesa]
@@ -92,7 +116,7 @@ Mike: Legal.
 Rit: Você disse que é novo por aqui, de onde veio?
 Mike: Eu morava em uma vila bem longe daqui. Meio que fui forçado a sair de lá.
 Rit: Aconteceu algo?
-Mike: A vila foi atacada, com sorte consegui sair de lá.
+Mike: A vila foi atacada, com sorte consegui sair.
 Rit: Entendo. O que está achando daqui?
 Mike: Interessante. Andei explorando algumas coisas, ainda não conheço tudo mas pelo o que vi é legal.
 Mike: É "diferente"
@@ -103,14 +127,14 @@ Rit: Quantos anos tu tem?
 Mike: 14.
 Rit: Cacete ... Bom, tem onde ficar? 
 Mike: Pra falar a verdade não. Cheguei hoje aqui.
-Rit: Olha, se quiser tem uma pequena associação de moradores com algumas casas ao lado aqui do centro. Algumas estão livres, você pode ficar com uma delas. É lá que eu moro.
+Rit: Olha, se quiser, tem uma pequena associação de moradores com algumas casas ao lado aqui do centro. Algumas estão livres, você pode ficar com uma delas. É lá que eu moro.
 Rit: A associação é como uma parceria, em troca da casa você ajuda os outros moradores quando precisarem. O mesmo vale pra eles. Quando precisar, os mesmos ajudarão você.
 Rit:  As pessoas de lá são muito receptivas, acho que gostarão de ter você lá. 
 Rit: O que acha?
-Mike: Pera. Serio?
+Mike: Pera'... Sério?
 Rit: Sim, sim.
 Mike: Ah, eu topo. 
-Rit[sorrisinho]: Que bom.
+Rit [sorrisinho]: Que bom.
 Rit: Quando sairmos daqui te levo lá. Tu pode entrar hoje mesmo. Se quiser, é claro.
 Mike [sorrisinho com a mão na nuca]: Claro! 
 Mike: Sempre morou lá? 
@@ -126,10 +150,10 @@ Mike: Entendo.
 Mike: Queria ... Me juntar também.
 Rit: Você só precisa ir até o Centro de Combate, amanhã te levo lá se quiser.
 Mike: Pode ser.
-Rit: Só não sei se te deixam entrar por ser muito novo, mas vamos de qualquer forma. Vai ver eles não ligam.
+Rit: Só não sei se te deixam entrar por ser muito novo, mas vamos de qualquer forma. Vai ver, eles não ligam.
 Mike [sorrisinho]: É.
 Rit [diz com a mão na nuca]: ... Toma, é um mapa ... Você vai precisar disso ... 
-Mike[sorrisinho]: Ah, valeu!
+Mike [sorrisinho]: Ah, valeu!
 [jogo mostra o mapa]
 Rit: Nós estamos aqui [flecha apontando para o Pub no mapa]
 Rit: Aqui fica a associação [flecha apontando]
@@ -240,7 +264,7 @@ falas paralelas {
       Alan: Não precisa Maicon. Eu me viro.
       Mike: Preciso sim, você não tá bem.
       Alan: É óbvio que não ... Só me deixa em paz, tá legal?
-      Mike: ... Certo ... Só ...  
+      Mike: ... Certo ... Só ... Fica ...   
       [fim da cutscene]
       [Alan estará do lado de fora do PUB (aspecto de sonolência, como se estivesse bêbado), jogador deverá andar com Alan até a caverna. {
           Alan: Droga de vida.
@@ -418,8 +442,12 @@ Alan: Falar com você não é o problema Maicon.
 Mike: Então ... Qual é?
 Alan: É só que ... Eu não queria estar aqui, entende?
 Mike: ... Foi mal ... 
-Alan: Tá tudo bem, você não tinha como saber que afetaria nós dois.
-Mike: É, mas ... 
+Alan: Você foi um babaca, um idiota inconsequente.
+Mike: É, eu sei ... 
+Alan: Apesar de ... (fecha os olhos) tá, eu vou dar uma chance ... a esse "novo mundo."
+Mike [sorrisinho]
+Alan: Ainda sim, cada um pra um lado.
+Mike: Certo ...
 Alan: É bom conversar com alguém depois de tanto tempo, mas não sobre isso. 
 Mike: Ah ... Pode falar, qualquer coisa ... 
 Alan: Deixa, fica com seus amigos, eu me viro aqui. 
@@ -428,21 +456,21 @@ Alan: Tá tudo bem. Relaxa.
 Mike: Tá bem. Posso ... Vir ver como você tá de vez em quando? 
 Alan: Sim.
 Alan: Te vejo por aí.
-Alan: Tenta não morrer, quero lutar com você um dia. 
-Mike: Tá legal.
+Alan: Tenta não morrer, quero lutar com você um dia - vou dar o troco por ter me arrastado pra cá. 
+Mike [riso de canto]: Tá legal.
 [Mike volta a mesa com Rit e Deni]
 Deni: E aí, como foi?
 Mike: Bem, melhor que das últimas vezes. Aparentemente ele tá mais "sociável" agora.
 Deni: Que bom. Aos poucos ele ...
 Mike: É ...
-Mike: Ei, posso ... Fazer uma pergunta pra vocês?
+Mike: Ei, posso ... Fazer *algumas* perguntas pra vocês?
 Rit: Fala.
 Mike: Vocês são irmãos de sangue? 
 Rit: Sim? ...
 Deni: Mais ou menos isso, pais diferentes.
-Mike: Ah é que vocês são um pouco diferentes. Faz sentido.
+Mike: Ah, é que vocês são um pouco diferentes. Faz sentido.
 Deni: É.
-Mike: Ah, como consigo ... Dinheiro?
+Mike: Perguntinha, como consigo ... Dinheiro?
 Rit: Lá no Centro? Tem um quadro de missões, tu cumpre elas e eles te pagam. 
 Mike: Entendi.
 [escurece a tela com a mensagem: "Mike continuou fazendo perguntas sobre como viver no novo mundo. Rit tomou alguns copos de cerveja e os três foram pra casa."]
@@ -460,7 +488,7 @@ Alan: Já que vou ficar aqui seria bom explorar essa caverna. Vai ver consigo al
 
 Alan: Nunca pensei que teria que dormir em uma caverna feito um animal.
 Alan: Esse lugar é frio e sombrio, e minha única opção é ficar aqui.
-Alan: Preciso arrumar um canto melhor pra eu ficar.
+Alan: Preciso arrumar um canto melhor pra ficar.
 
 [após jogador avançar 1 nível na caverna]
 Alan: Nunca tinha chego até aqui.
@@ -473,8 +501,9 @@ Alan: a...acho que ele não vai mais precisar disso...
     [saldo de dinheiro = {número aleatório entre 200 e 350}]
     [{Configuração de idade do jogador >= 18} {
         [Alan encontra uma revista com algumas imagens sexualizadas]
-        Alan [riso]: Tu era safado em velho. 
+        Alan [riso]: Tu era safado hein, velho. 
         Alan: Ahn ... você não vai precisar disso ... Vou guardar pra você. 
+        [item colecionável adicionado: Jornal "Diferente"]
     }]
 }
 
@@ -491,7 +520,7 @@ Alan: De qualquer forma não cheguei ao final dela, então vou continuar explora
 [conjunto de falas {
     [jogador encontra um minério pela primeira vez] {
         Alan: Essa pedra é meio diferente, deve valer alguma coisa.
-        Alan: Um ferreiro ou sei lá quem, deve querer algo assim.
+        Alan: Um ferreiro, ou sei lá quem, deve querer algo assim.
     }
     [jogador encontra um pergaminho pela primeira vez] {
         Alan: Parece umas escrituras, vou dar uma olhada depois.
@@ -509,7 +538,7 @@ Alan: Porra!
 [Alan tenta atacar a sombra com a espada algumas vezes]
 Alan: É, não vai funcionar.
 Alan: Vou ter que bolar outro plano.
-Alan: Se ataques diretos não funcionam, talves aprisiona-lo possa resolver.
+Alan: Se ataques diretos não funcionam, talvez aprisiona-lo possa resolver.
 [câmera mostra um buraco na caverna]
 Alan: Vou tentar jogar ele ali.
 Alan: Depois derrubar algumas coisas, pedras ou coisas do tipo.
@@ -633,7 +662,7 @@ Alan: É, não resolveu, fazer o que.
 Alan: Vou pro PUB, aliviar um pouco.
 [jogador deverá ir com Alan até lá]
 
-[cutscene = "Possível Amigo"]
+[cutscene = "possivelAmigo"]
 [cena mostra Alan entrando pela porta e se sentando na mesma mesa de antes]
 [câmera mostra Mike sentado sozinho em uma das mesas]
 Alan: O Mike tá sozinho, deve ter rolado alguma coisa.
@@ -641,10 +670,10 @@ Alan: Acho que vou lá falar com ele.
 [Alan se levanta e vai até lá]
 Alan: Mike ... Você tá legal?
 Mike: Hm? [Olha pra trás e vê Alan]
-Mike[sorrisinho]
+Mike [sorrisinho]
 Mike: Tô sim. Você ... Tá bem? 
 Mike: Nunca veio falar comigo, então ...
-Alan: É, eu tô ligado. É só que ... Você tava aqui sozinho - o que não é muito comum - então passei aqui pra saber se não rolou alguma coisa.
+Alan: É, eu tô ligado. É só que ... Você tava aqui sozinho, o que não é muito comum, então passei aqui pra saber se não rolou alguma coisa.
 Mike: Tendi. Bom, senta aí, só pra bater papo 
 Alan: Tá legal.
 Mike: ...
@@ -681,8 +710,9 @@ Alan: [Gargalhada] Só um pouquinho.
 [cutscene = "primeira missao - convite"]
 [Mike está sentado num morro vendo a água de um rio passar]
 Mike: O Alan tava diferente ontem, ele é legal as vezes.
-Mike: Vai ver por ficar muito tempo sozinho, quis conversar um pouco.
+Mike: Vai ver, por ficar muito tempo sozinho, quis conversar um pouco.
 Mike: Espero que ele não volte a ser o rabugento de antes.
+Mike: Se bem que eu pisei na bola feio com ele. 
 [Rit está na porta da casa de Mike]
 Rit: Mike!
 Mike: Rit? 
@@ -736,7 +766,7 @@ Alan: Ah, e aí Mike?
 Mike: Vindo comprar coisas também?
 Alan: É, não tô afim de morrer.
 Mike [sorrisinho]
-Rit: Mike, vem cá.
+Rit: Mike, vem cá!
 Mike: Tô indo.
 Rit: Toma. 
 [Rit entrega uma espada feita por ele a Mike]
@@ -752,6 +782,8 @@ Rit: Bom que gostou.
 Rit: Quando eu não estiver em missão, vou ficar por aqui. Se precisar de alguma coisa é só falar comigo.
 Mike: Beleza.
 Rit: A gente pode ir em outras lojas ver se tem algo a mais. O que quer fazer?
+Mike: Falou, Alan! Te vejo por aí.
+Alan: té' mais.
 [Escolha do jogador]
  |-> 1: Mike: Acho que deu.
  |-> 2: Mike: Pera aí. Acho que deveríamos ir atrás de mais coisas.
@@ -764,7 +796,7 @@ Rit: A gente pode ir em outras lojas ver se tem algo a mais. O que quer fazer?
         Rit: Gosta de fazer alguma coisa Mike?
         Mike: Tipo o que?
         Rit: Caçar, tiro ao alvo, escalada; algo assim.
-        Mike: Gosto de nadar, mas não faço muito frequentemente.
+        Mike: natação, mas não faço muito frequentemente.
         Rit: Nadar? É algo legal.
         Rit: Gosto de escalada.
         Mike: Nunca pratiquei, mas parece legal.
@@ -817,14 +849,14 @@ Deni: Vamo' lá.
 
 [descrição do cenário {
      Várias construções antigas e destruídas. 
-     O cenário é uma antiga vila que foi atacada, posteriormente habitada por sombras e desabrigado.
+     O cenário é uma antiga vila que foi atacada, posteriormente habitada por sombras e desabrigados.
 }]
 
 General: Escutem: Essa área foi tomada por Avadest, há indícios de sombras habitando essa região, além de possíveis pessoas desabrigadas.
 General: Não ataquem se não forem atacados, essas pessoas também estão tentando sobreviver.
 ?: Certo!
 
-[interface introduz ao jogador as mecânicas de combate em grupo]
+[interface introduz ao jogador as mecânicas de combate furtivo em grupo]
 
 General: Dispersar!
 [esquadrão de 6 pessoas]
@@ -885,9 +917,9 @@ Rit: Algo ou alguém controla onde estão e o que fazem.
 Mike [Apontando para um dos guardas discretamente]: Eles fazem isso?
 Rit: Não. Nós chamamos eles de "observadores".
 Mike: Mas por que não atacaram a gente? Não nos viram?
-Rit: Eles sabem que estamos aqui, sabem o que fizemos.
+Rit: Eles sabem que estamos aqui. Sabem o que fizemos.
 Deni: Mas eles não têm ordens para intervir, por isso não entraram em ação.
-Deni: Eles vêm as sombras apenas como peões.
+Deni: Eles veêm as sombras apenas como peões.
 Rit: É como um jogo de xadrez.
 Rit: Não vale a pena sacrificar peças de maior valor por um ou dois peões.
 Mike: Então eles são as peças de maior valor?
@@ -915,7 +947,7 @@ General: Vocês dois cuidam da retaguarda.
 ?: Ok.
 General: Dispersar!
 
-Deni: Vem comigo Mike.
+Deni: Vem comigo, Mike.
 [Jogador seguirá Deni] {
     Mike: Como a gente vai surpreender eles?
     Deni: Contornando, nosso objetivo é a cobertura deles.
@@ -926,7 +958,168 @@ Deni: Vem comigo Mike.
 }
 
 [descrição do cenário {
-    
+    ambiente: floresta de pinheiros com grama morta.
+    clima: nevoeiro leve, anoitecendo.
+    Observadores {
+        formação estrela, todos posicionados de modo a proteger a retaguarda uns dos outros. 
+        Distância de 200 metros entre eles. 
+        Total de 13 observadores, formando uma estrela de 6 pontas (6 duplas), no meio deles, um está fazendo relatório, as duplas estão fazendo a cobertura. 
+        Todos, exceto o responsável pelo relatório, estão ocultos no ambiente.
+    } 
 }]
 
+Deni: Tá vendo ali, Mike?
+[Câmera mostra 3 duplas]
+Mike: Sim. 
+Deni: Eles tão usando uma formação. Quando a gente atacar, os outros imediatamente vão vir atrás.
+Mike: E o que a gente faz? Só mete o 'sarrafo'?
+Deni: Eu não sei, Mike. O que quer fazer?
 
+[Nessa parte da missão, apenas Mike poderá ser utilizado]
+
+[interface duo: "Você pode lutar da maneira que preferir." {
+    "Combate furtivo" (imagem Mike em combate furtivo; botão interativo {i: informações}) {
+        Nova mecânica: "esgueirar-se";
+        Quando próximo de um grande objeto, Mike pode se manter oculto no ambiente (inicio automático da pose quando se aproximar do objeto).
+        Ao pressionar SHIFT, Mike caminha sorrateiramente até o próximo objeto (se houver).
+        [tela mostrando exemplos de objetos: grandes arbustos, grama alta (Mike se arrasta), pedregulhos, entre outros]
+        Quando próximo de um inimigo, o jogador pode usar a combinação SHIFT + Q para realizar um ataque brutal e silencioso.
+    }
+    "Combate ativo" (imagem Mike em combate ativo; botão interativo {i: informações}){
+        [exibe os comandos de combate padrão]
+    }
+    interface botão 'OK' [okBtn]
+}]
+
+Mike [tédio]: tá, vamo' ver no que vai dar.
+
+[Caso o jogador vá correndo até o alvo (combate ativo) {
+    [fala paralela]
+    Deni: É. Ele vai meter o sarrafo.
+}
+Caso vá lentamente (combate furtivo){
+    [fala paralela]
+    Deni: Tá legal, vamos com calma então.
+}]
+
+[Ao entrar em contato com o inimigo {
+    Combate furtivo{
+        [Mike chega por trás do observador, pula nele e tenta imobilizar com a espada; observador revida, segurando Mike]
+    }
+    Combate ativo {
+        [Jogador ataca um dos observadores com o Mike diretamente; o observador segura o braço de Mike e imobiliza ele.]
+    }
+    
+    Mike [grita em desespero]: Deeeeeni. Deeeni, ele me pegou, Denii. 
+    Mike: Me ajuda, porra!
+    Deni [gargalhando]: Hm, vai dar não. Se vira aí.
+    Mike [se debatendo]: Seu 'cuzão', me ajuda aqui.
+    [Observador joga Mike no chão, em seguida aponta a espada]
+    Mike [sério]: Deni, é sério, ele vai ... 
+    Deni [rindo]: Tá bom, tá bom.
+    [Deni usa uma magia em forma de corda entorno dos braços e pernas dos dois observadores. Em seguida, as cordas se prendem no chão e os forçam contra ele, derrubando-os]
+    Deni: Tá bem?
+    Mike: Seu corno.
+    Deni [gargalhando]
+    Mike: É ... Ri mesmo.
+    Deni: Calma, Mike.
+    Deni [rindo]: Foi mal. Me deu uma crise de riso.
+    Mike: Tá ...
+    Mike [começa a rir]
+    Mike: Tá bom, foi engraçado.
+    Mike: O que a gente faz com o bobão?
+    Deni: Quem? Você?
+    Mike: VAI SE FERRAR!
+    Deni [gargalha]
+    Deni: Vamo' acabar com o resto deles.
+    Mike: Tá legal.
+    Deni: Quer fazer isso de novo? Distrai ele e eu derrubo.
+    Mike [sorrisinho]: Quero.
+}]
+
+[A partir de agora, a missão fluirá de uma forma diferente:
+    Todos os observadores já estão em modo de alerta. Jogador deverá imobilizar os que restam. 
+    O combate ativo ou furtivo poderá ser utilizado. 
+    Combate ativo {
+        [jogador golpeia os observadores, várias vezes]
+        Mike: Deni, não consegue usar aquele treco de novo?
+        Deni: Minha mana não é infinita, Mike ...
+        Mike: Sabe que eu não sei o que é, né?
+        Deni: ... Digamos que eu tô "cansado".
+        Mike: Fracote.
+        Deni: Vai lá, "fortão". Ele é todo seu.
+        Mike: Ei, ei, calma aí!
+        [Deni se afasta um pouco]
+        Deni: Mike, vem cá.
+        [Mike realiza um ataque pesado com a espada e se afasta em direção ao Deni]
+        Mike: Que foi?
+        Deni: Vamo' tentar refazer a mesma coisa. Deixa eles acharem que pegaram você, aí eu entro em ação.
+        Mike: Tá ...
+        Deni: Vai devagar, tenta chegar sem ele te ver. 
+        Mike: Tá legal.
+        [Essa fala dá uma dica ao jogador para que ele use o modo furtivo. Se mesmo assim, o modo ativo for usado, a cena a seguir acontece]
+        [jogador ataca um dos observadores]
+        [Outros 3 observadores cercam Mike]
+        Mike [apavorado]
+        Deni: Eu falei pra ir com calma... 
+        [Deni tenta usar a magia de cerco]
+        [Outros 2 observadores seguram e imobilizam Deni, o derrubando no chão]
+        [Minigame simultâneo com Mike e Deni {
+             —jogador deve pressionar uma sequência de botões simultâneos. Duas instroções serão dadas ao jogador ao mesmo tempo (uma referente ao Deni e outra ao Mike).
+             —minigame (tempo para executar uma ação > 3/{multiplicador de dificuldade} segundos ou sequência incorreta = falha no minigame (false); Mike e Deni caídos = fim de jogo: falha na missão [cutscene]){
+                  [#1 Mike] (Esqurda + DEF + ATK) {
+                      true: Mike desvia de um dos ataques e dá uma cotovelada;
+                      false (vida Mike: -70 * {multiplicador de dificuldade}) {
+                          [Observador segura e perfura o abdômen de Mike com a espada]
+                          Mike [hiperventilando, olha para baixo e vê a espada]: drog... argh...
+                          Deni [grita]: Mike!
+                          Mike: Relaxa, eu aguento!
+                          [Mike puxa sua espada e posiciona na direção do pescoço do observador com uma das mãos, enquanto isso, força ele contra a espada segurando-o pelo cabelo (ainda com a espada em seu abdômen).
+                          [minigame de vitória obrigatória (não é possível perde-lo, o jogo só continua após a vitória)]
+                          —minigame (i = 0; se i = 25 * {multiplicador de dificuldade}: true){
+                              (DEF + ATK [alternados]){i + 1}
+                              true {
+                                  [Mike corta levemente a garganta do observador]
+                                  Deni: Mike! Não matar ninguém, lembra?
+                                  [Observador segura Mike e cai de costas no chão]
+                                  [Mike cai junto com o Observador; a espada que estava em seu abdômen o perfura mais fundo, atravessando-o. A espada de Mike caiu ao seu lado. Mike (extremamente fraco) pega a espada e perfura o peitoral do Observador, o matando]
+                                  Mike [desmaia; Mike caído]
+                              }
+                          }
+                          Deni: Droga, Mike! Aguenta aí!
+                  }
+                  [#1 Deni] (Direita + Direita) { 
+                      true: Deni rola levemente para o lado e desvia de um dos golpes com espada dos observadores;
+                      false (vida Deni: -115 * {multiplicador de dificuldade}) {
+                          [Observador acerta a espada na clavícula esquerda de Deni]
+                          Deni [desmaia; Deni caído]
+                          [Se '#1 Mike' == derrota {
+                              [Deni cospe sangue e olha para Mike caído no chão]
+                              [fim de jogo; cutecene]
+                          }]
+                  [#2 Mike (apenas se '#1 Mike' == vitória)] (Esquerda + Direita + (Baixo + ATK) + (Cima + ATK + ATK)) {
+                      etapas do combo {
+                          [1- Esquerda] {
+                              true: Mike desvia de um ataque frontal cima-baixo de um dos observadores;
+                              false (vida Mike: -10 * {multiplicador de dificuldade}: Observador acerta Mike de raspão; minigame pode continuar.
+                          }
+                          [2- Direita] {
+                              true: Mike desvia de uma perfuração de espada vinda de outro observador;
+                              false (vida Mike: -25 * {multiplicador de dificuldade; dano de sangramento: -2/s * {multiplicador de dificuldade}: A espada perfura a região ao lado do ombro de Mike; minigame pode continuar.
+                          }
+                          [3- Baixo + ATK] {
+                              true: Mike desvia de um ataque lateral esquerda-direita se abaixando, em seguida, dá uma rasteira no observador que realizou o ataque;
+                              false (vida Mike: -55 * {multiplicador de dificuldade}): O ataque fere Mike de ombro a ombro, em seguida o mesmo observador realiza um chute frontal e durruba Mike. {
+                                  [Mike
+                                  —minigame (Esquerda ou Direita){
+                                      true: O mesmo observador corre e pula na direção de Mike, com a espada aponta ao peitoral dele, realizando um ataque cima-baixo. Mike rola para o lado e desvia.
+                                      false (vida Mike: -85 * {multiplicador de dificuldade}): O ataque atinge abaixo da clavícula de Mike; fim do minigame, Mike caído.
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+         }]
+    }
+]
