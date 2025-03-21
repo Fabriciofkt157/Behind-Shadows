@@ -1,0 +1,161 @@
+dados: este arquivo se trata de todas as escrituras do jogo, seja história, mecânicas, cenas ou falas do jogo.
+versão do arquivo: REV-1, v1
+nomenclatura do arquivo: Revisão 1, versão 1
+notas de versão: as antigas versões de revisão foram absolvidas, devido a reformulação completa do jogo.
+
+Sobre o jogo:
+NOME: Behind Shadows
+ESTILO: RPG, aventura e exploração.
+MODELO DE ROTEIRO: Semi-linear. A história pode assumir mais de uma linha de raciocínio, mas sempre haverá pontos de reencontro com a narrativa principal.
+MODELO DE NARRATIVA: A história é contada a partir de cutscenes para momentos cruciais, e conversas entre os personagens durante o gameplay (God of War e The Last of Us são exemplos).
+ESTILO GRÁFICO: 3D semi-realista. O mundo é construído em 3 dimensões, tentando se aproximar da realidade, mas sem preocupações em ser idêntico ao mundo real.
+ESTILO GAMEPLAY: Exploração em terceira pessoa (God of War, Final Fantasy XV são algumas referências). Combate frenético ou estratégico (The Last of Us é um exemplo).
+ESTILO MUSICAL: Não definido, mas algo como:
+-Ambientação: Som ambiente, violão. 
+-Durante as lutas: rock.
+-Durante as lutas com peso emocional (como as lutas entre Alan e Mike): violão e piano "triste".
+
+
+Informações necessárias para a narrativa:
+
+O mundo do jogo:
+
+-O mundo do jogo existe em um multiverso, nele existem 7 realiades e um "verso" que agrupa todas elas no mesmo plano (o Homem Misterioso habita nesse plano, algumas vezes pode ser referênciado como "Dimensão Entre os Reinos".
+
+-Todos os seres considerados "vivos" habitam em uma ou mais realidades. 
+  -> A definição de "vivo" difere da definição usual: vivo, é todo ser vivo capaz de assumir forma física estavelmente, ou seja, que pode ser ferido sem perder sua forma.
+  -> Os seres são formados pela junção de matéria orgânica e energia espiritual (alma). A proporção de um para o outro necessária para assumir forma varia de acordo com a realidade.
+     -> As diferenças de proporção determinam as capacidades das entidades existentes entre os reinos. Quanto maior a energia espiritual, maior a afinidade com magia, quanto maior a matéria orgânica, maior resistência e força física.
+  -> Quando um ser vivo é fragmentado pelo Homem Misterioso, a integridade do individuo é reformulada, de modo a se adequar a realidade para qual foi enviada. 
+    -> Apesar de ser reformulada para a fragmentação, a energia não pode ser alterada. Por exemplo: 2% não vira o equivalente a 20% na mesma proporção; ao invés disso, matéria orgânica é adicionada de modo a formar a proporção do mundo.
+  -> Apenas a energia espiritual pode ser fragmentada, o corpo físico permanece no mundo original e sofre seu respectivo processo de decomposição.
+
+-7 realidades:
+  * Eards: realidade primária de Alan e Mike, a Terra como a conhecemos;
+    -> Um dos fatores que impede os fragmentados de Eards voltarem para ela: a proporção é 98% matéria orgânica para 2% de energia vital.
+  * Median: realidade onde Mike e Alan foram enviados após a morte na Terra.
+    -> A proporção para os seres vivos é 50/50.
+    -> Avalest é o reino a história se passa inicialmente.
+  * Aquins: realidade onde o mundo foi construído tendo a água como príncipio.
+  * Submundo: realidade para onde o fragmento da alma de um corrompido é levada; Onis e demônios são encontrados aqui.
+    -> Possui 5 partições com características semelhantes:
+       -> Economia própria;
+       -> Civilizações com divisões de acordo com nível de poder;
+       -> Classes sociais;
+    -> De modo geral, se assemelha a vida em Eards (favelas, trabalho, prostituição, ...).
+  * Nature: realidade onde plantas são a raça dominante; possui muita energia vital, o que a torna alvo do Exército das Sombras; bruxas e elfos são encontrados aqui.
+  * Assolyam: realidade Cyberpunk, o mundo foi construído a partir das máquinas a vapor; robôs são encontrados aqui.
+    -> essa realidade foi totalmente tomada pelas Sombras e é utilizada como fonte armamentícia para seu Exército.
+  * Neutor (as vezes chamado de Dracônico): Semelhante a Median, mas a raça dominante são dragões, devido a isso, é um mundo montanhoso, contruído muito acima da altitude habitável para humanos; no aspecto gameplay, Dungeons são muito comuns aqui.
+
+As realidades são a base para o princípio do renascimento:
+- Se uma entidade perder sua vida em uma das realidades, ela ainda pode continuar em outra se sua alma for fragmentada e um dos fragmentos permanecer no local de morte.
+- A alma não pode se fragmentar por conta própria, alguém deve fazer isso.
+- Ao ser fragmentada, a alma é dividida em 2, em outras palavras, a integridade física e mental é partida ao meio, levando a alucinações, perda grave de memória, fraqueza e perda de vitalidade.
+- Um fragmento não pode representar menos do que 12,5% da alma original, caso contrário, o fragmento é frágil a ponto de não conseguir manter sua forma. No entanto, caso esteja corrompida por uma sombra, ainda poderá formar.
+- A exemplo de renascimento: 
+  -> Mike e Alam foram fragmentados pelo Homem Misterioso quando morreram em Eards, seus respectivos fragmentos são seus corpos mortos que continuaram em Eards e os fragmentos de Median. 
+  -> Quando Alan é corrompido, sua alma é fragmentada novamente, agora, o fragmento é sua sombra que permanece em Median.
+     -> Ao ser parcialmente restaurado por Mike, sua alma é reconstruída, mas ainda permanece fragmentada, ou seja, Alan pode controlar os dois fragmentos, mas eles não se comunicam entre si. 
+
+-Elementos (magias):
+O mundo do jogo é composto a partir de 5 elementos fundamentais, a fusão desses elementos forma a natureza do mundo. O controle desses elementos pode acontecer a partir de dois fatores:
+  -> dados:
+       *mana: são pedras formadas naturalmente a partir de energia natural, em outras palavras, é energia natural solidificada.
+       *runas: são gemas que, quando estimuladas por magia ancestral, armazenam uma identidade mágica; quando estimuladas novamente por essa magia, reproduzem em grande escala a magia original. 
+         -> A magia ancestral tem origem a partir do Homem Misterioso: no início dos tempos, 7 dicípulos foram escolhidos para difundir os conhecimentos do Homem Misterioso aos habitantes de cada realidade, cada dicípulo possuía uma porção diferente do conhecimento original, isso dá origem as diferenças entre cada realidade.
+São eles:
+
+Elétrico: trata-se da capacidade de excitar o movimento de elétrons para uma direção específica, esse movimento depende especialmente do material. Essa capacidade se propaga na forma de ondas, resultando em luz sólida (pode colidir com objetos, nesse caso, o objeto tem seus elétrons forçados a se mover, promovendo uma descarga elétrica).
+  ->possui algumas regras:
+    *o poder do elemento elétrico é definido pela densidade, quanto maior a densidade, mais difícil é o controle dele e quanto maior a densidade, mais escura é a luz (exemplo: branco < azul claro < azul escuro < roxo < roxo escuro < preto)
+    *se a pessoa estiver imersa em uma substância altamente condutora, como água ou metal liquido, a eletricidade é conduzida por toda a substância, atingindo tudo que também estiver imerso (incluindo o conjurador).
+    *em caso de encontro entre dois elementos elétricos vindos de vetores exatamente opostos (-><-) (ex: duas pessoas, exatamente de frente uma pra outra), ambos os conjuradores são atingidos (nesse caso, luz não pode colidir com luz), o dano causado é de acordo com o poder do conjurador.
+    *em caso de colisão entre dois elementos elétricos vindos de vetores diferentes, não opostos (^<-), vence o elemento com maior poder (exemplo: armadura elétrica repele qualquer golpe, indepentente do elemento, mesmo elétrico, no entanto, se a magia elétrica do inimigo for mais densa do que a armadura, ela é penetrada).
+    *vindos de vetores iguais, o poder dos dois é somado.
+    *elemento elétrico é extremamente resistente a fusão com outros elementos, a maior parte das magias resulta em um ataque combinado e não em um elemento novo.
+
+Água: é a capacidade de condensar o vapor de água presente no ar ou fundir hidrogênio e oxigênio, se não houver nenhum dessses dois fatores, o elemento água não pode ser usado.
+  -> É um elemento altamente fundível, forma um novo elemente facilmente.
+
+
+-As Sombras:
+Uma Sombra (entidade) é um fragmento de alma controlado por um usuário do elemento Sombra. O processo de corrupção funciona da seguinte forma:
+  ->Tudo começa com o primeiro contato da vítima com o elemento sombra de um corrompido.
+  ->Ao ser tocado pela Sombra, a alma (ou fragmento da alma) da vítima é fragmentada em 2. Durante a corrupção, um dos fragmentos é teleportado para uma das partições do submundo, já a outra, sofre um processo de fusão forçada, onde um fragmento falso, que simula o fragmento do Submundo, é criado a partir do fragmento restante e se une a ele. Com essa união, o fragmento falso assume controle do fragmento original, manifestando as características de uma Sombra. OBS: esse é um dos sinais de que o Homem Misterioso é, na verdade, o responsável pelo Exército das Sombras, já que para viajar entre dimensões é necessário o poder de controlar o tempo.
+  ->O processo de fusão forçada acontece com uma nova fragmentação da Sombra original (entidade), um fragmento se funde com o fragmendo da nova vítima e o outro permanece na Sombra original.
+  ->O processo para descorromper um corrompido consiste em assumir o poder sobre o elemento Sombra que está no controle do fragmento. Existem duas formas de fazer isso:
+      *selamento: o elemento Sombra troca de hospedeiro, saindo do fragmento e indo para o objeto de selamento. 
+        ->Como exemplo: Mike usa desse método para descorromper Alan. O método dele consiste em um ritual que força a fusão do fragmento corrompido com o original se desfazer, quando isso acontece, a Sombra tenta buscar um hospedeiro próximo, no caso, o hospedeiro se tornou a runa de selamento utilizada no ritual. Quanto ao outro fragmento, quando Alan derrota o falso General (o real é a Raika), o portal criado pelo Homem Misterioso é reaberto e o fragmento do Submundo pode voltar para Median, Alan reaparece no local do ritual pois os pertences dele são como âncoras para a alma dele. Quando a fusão é desfeita, o fragmento original tentará se estabilizar, nesse ponto, o outro fragmento entra em ação: ele se funde com o fragmento de Median e dessa forma, o fragmento de Median é descorrompido, mas o fragmento do Submundo continua com a corrupção, mas dessa vez, Alan está no controle.
+            ->"Parcialmmente restaurado" devido ao fato de os dois fragmentos não voltarem a ser um, agora, Alan é composto por 25% + 25% da sua constituição antes de morrer em Eards; Alan alterna entre os dois fragmentos (por isso a relação 25 + 25), já Mike, controla 50% em modo único, o que em teoria, torna ele mais forte do que Alan, no entanto, Alan ganha novas habilidades com o fragmento do Submundo (nesse estado, Alan, mesmo com a metade da integridade que Mike possui, venceria Mike em uma luta).
+      *exorcismo/banimento: aqueles que controlam o elemento Sombra ou Luz podem controlar/extinguir a sombra que controla o fragmento corrompido, para isso, o poder daquele que realizará o procedimento deve ser maior de quem conjurou a corrupção.
+        ->Quando Alan possuir o controle das Sombras (domínio do elemento Sombra), ele fará o processo para extinguir o fragmento corrompido e posteriormente desfragmentar a alma dele.
+
+A narrativa é construída por capitulos, a cada capitulo haverá um ponto considerável no avanço da história.
+
+Personagens principais (protagonistas):
+-Mike:
+  ∗ Nome completo: Maicon Jousan;
+  ∗ Apelido: Mike;
+  ∗ Sexo: Masculino;
+  ∗ Idade: 14 anos;
+  * Aniversário: 17/12;
+  * Natureza: Hunano (renascido);
+  * Natural de: Eards (realidade);
+  * Parentesco: Alan (melhor amigo / irmão (vida real));
+  * Personalidade: Mike é geralmente alegre e espontâneo. Ele é uma pessoa extrovertida, com uma mentalidade um pouco imatura e impulsiva. Ao contrário de Alan, Mike costuma expressar tudo o que pensa e adora socializar. Ele tem uma facilidade natural para fazer amigos, o que, por vezes, incomoda algumas pessoas;
+  * Curiosidade: Alan e Mike são irmãos por parte de mãe, mas têm pais diferentes, o que explica seus sobrenomes distintos. Alan carrega o sobrenome ”Dount” de seu pai, enquanto Mike herda o sobrenome ”Jousan”. O Homem Misterioso menciona apenas os sobrenomes aos quais os personagens têm maior vínculo, refletindo a tradição em que cada pessoa representa uma família em batalhas. Alan, portanto, luta pela família ”Dount”, enquanto Mike luta pela família ”Jousan”, reforçando a ideia de que eles pertencem a linhagens diferentes, apesar de serem irmãos;
+  * Sobre: Mike passa por algumas situações estressantes na vida real, essas situações são retratadas no sonho de Mike sob outra perspectiva, dessa vez, esses problemas podem ser resolvidos.
+
+-Alan:
+  * Nome completo: Alan Dount;
+  * Apelido: Lon;
+  * Sexo: Masculino;
+  * Idade: 17 anos;
+  * Aniversário: 14/02;
+  * Natureza: Humano (renascido);
+  * Natural de: Eards (realidade);
+  * Parentesco: Mike (melhor amigo / irmão (vida real)), Raika (cônjuge);
+  * Aliados: Mike, Raika, Deni, Rit;
+  * Personalidade: Alan é reservado, um pouco rabugento e geralmente muito inteligente. Ele pode parecer sombrio as vezes, mas é, no fundo, uma boa pessoa. No entanto, se algo se colocar entre ele e seus objetivos, Alan não hesitará em mostrar um lado menos amigável. Alan pode se mostrar um pouco ”fofinho” em alguns diálogos, contrapondo seu lado rabugento;
+  * Curiosidade: Em uma das cenas com Mike, Alan revela que seu irmão costumava chamá-lo de ”Lon” e sugere que Mike também pode usar esse apelido se quiser. Eventualmente, Mike chama o Alan por esse nome;
+  * Sobre: Alan é irmão mais velho de Mike, na vida real está se preparando para viver sua própria vida, o que Mike distorce e enxerga como um "adeus". Alan foi abusado por seu tio Mark quando tinha 4 anos, no entando, quando realta isso a sua família, todos acham que Alan está tentando "chamar atenção" e ignoram. Isso torna Alan quieto e desconfiado de todos, muitas vezes preferindo ficar sozinho; no sonho de Mike, Mark é o Homem Misterioso (sua identidade será revelada apenas no final do jogo) que também é o antagonista principal da história, além de se infiltrar como um aliado de Mike e Alan, mostrando a realidade traiçoeira da confiança.
+
+Personagens secundários (aliados e companheiros dos protagonistas):
+– Rit:
+  * Nome completo: Ritain Mourk;
+  * Apelido: Rit;
+  * Sexo: Masculino;
+  * Idade: 23 anos;
+  * Aniversário: 21/02
+  * Natureza: Humano;
+  * Natural de: Median (realidade);
+  * Parentesco: Deni (irmão), Mike (melhor amigo);
+  * Personalidade: Rit é uma pessoa emocionalmente forte, raramente se deixa abalar por qualquer situação Ele não é excessivamente alegre, nem propenso à melancolia; em vez disso, Rit sente exatamente o que o momento exige. Sua empatia é uma característica notável, permitindo que ele se sensibilize profundamente com as dificuldades dos outros, o que o leva frequentemente a ajudar aqueles que o cercam;
+  * Sobre: Rit fugiu com Deni para Avalest após um ataque a antiga vila onde moravam (na época, Deni tinha 3 anos e Rit 10), nele, seus amigos e familiares foram mortos;
+
+– Deni:
+  * Nome completo: Deniel Mourk;
+  * Apelido: Deni;
+  * Sexo: Masculino;
+  * Idade: 16 anos;
+  * Aniversário: 01/04
+  * Natureza: Humano;
+  * Natural de: Median (realidade);
+  * Parentesco: Rit (irmão), Mike (melhor amigo);
+  * Personalidade: Deni é amigável na maior parte do tempo, mostrando maturidade na maioria das situações, embora ocasionalmente cometa alguns deslizes. 
+  * Curiosidade: Deni tem o hábito de fazer piadas ruins de vez em quando ou ”pregar peças” em seus companheiros durante longas jornadas, trazendo um toque de humor às suas interaçõoes.
+  * Sobre: Deni foi levado por Rit a Avalest após o ataque, no entanto, não tem lembranças disso por ser muito pequeno quando aconteceu.
+
+- Raika:
+  * Nome completo: Raika Tirouf;
+  * Apelido: não possui;
+  * Sexo: Feminino;
+  * Idade: 21 anos;
+  * Aniversário: 15/07;
+  * Natureza: Humano;
+  * Natural de: Median (realidade);
+  * Parentesco: Alan (cônjuge);
+  * Personalidade: Raika é uma pessoa de temperamento ”bravo” e ”raivoso”, o que a leva a agir e atacar impulsivamente em diversas situações. No entanto, ela demonstra uma inteligência afiada em combate e na criação de estratégias. Geralmente, Raika é um pouco infeliz e raramente sorri, o que passa a acontecer ao lado de Alan.
+  * Curiosidade: Raika se apaixona por Alan depois de um tempo convivendo juntos; uma das cenas do jogo mostra os dois dançando juntos, Raika revela seu interesse amoroso e os dois ficam juntos (um pouco antes de metade do jogo).
+  * Sobre: Raika foi uma dos generais do Exército das Sombras como um agente duplo entre o Império de Median e o Exército. Em um tempo ajudava o Exército a tomar posse dos recursos de Median, em outro, ajudava Median fornecendo informaçōes em troca de sua liberdade; essa relação é desfeita oficialmente quando a Journey (organização) é formada, agora Raika deixa seu posto como General. Após seu interesse romântico com Alan ser revelado, Raika conta que ela era o verdadeiro General do Submundo e não o cara que eles derrotaram no torneio quando Alan estava corrompido.
