@@ -4,6 +4,7 @@ Divirta-se!
 
 -Por padrão, vou usar meu fuso horário (GMT-3) para as datas nas notas.
 
+
 20/03/2025 - 23:22
 O jogo passou por muitas alterações, muitas delas bem recorrentes (provavelmente por eu ser muito indeciso rsrs), vou tentar listar a ordem das minhas "recaídas":
   faço em 2D, vejo que não é exatamente o que eu tenho em mente > vou pro 3D, o jogo acaba muito genérico > volto pro 2D, quero gráficos e jogabilidades melhores > volto pro 3D, não consigo materializar as ideias, volto pro 2D por ser mais fácil > encontro uma alternativa: um 3D com formas simples usando o texturas e normal maps pra dar profundidade.
@@ -21,9 +22,16 @@ O jogo passou por muitas alterações, muitas delas bem recorrentes (provavelmen
 
 Com o rework do jogo, eis a questão: "qual engine?". Tcharam! Temos outra coisa pra minha indecisão brilhar. 
 Analisando um pouco, resolvi que seria com a Unreal. Tentei instalar, mas essa bomba é muito pesada, nem roda o editor direito. É ... Vamos com a Unity. Não é uma opção ruim, eu só queria coisas que facilitariam mais o processo criativo, já que não dá, vamos de Unity. 
-Sei desenvoler algo com a Unity? ✨não✨, ao menos não algo decente, não pro quee tenho em mente pro projeto. Nesse caso, vou ter que estudar Unity.
+Sei desenvoler algo com a Unity? ✨não✨, ao menos não algo decente, não pro que tenho em mente pro projeto. Nesse caso, vou ter que estudar Unity.
 Pronto, chegamos ao presente momento: vou começar a estudar Unity, de novo.
 
 Além do projeto em si, tem o site dele (provavelmente foi por ele que você chegou aqui). Bom ... Não dou muita atenção pra ele, já que se 2 pessoas olharem a cada 2 meses, é muito. De toda forma, estou escrevendo essas notas para as futuras pessoas que irão acessa-lo.
 
-Bom, por hoje é isso. Se tiver ideias ou quiser me ajudar em algo, me chama no email. —Fabriciofkt157 :)
+Bom, por hoje é isso. Se tiver ideias ou quiser me ajudar em algo, me chama no email. 
+—Fabricio :)
+
+
+21/03/2025 - 12:43
+Outra recaída KKKK, tentei insistir com a Unreal. 
+Eu tava na Unreal 5 antes, que é pesada pra cacete, pouco tempo depois descobri que ainda dava pra instalar a Unreal 4 (eu achava que era só a versão mais recente). Bom, instalei e rodou de boas, mas aquela interface ... não, não tanko não, muito velha ou sei lá — a câmera e movimentação são muito boas (do jogo pré pronto, não da interface, essa é uma droga), isso me pouparia um bom tempo, mas vamos de Unity de novo.
+
