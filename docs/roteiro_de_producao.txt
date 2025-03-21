@@ -118,6 +118,9 @@ O usuário que realizar esse feito, poderá controlar apenas a Luz ou a Sombra �
 A fusão de Luz e Sombra resulta no poder de controlar o tempo e o rumo das vidas guiadas por ele.
 O surgimento de Luz e Sombra no mesmo usuário só é possível com a fusão da alma do usuário de elemento oposto. Esse feito é impossível, a alma não pode assumir forma.
   -> Homem Misterioso é um exemplo disso: ele é o resultado da fusão de dois usuários que controlavam Luz e Sombra, suas almas não puderam assumir forma e o resultado foi uma Entidade sem forma física — o Homem Misterioso utiliza a Sombra para "assumir" forma, basicamente, é a personificação da Sombra (elemento).
+  -> Além disso, o Homem Misterioso é uma fusão e funciona de forma semelhante ao Alan corrompido, alterna entre fragmentos para controlar cada elemento: um deles controla a Luz e o outro a Sombra, no caso, a Entidade controla ambos os fragmentos. 
+  -> Isso impõe uma restrição: o controle do Tempo leva tempo, devido a fusão que precisa do manifesto dos dois fragmentos.
+
 
 -As Sombras:
 Uma Sombra (entidade) é um fragmento de alma controlado por um usuário do elemento Sombra. O processo de corrupção funciona da seguinte forma:
