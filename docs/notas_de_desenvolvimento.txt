@@ -35,7 +35,7 @@ Bom, por hoje é isso. Se tiver ideias ou quiser me ajudar em algo, me chama no 
 Outra recaída KKKK, tentei insistir com a Unreal. 
 Eu tava na Unreal 5 antes, que é pesada pra cacete, pouco tempo depois descobri que ainda dava pra instalar a Unreal 4 (eu achava que era só a versão mais recente). Bom, instalei e rodou de boas, mas aquela interface ... não, não tanko não, muito velha ou sei lá — a câmera e movimentação são muito boas (do jogo pré pronto, não da interface, essa é uma droga), isso me pouparia um bom tempo, mas vamos de Unity de novo.
 
-Os arquivos de história do site são bem desatualizados, antes de eu começar a refazer o jogo completamente, então além de incompleto, está mal trabalhado. 
+Os arquivos de história do site são bem desatualizados. São de antes de eu começar a refazer o jogo completamente, então além de incompleto, está mal trabalhado. 
 Não coloquei o arquivo que estou trabalhando agora por ... privacidade, sei lá, não é todo mundo que entra no site que deveria ver isso. Hm, aqui o arquivo (não garanto que eu vá atualizar o arquivo desse link sempre que tiver alguma alteração, mas periódicamente vou enviar o mais recente):
 
 https://fabriciofkt157.github.io/Behind-Shadows/docs/roteiro_de_producao.txt
