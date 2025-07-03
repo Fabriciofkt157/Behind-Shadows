@@ -1,12 +1,9 @@
 name: Deploy Códice to GitHub Pages
-
-# Este workflow roda toda vez que houver um push na branch 'main'
 on:
   push:
     branches:
       - main
 
-# Permissões para o workflow poder escrever na branch gh-pages
 permissions:
   contents: write
 
@@ -14,30 +11,19 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Baixa o código do seu repositório
       - name: Checkout code
         uses: actions/checkout@v4
-
-      # 2. Configura o ambiente Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-
-      # 3. Instala as dependências do build.js (listadas no package.json)
       - name: Install dependencies
         run: npm install
-
-      # 4. Executa o script de build para gerar o dist/db.json
       - name: Build project
-        run: npm run build # Este comando executa 'node build.js'
-
-      # 5. Publica o conteúdo completo do site para a branch 'gh-pages'
+        run: npm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 'publish_dir' é o diretório que será publicado. 
-          # Usamos './' para publicar tudo: index.html, css/, js/ e o novo dist/
           publish_dir: ./
