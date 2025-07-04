@@ -16,6 +16,12 @@ jobs:
     # O tipo de máquina que o workflow vai usar
     runs-on: ubuntu-latest
     
+    # Define um diretório de trabalho padrão para todos os comandos 'run' neste job.
+    # Isso garante que todos os comandos sejam executados dentro da pasta 'story-view'.
+    defaults:
+      run:
+        working-directory: ./story-view
+
     steps:
       # 1. Baixa o código do seu repositório para a máquina virtual
       - name: Checkout code
@@ -27,25 +33,30 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          # CORREÇÃO: Especifica onde o arquivo de cache de dependências está localizado
+          # Especifica onde o arquivo de cache de dependências está localizado
           cache-dependency-path: story-view/package-lock.json
 
       # 3. Instala as dependências do projeto
       - name: Install dependencies
-        # CORREÇÃO: Executa o comando dentro da pasta 'story-view'
         run: npm install
-        working-directory: ./story-view
 
-      # 4. Executa o script de build para gerar o db.json
+      # 4. (Diagnóstico) Lista os arquivos para confirmar que build.js está presente
+      - name: List files in working directory
+        run: |
+          echo "Conteúdo da pasta story-view:"
+          ls -la
+          echo "Conteúdo da pasta story-view/build:"
+          ls -la build
+
+      # 5. Executa o script de build para gerar o db.json
       - name: Build project
-        # CORREÇÃO: Executa o comando dentro da pasta 'story-view'
-        run: npm run build
-        working-directory: ./story-view
+        # CORREÇÃO: Executa o script diretamente do seu novo local
+        run: node build/build.js
 
-      # 5. Publica o conteúdo final no GitHub Pages
+      # 6. Publica o conteúdo final no GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # CORREÇÃO: Especifica que o conteúdo a ser publicado está na pasta 'story-view'
+          # Especifica que o conteúdo a ser publicado está na pasta 'story-view'
           publish_dir: ./story-view
