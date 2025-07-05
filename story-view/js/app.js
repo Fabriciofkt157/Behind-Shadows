@@ -9,31 +9,22 @@ const mainContentEl = document.getElementById('main-content');
 const codexTitleEl = document.getElementById('codex-title');
 const sidebarEl = document.getElementById('sidebar');
 
-/**
- * Constrói o menu de navegação a partir das seções do banco de dados.
- */
-function buildNavMenu() {
-    navMenuEl.innerHTML = '';
+function renderNavSection(section, container) {
+    const sectionDiv = document.createElement('div');
+    sectionDiv.className = section.parent ? 'ml-4 mt-2' : 'mt-4'; 
 
-    const homeLink = document.createElement('a');
-    homeLink.href = '#home';
-    homeLink.className = 'block text-stone-300 hover:bg-stone-700 hover:text-sky-300 rounded-md px-3 py-2 text-sm font-medium';
-    homeLink.innerHTML = '<i class="fas fa-dungeon w-6 mr-2"></i>Início';
-    homeLink.dataset.target = 'home';
-    navMenuEl.appendChild(homeLink);
-
-    db.sections.forEach(category => {
-        const sectionDiv = document.createElement('div');
-        sectionDiv.className = 'mt-4';
-        
+    if (section.title) {
         const titleH3 = document.createElement('h3');
         titleH3.className = 'text-xs font-title text-stone-500 uppercase tracking-wider flex items-center px-3';
-        titleH3.innerHTML = `<i class="fas ${category.icon || 'fa-book'} fa-fw mr-3"></i><span>${category.title}</span>`;
-        
+        titleH3.innerHTML = `<i class="fas ${section.icon || 'fa-book'} fa-fw mr-3"></i><span>${section.title}</span>`;
+        sectionDiv.appendChild(titleH3);
+    }
+    
+    if (section.items && section.items.length > 0) {
         const itemListUl = document.createElement('ul');
         itemListUl.className = 'space-y-1 mt-1 ml-5 border-l border-stone-700';
 
-        const sortedItems = category.items.sort((a, b) => a.title.localeCompare(b.title));
+        const sortedItems = [...section.items].sort((a, b) => a.title.localeCompare(b.title));
 
         sortedItems.forEach(item => {
             const li = document.createElement('li');
@@ -45,37 +36,65 @@ function buildNavMenu() {
             li.appendChild(a);
             itemListUl.appendChild(li);
         });
-
-        sectionDiv.appendChild(titleH3);
         sectionDiv.appendChild(itemListUl);
-        navMenuEl.appendChild(sectionDiv);
+    }
+
+    if (section.children && section.children.length > 0) {
+        const childrenContainer = document.createElement('div');
+        const sortedChildren = [...section.children].sort((a,b) => a.id.localeCompare(b.id));
+        sortedChildren.forEach(childSection => {
+            renderNavSection(childSection, childrenContainer);
+        });
+        sectionDiv.appendChild(childrenContainer);
+    }
+
+    container.appendChild(sectionDiv);
+}
+
+function buildNavMenu() {
+    navMenuEl.innerHTML = '';
+
+    const homeLink = document.createElement('a');
+    homeLink.href = '#home';
+    homeLink.className = 'block text-stone-300 hover:bg-stone-700 hover:text-sky-300 rounded-md px-3 py-2 text-sm font-medium';
+    homeLink.innerHTML = '<i class="fas fa-dungeon w-6 mr-2"></i>Início';
+    homeLink.dataset.target = 'home';
+    navMenuEl.appendChild(homeLink);
+
+    const sectionsMap = new Map();
+    const rootSections = [];
+
+    db.sections.forEach(section => {
+        sectionsMap.set(section.id, { ...section, children: [] });
+    });
+
+    sectionsMap.forEach(section => {
+        if (section.parent && sectionsMap.has(section.parent)) {
+            sectionsMap.get(section.parent).children.push(section);
+        } else {
+            rootSections.push(section);
+        }
+    });
+    
+    const sortedRoots = rootSections.sort((a,b) => a.id.localeCompare(b.id));
+
+    sortedRoots.forEach(section => {
+        renderNavSection(section, navMenuEl);
     });
 }
 
-/**
- * Renderiza o conteúdo principal com base no ID do item.
- * @param {string} itemId O ID do tópico a ser renderizado, ou 'home'.
- */
 function renderContent(itemId) {
-    if (itemId === 'home' || !itemId) {
-        mainContentEl.innerHTML = document.getElementById('home-template').innerHTML;
-        return;
+    // Se o itemId for vazio, nulo ou '#', redirecione para 'home'
+    if (!itemId || itemId === '#') {
+        itemId = 'home';
     }
-
-    // Exibir horário, se houver
-    if (item.horario) {
-        const horarioDiv = document.createElement('div');
-        horarioDiv.className = 'horario-box';
-        horarioDiv.innerHTML = `<i class="fa-solid fa-clock mr-1 text-yellow-400"></i><span>${item.horario}</span>`;
-        mainContentEl.prepend(horarioDiv);
-    }
-
 
     const item = db.topics[itemId];
 
     if (!item) {
-        console.warn(`Tópico com id "${itemId}" não encontrado.`);
-        renderContent('home');
+        console.warn(`Tópico com id "${itemId}" não encontrado. Carregando página inicial.`);
+        // Se o tópico não for encontrado, tente carregar o 'home' como fallback
+        renderContent('home'); 
         return;
     }
 
@@ -83,12 +102,12 @@ function renderContent(itemId) {
     const templateContainer = document.getElementById(`${templateName}-template-display`);
     if (!templateContainer) {
         console.error(`Template de visualização para '${templateName}' não encontrado.`);
+        mainContentEl.innerHTML = `<p>Erro: Template '${templateName}' não existe.</p>`;
         return;
     }
     
     let templateHtml = templateContainer.innerHTML;
     
-    // CORREÇÃO: Lógica especial para o template de personagem
     if (templateName === 'character') {
         const details = [
             { label: 'Idade', value: item.age },
@@ -102,14 +121,13 @@ function renderContent(itemId) {
         ];
 
         const detailsHtml = details
-            .filter(detail => detail.value) // Inclui apenas detalhes que têm um valor
+            .filter(detail => detail.value)
             .map(detail => `<p><strong>${detail.label}:</strong> ${detail.value}</p>`)
             .join('');
         
         templateHtml = templateHtml.replace('{details_grid}', detailsHtml);
     }
-
-    // Substitui todos os outros placeholders
+    
     Object.keys(item).forEach(key => {
         const regex = new RegExp(`{${key}}`, 'g');
         let content = item[key] || '';
@@ -118,14 +136,19 @@ function renderContent(itemId) {
         }
         templateHtml = templateHtml.replace(regex, content);
     });
-
+    
     mainContentEl.innerHTML = templateHtml;
     mainContentEl.scrollTop = 0;
+    
+    const horarioBox = document.querySelector('.horario-box');
+    if (item.horario) {
+        horarioBox.innerHTML = `<i class="fa-solid fa-clock mr-1 text-yellow-400"></i><span>${item.horario}</span>`;
+        horarioBox.style.display = 'flex';
+    } else {
+        horarioBox.style.display = 'none';
+    }
 }
 
-/**
- * Inicializa os manipuladores de eventos para navegação.
- */
 function initializeEventHandlers() {
     const sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
     
@@ -133,11 +156,9 @@ function initializeEventHandlers() {
         const target = e.target.closest('a');
         if (target && target.dataset.target) {
             e.preventDefault();
-            renderContent(target.dataset.target);
-            window.location.hash = target.dataset.target;
-            if (window.innerWidth <= 768) {
-                sidebarEl.classList.remove('open');
-            }
+            const itemId = target.dataset.target;
+            window.location.hash = itemId;
+            // A renderização agora é tratada pelo 'hashchange'
         }
     });
 
@@ -152,18 +173,23 @@ function initializeEventHandlers() {
         }
     });
 
-    window.addEventListener('hashchange', () => {
+    // Evento unificado para carregar conteúdo
+    const loadContentFromHash = () => {
         const itemId = window.location.hash.substring(1);
         renderContent(itemId || 'home');
-    });
+        if (window.innerWidth <= 768) {
+            sidebarEl.classList.remove('open');
+        }
+    };
+
+    window.addEventListener('hashchange', loadContentFromHash);
+    // Carrega o conteúdo inicial na primeira vez
+    window.addEventListener('load', loadContentFromHash);
 }
 
-/**
- * Função principal de inicialização.
- */
 async function init() {
     try {
-        const response = await fetch(DB_PATH);
+        const response = await fetch(DB_PATH + `?v=${new Date().getTime()}`); // Cache busting
         if (!response.ok) {
             throw new Error(`Erro ao carregar o arquivo db.json: ${response.statusText}`);
         }
@@ -181,9 +207,6 @@ async function init() {
         buildNavMenu();
         initializeEventHandlers();
 
-        const initialItemId = window.location.hash.substring(1);
-        renderContent(initialItemId || 'home');
-
     } catch (error) {
         console.error("Falha ao inicializar a aplicação:", error);
         mainContentEl.innerHTML = `<div class="text-center p-8 bg-red-900/50 rounded-lg text-red-300">
@@ -194,5 +217,4 @@ async function init() {
     }
 }
 
-// Inicia a aplicação quando o DOM estiver pronto.
 document.addEventListener('DOMContentLoaded', init);

@@ -29,50 +29,80 @@ const frontmatterSchema = z.object({
 // Suporte a blocos internos com ### Título
 function processarBlocosEspeciais(markdown) {
   const lines = markdown.split('\n');
-  const result = [];
-  let currentTitle = null;
+  let result = [];
   let currentContent = [];
-
-  for (const line of lines) {
-    const match = line.match(/^###\s+(.*)/);
-    if (match) {
-      if (currentTitle) {
-        result.push(`<div class="bloco"><h3>${currentTitle}</h3>\n${currentContent.join('\n')}</div>`);
-      }
-      currentTitle = match[1].trim();
-      currentContent = [];
-    } else {
-      currentContent.push(line);
-    }
+  
+  // Processa o conteúdo antes do primeiro '###'
+  const firstHeadingIndex = lines.findIndex(line => line.match(/^###\s+.*/));
+  if (firstHeadingIndex > 0) {
+      result.push(lines.slice(0, firstHeadingIndex).join('\n'));
+  } else if (firstHeadingIndex === -1) {
+      result.push(lines.join('\n'));
+      return marked.parse(result.join(''));
   }
 
-  if (currentTitle) {
-    result.push(`<div class="bloco"><h3>${currentTitle}</h3>\n${currentContent.join('\n')}</div>`);
-  }
+  const contentAfterFirstHeading = lines.slice(firstHeadingIndex).join('\n');
+  const blocks = contentAfterFirstHeading.split(/(?=^###\s+.*$)/m);
+
+  blocks.forEach(block => {
+      if (block.trim() === '') return;
+      const blockLines = block.trim().split('\n');
+      const title = blockLines[0].replace(/^###\s+/, '').trim();
+      const content = blockLines.slice(1).join('\n');
+      result.push(`<div class="bloco"><h3>${title}</h3>\n${marked.parse(content)}</div>`);
+  });
 
   return result.join('\n');
 }
 
-async function processarDiretorio(dir, parentId = null) {
+
+async function processarArquivo(filePath, topicos, secaoPai = null) {
+    if (!filePath.endsWith('.md')) return;
+
+    const raw = await fs.readFile(filePath, 'utf8');
+    const { data, content } = matter(raw);
+    const valid = frontmatterSchema.safeParse(data);
+
+    if (!valid.success) {
+        console.warn(`⚠️  Erro de validação em ${filePath}:`, valid.error.flatten().fieldErrors);
+        return;
+    }
+
+    const id = path.basename(filePath, '.md');
+    
+    // Adiciona o item à lista da seção pai, se aplicável
+    if (secaoPai && secaoPai.items) {
+      secaoPai.items.push({ id, title: data.titulo });
+    }
+
+    topicos[id] = {
+        ...data,
+        title: data.titulo,
+        subtitle: data.subtitulo || '',
+        template: data.template || (secaoPai?.template ?? 'simple'),
+        icon: data.icone || secaoPai?.icon || 'fa-book',
+        contentHtml: processarBlocosEspeciais(content)
+    };
+}
+
+
+async function processarDiretorio(dir) {
   const secoes = [];
   const topicos = {};
 
-  const itens = await fs.readdir(dir);
+  async function walk(currentDir, parentId = null) {
+    const itens = await fs.readdir(currentDir);
+    let secaoAtual = null;
 
-  for (const item of itens) {
-    const fullPath = path.join(dir, item);
-    const stat = await fs.stat(fullPath);
-
-    if (stat.isDirectory()) {
-      const resultado = await processarDiretorio(fullPath, path.relative(conteudoPath, dir));
-      secoes.push(...resultado.secoes);
-      Object.assign(topicos, resultado.topicos);
-    } else if (item === '_index.md') {
+    // Primeiro, encontre e processe o _index.md para definir a seção
+    const indexFile = itens.find(item => item === '_index.md');
+    if (indexFile) {
+      const fullPath = path.join(currentDir, indexFile);
       const raw = await fs.readFile(fullPath, 'utf8');
       const { data } = matter(raw);
-
-      const secaoId = path.relative(conteudoPath, dir).replace(/\\/g, '/');
-      const secao = {
+      const secaoId = path.relative(conteudoPath, currentDir).replace(/\\/g, '/');
+      
+      secaoAtual = {
         id: secaoId,
         title: data.titulo.replace(/_/g, ' '),
         icon: data.icone || 'fa-book',
@@ -80,54 +110,53 @@ async function processarDiretorio(dir, parentId = null) {
         parent: parentId,
         items: []
       };
+      secoes.push(secaoAtual);
+    }
 
-      secoes.push(secao);
+    // Agora, processe os outros arquivos e diretórios
+    for (const item of itens) {
+      const fullPath = path.join(currentDir, item);
+      const stat = await fs.stat(fullPath);
+
+      if (stat.isDirectory()) {
+        // O ID da seção atual se torna o pai da próxima
+        const proximoPaiId = secaoAtual ? secaoAtual.id : parentId;
+        await walk(fullPath, proximoPaiId);
+      } else if (item !== '_index.md' && item.endsWith('.md')) {
+        await processarArquivo(fullPath, topicos, secaoAtual);
+      }
     }
   }
 
-  const arquivos = await fs.readdir(dir);
-  const secaoId = path.relative(conteudoPath, dir).replace(/\\/g, '/');
-  const secao = secoes.find(s => s.id === secaoId);
-
-  for (const file of arquivos) {
-    if (file === '_index.md' || !file.endsWith('.md')) continue;
-
-    const filePath = path.join(dir, file);
-    const raw = await fs.readFile(filePath, 'utf8');
-    const { data, content } = matter(raw);
-    const valid = frontmatterSchema.safeParse(data);
-
-    if (!valid.success) {
-      console.warn(`⚠️  Erro em ${filePath}:`, valid.error.flatten().fieldErrors);
-      continue;
-    }
-
-    const id = path.basename(file, '.md');
-    if (secao) {
-      secao.items.push({ id, title: data.titulo });
-    }
-
-    const markdownComBlocos = processarBlocosEspeciais(content);
-
-    topicos[id] = {
-      ...data,
-      title: data.titulo,
-      subtitle: data.subtitulo || '',
-      template: data.template || (secao?.template ?? 'simple'),
-      icon: data.icone || secao?.icon || 'fa-book',
-      contentHtml: marked.parse(markdownComBlocos)
-    };
+  // Processa arquivos na raiz (como home.md)
+  const itensRaiz = await fs.readdir(dir);
+  for (const item of itensRaiz) {
+      const fullPath = path.join(dir, item);
+      const stat = await fs.stat(fullPath);
+      if (stat.isFile() && item.endsWith('.md') && item !== '_index.md') {
+          await processarArquivo(fullPath, topicos, null);
+      }
+  }
+  
+  // Inicia o processo recursivo para subdiretórios
+  for (const item of itensRaiz) {
+      const fullPath = path.join(dir, item);
+      const stat = await fs.stat(fullPath);
+      if (stat.isDirectory()) {
+          await walk(fullPath, null);
+      }
   }
 
   return { secoes, topicos };
 }
+
 
 async function gerarDbJson() {
   const config = await fs.readJson(configPath).catch(() => ({ siteTitle: 'Story-View' }));
   const { secoes, topicos } = await processarDiretorio(conteudoPath);
 
   const finalDb = {
-    siteTitle: config.siteTitle || 'Story-View',
+    siteTitle: config.siteTitle || 'Behind Shadows',
     lastUpdated: new Date().toISOString(),
     sections: secoes,
     topics: topicos
