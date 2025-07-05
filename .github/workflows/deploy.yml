@@ -5,17 +5,15 @@ on:
   push:
     branches:
       - main
+  # Permite rodar manualmente
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write # Necessário para o peaceiris/actions-gh-pages
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: ./story-view
 
     steps:
       - name: Checkout code
@@ -26,32 +24,23 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          # O caminho para o cache deve ser relativo à raiz do repositório
           cache-dependency-path: story-view/package-lock.json
 
       - name: Install dependencies
         run: npm install
-
-      - name: List files in working directory
-        run: |
-          echo "Conteúdo da pasta story-view:"
-          ls -la
-          echo "Conteúdo da pasta story-view/build:"
-          ls -la build
+        # Define o diretório de trabalho apenas para este passo
+        working-directory: ./story-view
 
       - name: Build project
-        run: node build/build.js
+        run: node build.js
+        # Define o diretório de trabalho apenas para este passo
+        working-directory: ./story-view
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./story-view/dist
-
-      - name: Commita dist/db.json na branch main
-        run: |
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add dist/db.json
-            git commit -m "Atualiza dist/db.json gerado automaticamente" || echo "Nada para commitar"
-            git push origin main
-
+          # MUDANÇA CRÍTICA: Publica a pasta story-view inteira
+          # Isso garante que index.html, css/, js/ e dist/ sejam enviados.
+          publish_dir: ./story-view
