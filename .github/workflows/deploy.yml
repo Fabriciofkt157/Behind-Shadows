@@ -13,34 +13,26 @@ permissions:
 
 jobs:
   build-and-deploy:
-    # O tipo de máquina que o workflow vai usar
     runs-on: ubuntu-latest
     
-    # Define um diretório de trabalho padrão para todos os comandos 'run' neste job.
-    # Isso garante que todos os comandos sejam executados dentro da pasta 'story-view'.
     defaults:
       run:
         working-directory: ./story-view
 
     steps:
-      # 1. Baixa o código do seu repositório para a máquina virtual
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Configura o ambiente Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-          # Especifica onde o arquivo de cache de dependências está localizado
           cache-dependency-path: story-view/package-lock.json
 
-      # 3. Instala as dependências do projeto
       - name: Install dependencies
         run: npm install
 
-      # 4. (Diagnóstico) Lista os arquivos para confirmar que build.js está presente
       - name: List files in working directory
         run: |
           echo "Conteúdo da pasta story-view:"
@@ -48,15 +40,11 @@ jobs:
           echo "Conteúdo da pasta story-view/build:"
           ls -la build
 
-      # 5. Executa o script de build para gerar o db.json
       - name: Build project
-        # CORREÇÃO: Executa o script diretamente do seu novo local
         run: node build/build.js
 
-      # 6. Publica o conteúdo final no GitHub Pages
       - name: Deploy to GitHub Pages
-  uses: peaceiris/actions-gh-pages@v4
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./story-view/dist
-
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./story-view/dist
