@@ -1,4 +1,3 @@
-
 import fs from 'fs-extra';
 import path from 'path';
 import matter from 'gray-matter';
@@ -9,6 +8,7 @@ const conteudoPath = path.resolve('conteudo');
 const distPath = path.resolve('dist');
 const configPath = path.join(conteudoPath, 'config.json');
 
+// Schema com novos campos personalizados
 const frontmatterSchema = z.object({
   titulo: z.string(),
   subtitulo: z.string().optional(),
@@ -18,8 +18,40 @@ const frontmatterSchema = z.object({
   age: z.string().optional(),
   birthday: z.string().optional(),
   origin: z.string().optional(),
+  sexo: z.string().optional(),
+  natureza: z.string().optional(),
+  natural_de: z.string().optional(),
+  parentesco: z.string().optional(),
+  aliados: z.string().optional(),
   personagens: z.array(z.string()).optional()
 });
+
+// Suporte a blocos internos com ### Título
+function processarBlocosEspeciais(markdown) {
+  const lines = markdown.split('\n');
+  const result = [];
+  let currentTitle = null;
+  let currentContent = [];
+
+  for (const line of lines) {
+    const match = line.match(/^###\s+(.*)/);
+    if (match) {
+      if (currentTitle) {
+        result.push(`<div class="bloco"><h3>${currentTitle}</h3>\n${currentContent.join('\n')}</div>`);
+      }
+      currentTitle = match[1].trim();
+      currentContent = [];
+    } else {
+      currentContent.push(line);
+    }
+  }
+
+  if (currentTitle) {
+    result.push(`<div class="bloco"><h3>${currentTitle}</h3>\n${currentContent.join('\n')}</div>`);
+  }
+
+  return result.join('\n');
+}
 
 async function processarDiretorio(dir, parentId = null) {
   const secoes = [];
@@ -75,13 +107,15 @@ async function processarDiretorio(dir, parentId = null) {
       secao.items.push({ id, title: data.titulo });
     }
 
+    const markdownComBlocos = processarBlocosEspeciais(content);
+
     topicos[id] = {
       ...data,
       title: data.titulo,
       subtitle: data.subtitulo || '',
       template: data.template || (secao?.template ?? 'simple'),
       icon: data.icone || secao?.icon || 'fa-book',
-      contentHtml: marked(content)
+      contentHtml: marked.parse(markdownComBlocos)
     };
   }
 
