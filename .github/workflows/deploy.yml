@@ -47,11 +47,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./story-view/dist
 
-      - name: Copia db.json para a branch main
+      - name: Commita dist/db.json na branch main
         run: |
-          cp dist/db.json ./db.json
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add db.json
-          git commit -m "Atualiza db.json gerado automaticamente" || echo "Nada para commitar"
-          git push origin main
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add dist/db.json
+            git commit -m "Atualiza dist/db.json gerado automaticamente" || echo "Nada para commitar"
+            git push origin main
+
