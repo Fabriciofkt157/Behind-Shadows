@@ -86,3 +86,22 @@ body {
   margin-top: 0 !important;
   margin-bottom: 1rem !important;
 }
+
+.horario-box {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  background: #2c2c2c;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #ddd;
+  z-index: 2;
+}
+
+.horario-box i {
+  color: #ffca28;
+}
