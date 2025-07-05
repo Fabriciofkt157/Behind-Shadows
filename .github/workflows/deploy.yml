@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - main
-    # opcional: limitar apenas a alterações em story-view/**/*.js
+    # opcional: limitar apenas a alterações em story-view
     # paths:
     #   - 'story-view/**'
 
@@ -16,30 +16,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true  # permite push com o GITHUB_TOKEN
+          persist-credentials: true
 
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'       # ou outra versão que você use
+          node-version: '18'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install dependencies (no lockfile)
         working-directory: ./story-view
-        run: npm ci               # ou npm install, conforme seu package.json
+        run: npm install
 
       - name: Run build script
-        run: node build/build.js  # gera story-view/dist/db.json
+        run: node story-view/build/build.js
 
       - name: Commit and push db.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add story-view/dist/db.json
-          # só comita se houver mudanças
           if ! git diff --cached --quiet; then
             git commit -m "ci: atualizar db.json [skip ci]"
             git push
           else
             echo "Nenhuma mudança em db.json, pulando commit."
-          fi
