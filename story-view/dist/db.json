@@ -1,0 +1,158 @@
+{
+  "siteTitle": "Behind Shadows",
+  "lastUpdated": "2025-07-05T13:26:38.525Z",
+  "sections": [
+    {
+      "id": "01_Personagens",
+      "title": "Personagens",
+      "icon": "fa-users",
+      "template": "character",
+      "parent": null,
+      "items": []
+    },
+    {
+      "id": "01_Personagens/01_Principais",
+      "title": "Protagonistas",
+      "icon": "fa-star",
+      "template": "character",
+      "parent": "01_Personagens",
+      "items": [
+        {
+          "id": "alan",
+          "title": "Alan / Lon"
+        },
+        {
+          "id": "mike",
+          "title": "Mike"
+        }
+      ]
+    },
+    {
+      "id": "01_Personagens/02_Secundarios_I",
+      "title": "Secundários I",
+      "icon": "fa-star",
+      "template": "character",
+      "parent": "01_Personagens",
+      "items": [
+        {
+          "id": "deni",
+          "title": "Deni"
+        },
+        {
+          "id": "raika",
+          "title": "Raika"
+        },
+        {
+          "id": "rit",
+          "title": "Rit"
+        }
+      ]
+    }
+  ],
+  "topics": {
+    "home": {
+      "titulo": "Bem-vindo ao Códice de Behind Shadows",
+      "subtitulo": "Todas as escrituras do jogo, da história às mecânicas.",
+      "template": "simple",
+      "title": "Bem-vindo ao Códice de Behind Shadows",
+      "subtitle": "Todas as escrituras do jogo, da história às mecânicas.",
+      "icon": "fa-book",
+      "contentHtml": "\r\n<div class=\"bloco\"><h3>Sobre este Códice</h3>\n<p>Este documento reúne todas as escrituras do jogo, abrangendo desde a história principal, mecânicas e cenas até as falas dos personagens. É um guia completo e centralizado para o universo de Behind Shadows.</p>\n</div>\n<div class=\"bloco\"><h3>Informações da Versão</h3>\n<ul>\n<li><strong>Versão do Arquivo:</strong> REV-1, v1</li>\n<li><strong>Nomenclatura:</strong> Revisão 1, versão 1</li>\n<li><strong>Última Modificação:</strong> 14/05/2025</li>\n<li><strong>Notas:</strong> As antigas versões de revisão foram completamente absorvidas devido à reformulação total do jogo.</li>\n</ul>\n</div>\n<div class=\"bloco\"><h3>Sobre o Jogo</h3>\n<ul>\n<li><strong>NOME:</strong> Behind Shadows</li>\n<li><strong>ESTILO:</strong> RPG, aventura e exploração.</li>\n<li><strong>MODELO DE ROTEIRO:</strong> Semi-linear. A história pode assumir mais de uma linha de raciocínio, mas sempre haverá pontos de reencontro com a narrativa principal.</li>\n<li><strong>MODELO DE NARRATIVA:</strong> A história é contada a partir de cutscenes para momentos cruciais, e conversas entre os personagens durante o gameplay (God of War e The Last of Us são exemplos).</li>\n<li><strong>ESTILO GRÁFICO:</strong> 3D semi-realista. O mundo é construído em 3 dimensões, tentando se aproximar da realidade, mas sem preocupações em ser idêntico ao mundo real.</li>\n<li><strong>ESTILO GAMEPLAY:</strong> Exploração em terceira pessoa (God of War, Final Fantasy XV são algumas referências). Combate frenético ou estratégico (The Last of Us é um exemplo).</li>\n</ul>\n</div>"
+    },
+    "alan": {
+      "titulo": "Alan / Lon",
+      "subtitulo": "Alan Dount",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "17 anos",
+      "birthday": "14/02",
+      "sexo": "Masculino",
+      "natureza": "Humano (renascido)",
+      "origin": "Eards (realidade)",
+      "natural_de": "Eards (realidade)",
+      "parentesco": "Mike (melhor amigo / irmão (vida real)), Raika (cônjuge)",
+      "aliados": "Mike, Raika, Deni, Rit",
+      "image_url": "https://behind.fabriciofkt157.me/game-features/concept-arts/Alan_retrato.png",
+      "title": "Alan / Lon",
+      "subtitle": "Alan Dount",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Alan é irmão mais velho de Mike, na vida real está se preparando para viver sua própria vida, o que Mike distorce e enxerga como um &quot;adeus&quot;. Alan foi abusado por seu tio Mark quando tinha 4 anos, no entanto, quando relata isso a sua família, todos acham que Alan está tentando &quot;chamar atenção&quot; e ignoram. Isso torna Alan quieto e desconfiado de todos, muitas vezes preferindo ficar sozinho; no sonho de Mike, Mark é o Homem Misterioso (sua identidade será revelada apenas no final do jogo) que também é o antagonista principal da história, além de se infiltrar como um aliado de Mike e Alan, mostrando a realidade traiçoeira da confiança.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Alan é reservado, um pouco rabugento e geralmente muito inteligente. Ele pode parecer sombrio as vezes, mas é, no fundo, uma boa pessoa. No entanto, se algo se colocar entre ele e seus objetivos, Alan não hesitará em mostrar um lado menos amigável. Alan pode se mostrar um pouco ”fofinho” em alguns diálogos, contrapondo seu lado rabugento.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Em uma das cenas com Mike, Alan revela que seu irmão costumava chamá-lo de ”Lon” e sugere que Mike também pode usar esse apelido se quiser. Eventualmente, Mike chama o Alan por esse nome. Após ser corrompido e posteriormente controlar as Sombras, Alan não precisa dormir, no entanto, é comum encontra-lo dormindo por aí (ele apenas gosta).</p>\n</div>"
+    },
+    "mike": {
+      "titulo": "Mike",
+      "subtitulo": "Maicon Jousan",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "14 anos",
+      "birthday": "17/12",
+      "sexo": "Masculino",
+      "natureza": "Humano (renascido)",
+      "origin": "Eards (realidade)",
+      "natural_de": "Eards (realidade)",
+      "parentesco": "Alan (melhor amigo / irmão (vida real));",
+      "aliados": "Alan, Raika, Deni, Rit",
+      "image_url": "https://behind.fabriciofkt157.me/game-features/concept-arts/Mike_retrato.png",
+      "title": "Mike",
+      "subtitle": "Maicon Jousan",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Mike passa por algumas situações estressantes na vida real, essas situações são retratadas no sonho de Mike sob outra perspectiva, dessa vez, esses problemas podem ser resolvidos.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Mike é geralmente alegre e espontâneo. Ele é uma pessoa extrovertida, com uma mentalidade um pouco imatura e impulsiva. Ao contrário de Alan, Mike costuma expressar tudo o que pensa e adora socializar. Ele tem uma facilidade natural para fazer amigos, o que, por vezes, incomoda algumas pessoas.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Alan e Mike são irmãos por parte de mãe, mas têm pais diferentes, o que explica seus sobrenomes distintos. Alan carrega o sobrenome ”Dount” de seu pai, enquanto Mike herda o sobrenome ”Jousan”. O Homem Misterioso menciona apenas os sobrenomes aos quais os personagens têm maior vínculo, refletindo a tradição em que cada pessoa representa uma família em batalhas. Alan, portanto, luta pela família ”Dount”, enquanto Mike luta pela família ”Jousan”, reforçando a ideia de que eles pertencem a linhagens diferentes, apesar de serem irmãos</p>\n</div>"
+    },
+    "deni": {
+      "titulo": "Deni",
+      "subtitulo": "Deniel Mourk",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "16 anos",
+      "birthday": "01/04",
+      "sexo": "Masculino",
+      "natureza": "Humano (renascido)",
+      "origin": "Median (realidade)",
+      "natural_de": "Median (realidade)",
+      "parentesco": "Rit (irmão), Mike (melhor amigo)",
+      "aliados": "Mike, Alan, Raika, Rit",
+      "image_url": "https://behind.fabriciofkt157.me/game-features/concept-arts/Deni_retrato.png",
+      "title": "Deni",
+      "subtitle": "Deniel Mourk",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Deni foi levado por Rit a Avalest após o ataque, no entanto, não tem lembranças disso por ser muito pequeno quando aconteceu.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Deni é amigável na maior parte do tempo, mostrando maturidade na maioria das situações, embora ocasionalmente cometa alguns deslizes.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Deni tem o hábito de fazer piadas ruins de vez em quando ou ”pregar peças” em seus companheiros durante longas jornadas, trazendo um toque de humor às suas interaçõoes.</p>\n</div>"
+    },
+    "raika": {
+      "titulo": "Raika",
+      "subtitulo": "Raika Tirouf",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "21 anos",
+      "birthday": "01/04",
+      "sexo": "Feminino",
+      "natureza": "Humano (renascido)",
+      "origin": "Median (realidade)",
+      "natural_de": "Median (realidade)",
+      "parentesco": "Alan (cônjuge)",
+      "aliados": "Mike, Alan, Rit, Deni",
+      "image_url": "https://behind.fabriciofkt157.me/game-features/concept-arts/Raika_retrato.png",
+      "title": "Raika",
+      "subtitle": "Raika Tirouf",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Raika foi uma dos generais do Exército das Sombras como um agente duplo entre o Império de Median e o Exército. Em um tempo ajudava o Exército a tomar posse dos recursos de Median, em outro, ajudava Median fornecendo informaçōes em troca de sua liberdade; essa relação é desfeita oficialmente quando a Sky (organização) é formada, agora Raika deixa seu posto como General. Após seu interesse romântico com Alan ser revelado, Raika conta que ela era o verdadeiro General do Submundo e não o cara que eles derrotaram no torneio quando Alan estava corrompido.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Raika é uma pessoa de temperamento ”bravo” e ”raivoso”, o que a leva a agir e atacar impulsivamente em diversas situações. No entanto, ela demonstra uma inteligência afiada em combate e na criação de estratégias. Geralmente, Raika é um pouco infeliz e raramente sorri, o que deixa de acontecer ao lado de Alan.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Raika se apaixona por Alan depois de um tempo convivendo juntos; uma das cenas do jogo mostra os dois dançando juntos, Raika revela seu interesse amoroso e os dois ficam juntos (um pouco antes de metade do jogo).</p>\n</div>"
+    },
+    "rit": {
+      "titulo": "Rit",
+      "subtitulo": "Ritain Mourk",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "23 anos",
+      "birthday": "21/02",
+      "sexo": "Masculino",
+      "natureza": "Humano",
+      "origin": "Median (realidade)",
+      "natural_de": "Median (realidade)",
+      "parentesco": "Deni (irmão), Mike (melhor amigo)",
+      "aliados": "Mike, Alan, Raika, Deni",
+      "image_url": "https://behind.fabriciofkt157.me/game-features/concept-arts/Rit_retrato.png",
+      "title": "Rit",
+      "subtitle": "Ritain Mourk",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Rit fugiu com Deni para Avalest (cidade principal) após um ataque a antiga vila onde moravam (na época, Deni tinha 3 anos e Rit 10), nele, seus amigos e familiares foram mortos.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Rit é uma pessoa emocionalmente forte, raramente se deixa abalar por qualquer situação Ele não é excessivamente alegre, nem propenso à melancolia; em vez disso, Rit sente exatamente o que o momento exige. Sua empatia é uma característica notável, permitindo que ele se sensibilize profundamente com as dificuldades dos outros, o que o leva frequentemente a ajudar aqueles que o cercam</p>\n</div>"
+    }
+  }
+}
