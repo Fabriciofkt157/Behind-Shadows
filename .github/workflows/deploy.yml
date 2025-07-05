@@ -1,24 +1,20 @@
-# Nome do Workflow
-name: Deploy Códice to GitHub Pages
+name: Build e Commit db.json
 
 on:
   push:
     branches:
       - main
-  # Permite rodar manualmente
-  workflow_dispatch:
-
-permissions:
-  contents: write # Necessário para o peaceiris/actions-gh-pages
 
 jobs:
-  build-and-deploy:
+  build-and-commit:
     runs-on: ubuntu-latest
-
+    
     steps:
+      # 1. Baixa o código do repositório
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2. Configura o ambiente Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -26,21 +22,20 @@ jobs:
           cache: 'npm'
           cache-dependency-path: story-view/package-lock.json
 
-      - name: Install dependencies
-        run: npm install
+      # 3. Instala as dependências e roda o build (dentro de story-view)
+      - name: Install and Build
+        run: |
+          npm install
+          node build/build.js
         working-directory: ./story-view
 
-      - name: Build project
-        run: node build/build.js
-        working-directory: ./story-view
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      # 4. Faz o commit do db.json atualizado de volta para a branch 'main'
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          # --- SOLUÇÃO DE CACHE ---
-          # force_orphan: true -> Cria uma branch de deploy limpa, sem histórico antigo.
-          # keep_files: false -> Garante que o diretório de destino seja limpo antes do deploy.
-          force_orphan: true
-          keep_files: false
+          commit_message: 'Automated build: Update db.json'
+          # Especifica o arquivo a ser "commitado"
+          file_pattern: 'story-view/dist/db.json'
+          commit_user_name: 'GitHub Actions Bot'
+          commit_user_email: 'actions@github.com'
+          commit_author: 'GitHub Actions Bot <actions@github.com>'
