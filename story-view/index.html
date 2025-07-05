@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-stone-900 text-stone-300">
-  <button id="sidebar-toggle-btn" class="fixed top-3 left-3 z-50 bg-stone-800 text-white text-xl px-3 py-2 rounded-md shadow-md border-stone-600 hidden">
+  <button id="sidebar-toggle-btn" class="fixed top-3 left-3 z-50 bg-stone-800 text-white text-xl px-3 py-2 rounded-md shadow-md border border-stone-600 hidden">
     ☰
   </button>
   <div class="flex h-screen">
@@ -47,10 +47,9 @@
             <div class="flex-grow">
               <h2 class="text-4xl text-sky-200 font-title">{title}</h2>
               <p class="text-sky-300 font-semibold mb-4 text-lg">"{subtitle}"</p>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-stone-300">
-                <p><strong>Idade:</strong> {age}</p>
-                <p><strong>Origem:</strong> {origin}</p>
-                <p><strong>Aniversário:</strong> {birthday}</p>
+              <!-- CORREÇÃO: A grade de detalhes agora é um placeholder único -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-stone-300">
+                {details_grid}
               </div>
             </div>
           </div>
