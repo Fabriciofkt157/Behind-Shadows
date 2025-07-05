@@ -20,3 +20,4 @@ Este documento reúne todas as escrituras do jogo, abrangendo desde a história 
 - **MODELO DE NARRATIVA:** A história é contada a partir de cutscenes para momentos cruciais, e conversas entre os personagens durante o gameplay (God of War e The Last of Us são exemplos).
 - **ESTILO GRÁFICO:** 3D semi-realista. O mundo é construído em 3 dimensões, tentando se aproximar da realidade, mas sem preocupações em ser idêntico ao mundo real.
 - **ESTILO GAMEPLAY:** Exploração em terceira pessoa (God of War, Final Fantasy XV são algumas referências). Combate frenético ou estratégico (The Last of Us é um exemplo).
+  
