@@ -79,6 +79,28 @@ function renderContent(itemId) {
     
     let templateHtml = templateContainer.innerHTML;
     
+    // CORREÇÃO: Lógica especial para o template de personagem
+    if (templateName === 'character') {
+        const details = [
+            { label: 'Idade', value: item.age },
+            { label: 'Sexo', value: item.sexo },
+            { label: 'Aniversário', value: item.birthday },
+            { label: 'Natureza', value: item.natureza },
+            { label: 'Origem', value: item.origin },
+            { label: 'Natural de', value: item.natural_de },
+            { label: 'Parentesco', value: item.parentesco },
+            { label: 'Aliados', value: item.aliados },
+        ];
+
+        const detailsHtml = details
+            .filter(detail => detail.value) // Inclui apenas detalhes que têm um valor
+            .map(detail => `<p><strong>${detail.label}:</strong> ${detail.value}</p>`)
+            .join('');
+        
+        templateHtml = templateHtml.replace('{details_grid}', detailsHtml);
+    }
+
+    // Substitui todos os outros placeholders
     Object.keys(item).forEach(key => {
         const regex = new RegExp(`{${key}}`, 'g');
         let content = item[key] || '';
@@ -89,7 +111,7 @@ function renderContent(itemId) {
     });
 
     mainContentEl.innerHTML = templateHtml;
-    mainContentEl.scrollTop = 0; // Garante que o conteúdo comece do topo
+    mainContentEl.scrollTop = 0;
 }
 
 /**
