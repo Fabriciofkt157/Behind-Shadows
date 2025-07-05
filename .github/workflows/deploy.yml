@@ -55,8 +55,8 @@ jobs:
 
       # 6. Publica o conteúdo final no GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Especifica que o conteúdo a ser publicado está na pasta 'story-view'
-          publish_dir: ./story-view
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./story-view/dist
+
