@@ -1,41 +1,45 @@
-name: Build e Commit db.json
+# .github/workflows/build-db.yml
+name: Build story-view DB
 
 on:
   push:
     branches:
       - main
+    # opcional: limitar apenas a alterações em story-view/**/*.js
+    # paths:
+    #   - 'story-view/**'
 
 jobs:
-  build-and-commit:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-      # 1. Baixa o código do repositório
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      # 2. Configura o ambiente Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          persist-credentials: true  # permite push com o GITHUB_TOKEN
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'       # ou outra versão que você use
           cache: 'npm'
-          cache-dependency-path: story-view/package-lock.json
 
-      # 3. Instala as dependências e roda o build (dentro de story-view)
-      - name: Install and Build
-        run: |
-          npm install
-          node build/build.js
+      - name: Install dependencies
         working-directory: ./story-view
+        run: npm ci               # ou npm install, conforme seu package.json
 
-      # 4. Faz o commit do db.json atualizado de volta para a branch 'main'
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'Automated build: Update db.json'
-          # Especifica o arquivo a ser "commitado"
-          file_pattern: 'story-view/dist/db.json'
-          commit_user_name: 'GitHub Actions Bot'
-          commit_user_email: 'actions@github.com'
-          commit_author: 'GitHub Actions Bot <actions@github.com>'
+      - name: Run build script
+        run: node build/build.js  # gera story-view/dist/db.json
+
+      - name: Commit and push db.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add story-view/dist/db.json
+          # só comita se houver mudanças
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: atualizar db.json [skip ci]"
+            git push
+          else
+            echo "Nenhuma mudança em db.json, pulando commit."
+          fi
