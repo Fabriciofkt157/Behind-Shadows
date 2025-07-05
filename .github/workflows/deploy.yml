@@ -24,23 +24,23 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          # O caminho para o cache deve ser relativo à raiz do repositório
           cache-dependency-path: story-view/package-lock.json
 
       - name: Install dependencies
         run: npm install
-        # Define o diretório de trabalho apenas para este passo
         working-directory: ./story-view
 
       - name: Build project
-        # CORREÇÃO AQUI: O caminho para o script de build foi corrigido.
         run: node build/build.js
-        # O diretório de trabalho continua sendo ./story-view, então o caminho relativo está correto.
         working-directory: ./story-view
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Publica a pasta story-view inteira
           publish_dir: ./story-view
+          # --- SOLUÇÃO DE CACHE ---
+          # force_orphan: true -> Cria uma branch de deploy limpa, sem histórico antigo.
+          # keep_files: false -> Garante que o diretório de destino seja limpo antes do deploy.
+          force_orphan: true
+          keep_files: false
