@@ -1,6 +1,6 @@
 ---
-titulo: "Alan Dount"
-subtitulo: "Lon"
+titulo: "Alan / Lon"
+subtitulo: "Alan Dount"
 template: "character"
 icone: "fa-user"
 age: "17 anos"
