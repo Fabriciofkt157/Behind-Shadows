@@ -84,7 +84,6 @@ function buildNavMenu() {
 }
 
 function renderContent(itemId) {
-    // Se o itemId for vazio, nulo ou '#', redirecione para 'home'
     if (!itemId || itemId === '#') {
         itemId = 'home';
     }
@@ -93,7 +92,6 @@ function renderContent(itemId) {
 
     if (!item) {
         console.warn(`Tópico com id "${itemId}" não encontrado. Carregando página inicial.`);
-        // Se o tópico não for encontrado, tente carregar o 'home' como fallback
         renderContent('home'); 
         return;
     }
@@ -158,7 +156,6 @@ function initializeEventHandlers() {
             e.preventDefault();
             const itemId = target.dataset.target;
             window.location.hash = itemId;
-            // A renderização agora é tratada pelo 'hashchange'
         }
     });
 
@@ -173,7 +170,6 @@ function initializeEventHandlers() {
         }
     });
 
-    // Evento unificado para carregar conteúdo
     const loadContentFromHash = () => {
         const itemId = window.location.hash.substring(1);
         renderContent(itemId || 'home');
@@ -183,13 +179,13 @@ function initializeEventHandlers() {
     };
 
     window.addEventListener('hashchange', loadContentFromHash);
-    // Carrega o conteúdo inicial na primeira vez
     window.addEventListener('load', loadContentFromHash);
 }
 
 async function init() {
     try {
-        const response = await fetch(DB_PATH + `?v=${new Date().getTime()}`); // Cache busting
+        // *** MUDANÇA AQUI *** Adiciona um parâmetro de cache busting
+        const response = await fetch(DB_PATH + `?v=${new Date().getTime()}`);
         if (!response.ok) {
             throw new Error(`Erro ao carregar o arquivo db.json: ${response.statusText}`);
         }
