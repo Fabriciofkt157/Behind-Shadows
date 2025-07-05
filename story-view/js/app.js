@@ -62,6 +62,15 @@ function renderContent(itemId) {
         return;
     }
 
+    // Exibir horário, se houver
+    if (item.horario) {
+        const horarioDiv = document.createElement('div');
+        horarioDiv.className = 'horario-box';
+        horarioDiv.innerHTML = `<i class="fa-solid fa-clock mr-1 text-yellow-400"></i><span>${item.horario}</span>`;
+        mainContentEl.prepend(horarioDiv);
+    }
+
+
     const item = db.topics[itemId];
 
     if (!item) {
