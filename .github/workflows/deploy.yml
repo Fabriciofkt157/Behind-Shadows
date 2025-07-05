@@ -33,14 +33,14 @@ jobs:
         working-directory: ./story-view
 
       - name: Build project
-        run: node build.js
-        # Define o diretório de trabalho apenas para este passo
+        # CORREÇÃO AQUI: O caminho para o script de build foi corrigido.
+        run: node build/build.js
+        # O diretório de trabalho continua sendo ./story-view, então o caminho relativo está correto.
         working-directory: ./story-view
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # MUDANÇA CRÍTICA: Publica a pasta story-view inteira
-          # Isso garante que index.html, css/, js/ e dist/ sejam enviados.
+          # Publica a pasta story-view inteira
           publish_dir: ./story-view
