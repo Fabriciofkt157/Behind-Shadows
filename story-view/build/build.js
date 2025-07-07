@@ -30,9 +30,7 @@ const frontmatterSchema = z.object({
 function processarBlocosEspeciais(markdown) {
   const lines = markdown.split('\n');
   let result = [];
-  let currentContent = [];
-  
-  // Processa o conteúdo antes do primeiro '###'
+
   const firstHeadingIndex = lines.findIndex(line => line.match(/^###\s+.*/));
   if (firstHeadingIndex > 0) {
       result.push(lines.slice(0, firstHeadingIndex).join('\n'));
@@ -55,7 +53,6 @@ function processarBlocosEspeciais(markdown) {
   return result.join('\n');
 }
 
-
 async function processarArquivo(filePath, topicos, secaoPai = null) {
     if (!filePath.endsWith('.md')) return;
 
@@ -70,7 +67,6 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
 
     const id = path.basename(filePath, '.md');
     
-    // Adiciona o item à lista da seção pai, se aplicável
     if (secaoPai && secaoPai.items) {
       secaoPai.items.push({ id, title: data.titulo });
     }
@@ -85,7 +81,6 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     };
 }
 
-
 async function processarDiretorio(dir) {
   const secoes = [];
   const topicos = {};
@@ -94,7 +89,6 @@ async function processarDiretorio(dir) {
     const itens = await fs.readdir(currentDir);
     let secaoAtual = null;
 
-    // Primeiro, encontre e processe o _index.md para definir a seção
     const indexFile = itens.find(item => item === '_index.md');
     if (indexFile) {
       const fullPath = path.join(currentDir, indexFile);
@@ -113,13 +107,11 @@ async function processarDiretorio(dir) {
       secoes.push(secaoAtual);
     }
 
-    // Agora, processe os outros arquivos e diretórios
     for (const item of itens) {
       const fullPath = path.join(currentDir, item);
       const stat = await fs.stat(fullPath);
 
       if (stat.isDirectory()) {
-        // O ID da seção atual se torna o pai da próxima
         const proximoPaiId = secaoAtual ? secaoAtual.id : parentId;
         await walk(fullPath, proximoPaiId);
       } else if (item !== '_index.md' && item.endsWith('.md')) {
@@ -128,7 +120,6 @@ async function processarDiretorio(dir) {
     }
   }
 
-  // Processa arquivos na raiz (como home.md)
   const itensRaiz = await fs.readdir(dir);
   for (const item of itensRaiz) {
       const fullPath = path.join(dir, item);
@@ -137,8 +128,7 @@ async function processarDiretorio(dir) {
           await processarArquivo(fullPath, topicos, null);
       }
   }
-  
-  // Inicia o processo recursivo para subdiretórios
+
   for (const item of itensRaiz) {
       const fullPath = path.join(dir, item);
       const stat = await fs.stat(fullPath);
@@ -150,7 +140,6 @@ async function processarDiretorio(dir) {
   return { secoes, topicos };
 }
 
-
 async function gerarDbJson() {
   const config = await fs.readJson(configPath).catch(() => ({ siteTitle: 'Story-View' }));
   const { secoes, topicos } = await processarDiretorio(conteudoPath);
@@ -158,6 +147,7 @@ async function gerarDbJson() {
   const finalDb = {
     siteTitle: config.siteTitle || 'Behind Shadows',
     lastUpdated: new Date().toISOString(),
+    buildId: Math.random().toString(36).substring(2), // força mudança
     sections: secoes,
     topics: topicos
   };
