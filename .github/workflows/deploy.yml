@@ -1,4 +1,3 @@
-# .github/workflows/build-db.yml
 name: Build story-view DB
 
 on:
@@ -26,10 +25,20 @@ jobs:
         working-directory: ./story-view
         run: npm install
 
-      - name: Run build script
+      - name: Build db.json
         run: node story-view/build/build.js
 
-      - name: Commit and push db.json
+      - name: Verificar se db.json foi gerado
+        run: |
+          if [ -f story-view/dist/db.json ]; then
+            echo "✅ db.json foi gerado:"
+            cat story-view/dist/db.json
+          else
+            echo "❌ db.json NÃO FOI GERADO"
+            exit 1
+          fi
+
+      - name: Commit e push do db.json (se necessário)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -38,4 +47,4 @@ jobs:
             git commit -m "ci: atualizar db.json [skip ci]"
             git push
           else
-            echo "Nenhuma mudança em db.json, pulando commit."
+            echo "🟡 Nenhuma mudança detectada em db.json, pulando commit."
