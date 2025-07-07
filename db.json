@@ -1,21 +1,29 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-05T13:26:38.525Z",
+  "lastUpdated": "2025-07-07T03:22:34.690Z",
   "sections": [
     {
-      "id": "01_Personagens",
-      "title": "Personagens",
-      "icon": "fa-users",
-      "template": "character",
+      "id": "01_Prefacio",
+      "title": "Prefácio",
+      "icon": "fa-book",
+      "template": "simple",
       "parent": null,
       "items": []
     },
     {
-      "id": "01_Personagens/01_Principais",
+      "id": "01_Prefacio/01_Personagens",
+      "title": "Personagens",
+      "icon": "fa-users",
+      "template": "character",
+      "parent": "01_Prefacio",
+      "items": []
+    },
+    {
+      "id": "01_Prefacio/01_Personagens/01_Principais",
       "title": "Protagonistas",
       "icon": "fa-star",
       "template": "character",
-      "parent": "01_Personagens",
+      "parent": "01_Prefacio/01_Personagens",
       "items": [
         {
           "id": "alan",
@@ -28,11 +36,11 @@
       ]
     },
     {
-      "id": "01_Personagens/02_Secundarios_I",
+      "id": "01_Prefacio/01_Personagens/02_Secundarios_I",
       "title": "Secundários I",
       "icon": "fa-star",
       "template": "character",
-      "parent": "01_Personagens",
+      "parent": "01_Prefacio/01_Personagens",
       "items": [
         {
           "id": "deni",
@@ -47,6 +55,35 @@
           "title": "Rit"
         }
       ]
+    },
+    {
+      "id": "01_Prefacio/01_Personagens/03_Secundarios_II",
+      "title": "Secundários II",
+      "icon": "fa-star",
+      "template": "character",
+      "parent": "01_Prefacio/01_Personagens",
+      "items": [
+        {
+          "id": "amanda",
+          "title": "Mands / Mandinha"
+        },
+        {
+          "id": "jhonatas",
+          "title": "Jhonata / loiro / John"
+        },
+        {
+          "id": "otto",
+          "title": "Cenoura"
+        }
+      ]
+    },
+    {
+      "id": "01_Prefacio/02_Mundo",
+      "title": "O Mundo do Jogo",
+      "icon": "fa-cog",
+      "template": "simple",
+      "parent": "01_Prefacio",
+      "items": []
     }
   ],
   "topics": {
@@ -153,6 +190,60 @@
       "subtitle": "Ritain Mourk",
       "icon": "fa-user",
       "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Rit fugiu com Deni para Avalest (cidade principal) após um ataque a antiga vila onde moravam (na época, Deni tinha 3 anos e Rit 10), nele, seus amigos e familiares foram mortos.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Rit é uma pessoa emocionalmente forte, raramente se deixa abalar por qualquer situação Ele não é excessivamente alegre, nem propenso à melancolia; em vez disso, Rit sente exatamente o que o momento exige. Sua empatia é uma característica notável, permitindo que ele se sensibilize profundamente com as dificuldades dos outros, o que o leva frequentemente a ajudar aqueles que o cercam</p>\n</div>"
+    },
+    "amanda": {
+      "titulo": "Mands / Mandinha",
+      "subtitulo": "Amanda Mullef",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "22 anos",
+      "birthday": "19/05",
+      "sexo": "Masculino",
+      "natureza": "Humano (renascido)",
+      "origin": "Eards (realidade)",
+      "natural_de": "Eards (realidade)",
+      "parentesco": "Otto e Jhonatas (melhores amigos)",
+      "aliados": "Otto e Jhonatas. Após o timeskip, Alan e Mike também se tornam aliados.",
+      "title": "Mands / Mandinha",
+      "subtitle": "Amanda Mullef",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Jhonata, Amanda e Otto morreram ao mesmo tempo e foram juntos pro Novo Mundo. Nele, eles se juntaram ao Império de Avalest.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Sorridente a maior parte do tempo, pouco tímida.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Amanda tem uma &quot;quedinha&quot; pelo Alan, mas prefere não rivalizar com Raika.</p>\n</div>"
+    },
+    "jhonatas": {
+      "titulo": "Jhonata / loiro / John",
+      "subtitulo": "Jhonatas Thaif",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "21 anos",
+      "birthday": "12/01",
+      "sexo": "Masculino",
+      "natureza": "Humano (renascido)",
+      "origin": "Eards (realidade)",
+      "natural_de": "Eards (realidade)",
+      "parentesco": "Otto e Amanda (melhores amigos)",
+      "aliados": "Otto e Amanda. Após o timeskip, Alan e Mike também se tornam aliados.",
+      "title": "Jhonata / loiro / John",
+      "subtitle": "Jhonatas Thaif",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Jhonata, Amanda e Otto morreram ao mesmo tempo e foram juntos pro Novo Mundo. Nele, eles se juntaram ao Império de Avalest.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Extremamente amigável com seus amigos e &quot;pavio curto&quot; com aqueles que estão no seu caminho.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Eventualmente Otto e Amanda chamam Jhonatas de loiro. Mike o conhece como Jhonata (sem o s) — ele entendeu assim e acaba confundindo a maior parte do tempo. Alan o chama de John por pura preguiça.</p>\n</div>"
+    },
+    "otto": {
+      "titulo": "Cenoura",
+      "subtitulo": "Otto Wern",
+      "template": "character",
+      "icone": "fa-user",
+      "age": "24 anos",
+      "birthday": "21/07",
+      "sexo": "Masculino",
+      "natureza": "Humano (renascido)",
+      "origin": "Eards (realidade)",
+      "natural_de": "Eards (realidade)",
+      "parentesco": "Jhonatas e Amanda (melhores amigos)",
+      "aliados": "Jhonatas e Amanda. Após o timeskip, Alan e Mike também se tornam aliados.",
+      "title": "Cenoura",
+      "subtitle": "Otto Wern",
+      "icon": "fa-user",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Jhonata, Amanda e Otto morreram ao mesmo tempo e foram juntos pro Novo Mundo. Nele, eles se juntaram ao Império de Avalest.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Tranquilo e &quot;desligado&quot; a maior parte do tempo. Quando cercado por muitas pessoas que não conhece, tende a ficar retraído e tímido.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Jhonatas e Amanda o chamam de Cenoura devido ao seu cabelo ruivo — há algumas cenas reforçando isso, como piadas e seu aniversário onde recebe uma roupa laranja para combinar com o apelido. De início, Alan acha que seu nome é Otavio e Otto é seu apelido, pouco tempo depois, Alan o chama de Cenoura.</p>\n</div>"
     }
   }
 }
