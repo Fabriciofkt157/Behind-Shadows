@@ -5,9 +5,6 @@ on:
   push:
     branches:
       - main
-    # opcional: limitar apenas a alterações em story-view
-    # paths:
-    #   - 'story-view/**'
 
 jobs:
   build:
@@ -23,8 +20,9 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
+          cache-dependency-path: story-view/package-lock.json
 
-      - name: Install dependencies (no lockfile)
+      - name: Install dependencies
         working-directory: ./story-view
         run: npm install
 
