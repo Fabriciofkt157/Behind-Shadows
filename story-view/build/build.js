@@ -3,9 +3,14 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import { z } from 'zod';
+import { fileURLToPath } from 'url';
 
-const conteudoPath = path.resolve('conteudo');
-const distPath = path.resolve('dist');
+// Corrige __dirname para ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const conteudoPath = path.resolve(__dirname, '../conteudo');
+const distPath = path.resolve(__dirname, '../dist');
 const configPath = path.join(conteudoPath, 'config.json');
 
 // Schema com novos campos personalizados
@@ -30,7 +35,7 @@ const frontmatterSchema = z.object({
 function processarBlocosEspeciais(markdown) {
   const lines = markdown.split('\n');
   let result = [];
-
+  
   const firstHeadingIndex = lines.findIndex(line => line.match(/^###\s+.*/));
   if (firstHeadingIndex > 0) {
       result.push(lines.slice(0, firstHeadingIndex).join('\n'));
@@ -147,7 +152,6 @@ async function gerarDbJson() {
   const finalDb = {
     siteTitle: config.siteTitle || 'Behind Shadows',
     lastUpdated: new Date().toISOString(),
-    buildId: Math.random().toString(36).substring(2), // força mudança
     sections: secoes,
     topics: topicos
   };
