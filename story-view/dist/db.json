@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-07T03:22:34.690Z",
+  "lastUpdated": "2025-07-07T22:09:54.113Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -12,7 +12,7 @@
     },
     {
       "id": "01_Prefacio/01_Personagens",
-      "title": "Personagens",
+      "title": "Teste",
       "icon": "fa-users",
       "template": "character",
       "parent": "01_Prefacio",
@@ -58,7 +58,7 @@
     },
     {
       "id": "01_Prefacio/01_Personagens/03_Secundarios_II",
-      "title": "Secundários II",
+      "title": "Secundários I",
       "icon": "fa-star",
       "template": "character",
       "parent": "01_Prefacio/01_Personagens",
@@ -80,7 +80,7 @@
     {
       "id": "01_Prefacio/02_Mundo",
       "title": "O Mundo do Jogo",
-      "icon": "fa-cog",
+      "icon": "world",
       "template": "simple",
       "parent": "01_Prefacio",
       "items": []
