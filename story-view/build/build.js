@@ -9,9 +9,10 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const conteudoPath = path.resolve(__dirname, '/story-view/conteudo/');
-const distPath = path.resolve(__dirname, '/story-view/dist/');
+const conteudoPath = path.resolve(__dirname, '../conteudo');
+const distPath = path.resolve(__dirname, '../dist');
 const configPath = path.join(conteudoPath, 'config.json');
+
 
 // Schema com novos campos personalizados
 const frontmatterSchema = z.object({
