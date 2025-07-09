@@ -1,84 +1,89 @@
 ---
-titulo: Realidades e Fragmentação
-subtitulo: O princípio do renascimento e as sete realidades
+titulo: O Mundo do Jogo
 icone: fa-globe
 template: simple
 ---
 
+### O multiverso
+
+- O mundo do jogo existe em um multiverso.
+  -> Nele existem 7 realidades e um "verso" que agrupa todas elas no mesmo plano.
+     -> O Homem Misterioso habita nesse plano.
+     -> Algumas vezes é referenciado como "Dimensão Entre os Reinos".
+
+---
+
 ### Natureza dos seres vivos
 
-Todos os seres considerados "vivos" habitam em uma ou mais realidades.
-
-- A definição de "vivo" difere da usual: é todo ser capaz de assumir forma física estavelmente, ou seja, pode ser ferido sem perder sua forma.
-- Os seres são formados pela junção de **matéria orgânica** e **energia espiritual (alma)**. A proporção necessária para assumir forma varia entre realidades.
-  - Quanto maior a energia espiritual, maior a afinidade com magia.
-  - Quanto maior a matéria orgânica, maior a resistência e força física.
-- Quando um ser vivo é fragmentado pelo **Homem Misterioso**, sua integridade é reformulada conforme a realidade de destino.
-  - A energia espiritual **não é alterável**. Se um ser tem 2% de energia, ele continuará com isso. Para ajustar a proporção, apenas matéria orgânica é adicionada.
-- Apenas a **energia espiritual** pode ser fragmentada. O corpo físico permanece no mundo original e se decompõe normalmente.
-
----
-
-### As Sete Realidades
-
-#### Eards
-- Realidade primária de Alan e Mike (Terra).
-- Proporção: **98% matéria orgânica / 2% energia espiritual**.
-- Fragmentados não conseguem retornar a ela devido à baixa afinidade energética.
-
-#### Median
-- Realidade onde Mike e Alan renascem após morrerem em Eards.
-- Proporção: **50% / 50%**.
-- Reino inicial da história: **Avalest**.
-
-#### Aquins
-- Realidade construída a partir da água como elemento central.
-
-#### Submundo
-- Destino dos fragmentos de almas corrompidas.
-- Lar de **Onis** e **demônios**.
-- Possui 5 partições, com:
-  - Economia própria
-  - Civilizações divididas por nível de poder
-  - Classes sociais
-- Se assemelha à vida em Eards (favelas, trabalho, prostituição...).
-
-#### Nature
-- Realidade dominada por **plantas** e com alta energia vital.
-- Alvo constante do **Exército das Sombras**.
-- Bruxas e elfos habitam este mundo.
-
-#### Assolyam
-- Realidade **cyberpunk**, movida por máquinas a vapor.
-- Dominada pelas Sombras, usada como base armamentista.
-
-#### Neutor (ou Dracônico)
-- Similar a Median, mas com **dragões** como raça dominante.
-- Altamente montanhosa, altitude inóspita para humanos.
-- No gameplay, **dungeons** são comuns aqui.
+- Todos os seres considerados "vivos" habitam em uma ou mais realidades. 
+  -> A definição de "vivo" difere da definição usual: vivo é todo ser capaz de assumir forma física estavelmente, ou seja, que pode ser ferido sem perder sua forma.
+  -> Os seres são formados pela junção de matéria orgânica e energia espiritual (alma). A proporção de um para o outro necessária para assumir forma varia de acordo com a realidade.
+     -> As diferenças de proporção determinam as capacidades das entidades existentes entre os reinos.
+     -> Quanto maior a energia espiritual, maior a afinidade com magia.
+     -> Quanto maior a matéria orgânica, maior resistência e força física.
+  -> Quando um ser vivo é fragmentado pelo Homem Misterioso, sua integridade é reformulada para se adequar à realidade de destino.
+     -> A energia não pode ser alterada. Exemplo: 2% não vira 20%.
+     -> Ao invés disso, matéria orgânica é adicionada para compensar.
+  -> Apenas a energia espiritual pode ser fragmentada. O corpo físico permanece no mundo original e se decompõe normalmente.
 
 ---
 
-### Fragmentação e Renascimento
+### As 7 realidades
 
-- As realidades sustentam o ciclo de renascimento: se um ser morre em uma, pode continuar em outra se sua alma for fragmentada e parte dela permanecer na realidade da morte.
-- A alma **não se fragmenta sozinha** — é necessário um agente externo.
-- Fragmentar uma alma:
-  - Divide corpo físico e mental.
-  - Provoca **alucinações, perda de memória, fraqueza** e **baixa vitalidade**.
-- Um fragmento **deve conter no mínimo 12,5% da alma original**.
-  - Fragmentos menores são instáveis e não assumem forma — a menos que estejam corrompidos por uma Sombra.
+* Eards: realidade primária de Alan e Mike, a Terra como a conhecemos.
+  -> Um dos fatores que impede os fragmentados de Eards voltarem: a proporção é 98% matéria orgânica para 2% de energia vital.
+
+* Median: realidade onde Mike e Alan foram enviados após a morte na Terra.
+  -> A proporção para os seres vivos é 50/50.
+  -> Avalest é o reino onde a história se inicia.
+
+* Aquins: realidade onde o mundo foi construído tendo a água como princípio.
+
+* Submundo: realidade para onde o fragmento da alma de um corrompido é levado; Onis e demônios habitam aqui.
+  -> Possui 5 partições com características semelhantes:
+     -> Economia própria;
+     -> Civilizações divididas por nível de poder;
+     -> Classes sociais;
+  -> De modo geral, se assemelha à vida em Eards (favelas, trabalho, prostituição, ...).
+
+* Nature: realidade onde plantas são a raça dominante. Possui muita energia vital.
+  -> É alvo do Exército das Sombras.
+  -> Bruxas e elfos habitam esse mundo.
+
+* Assolyam: realidade cyberpunk construída com base em máquinas a vapor. Robôs habitam aqui.
+  -> Essa realidade foi totalmente tomada pelas Sombras.
+  -> É usada como base armamentista pelo Exército das Sombras.
+
+* Neutor (ou Dracônico): semelhante a Median, mas a raça dominante são dragões.
+  -> É um mundo montanhoso, muito acima da altitude habitável para humanos.
+  -> No gameplay, dungeons são comuns aqui.
 
 ---
 
-### Exemplo de Renascimento
+### Princípio do renascimento
 
-- **Mike e Alan** foram fragmentados pelo **Homem Misterioso** ao morrerem em Eards.
-  - Seus corpos mortos permaneceram em Eards.
-  - Os fragmentos renasceram em **Median**.
-- Quando **Alan é corrompido**, sua alma é fragmentada novamente:
-  - Um fragmento vira sua **Sombra**, que permanece em Median.
+- As realidades sustentam o ciclo de renascimento.
+  -> Se uma entidade morrer em uma realidade, ela pode continuar em outra se sua alma for fragmentada e um fragmento permanecer no local da morte.
+- A alma não pode se fragmentar sozinha; alguém precisa realizar o processo.
+- Ao ser fragmentada, a alma é dividida em duas partes:
+  -> A integridade física e mental é comprometida.
+  -> O ser pode sofrer alucinações, perda grave de memória, fraqueza e baixa vitalidade.
+- Um fragmento não pode representar menos que 12,5% da alma original.
+  -> Fragmentos menores são frágeis e não mantêm forma.
+  -> Exceção: se estiverem corrompidos por uma Sombra, podem manter-se ativos.
+
+---
+
+### Exemplos
+
+- Mike e Alan foram fragmentados pelo Homem Misterioso ao morrerem em Eards.
+  -> Seus corpos mortos permaneceram em Eards.
+  -> Seus fragmentos ativos surgiram em Median.
+
+- Quando Alan é corrompido:
+  -> Sua alma é fragmentada novamente.
+  -> O novo fragmento é sua Sombra, que permanece em Median.
+
 - Após ser parcialmente restaurado por Mike:
-  - Sua alma é **reconstruída**, mas ainda **permanece fragmentada**.
-  - Alan pode controlar ambos os fragmentos, mas **eles não se comunicam entre si**.
-
+  -> Alan tem sua alma reconstruída, mas ainda fragmentada.
+  -> Ele controla os dois fragmentos, mas eles não se comunicam entre si.
