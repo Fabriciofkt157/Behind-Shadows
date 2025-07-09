@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-09T01:15:01.644Z",
+  "lastUpdated": "2025-07-09T01:19:21.432Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -83,7 +83,12 @@
       "icon": "world",
       "template": "simple",
       "parent": "01_Prefacio",
-      "items": []
+      "items": [
+        {
+          "id": "realidades",
+          "title": "Realidades e Fragmentação"
+        }
+      ]
     }
   ],
   "topics": {
@@ -244,6 +249,16 @@
       "subtitle": "Otto Wern",
       "icon": "fa-user",
       "contentHtml": "\n<div class=\"bloco\"><h3>Sobre</h3>\n<p>Jhonata, Amanda e Otto morreram ao mesmo tempo e foram juntos pro Novo Mundo. Nele, eles se juntaram ao Império de Avalest.</p>\n</div>\n<div class=\"bloco\"><h3>Personalidade</h3>\n<p>Tranquilo e &quot;desligado&quot; a maior parte do tempo. Quando cercado por muitas pessoas que não conhece, tende a ficar retraído e tímido.</p>\n</div>\n<div class=\"bloco\"><h3>Curiosidade</h3>\n<p>Jhonatas e Amanda o chamam de Cenoura devido ao seu cabelo ruivo — há algumas cenas reforçando isso, como piadas e seu aniversário onde recebe uma roupa laranja para combinar com o apelido. De início, Alan acha que seu nome é Otavio e Otto é seu apelido, pouco tempo depois, Alan o chama de Cenoura.</p>\n</div>"
+    },
+    "realidades": {
+      "titulo": "Realidades e Fragmentação",
+      "subtitulo": "O princípio do renascimento e as sete realidades",
+      "icone": "fa-globe",
+      "template": "simple",
+      "title": "Realidades e Fragmentação",
+      "subtitle": "O princípio do renascimento e as sete realidades",
+      "icon": "fa-globe",
+      "contentHtml": "\n<div class=\"bloco\"><h3>Natureza dos seres vivos</h3>\n<p>Todos os seres considerados &quot;vivos&quot; habitam em uma ou mais realidades.</p>\n<ul>\n<li>A definição de &quot;vivo&quot; difere da usual: é todo ser capaz de assumir forma física estavelmente, ou seja, pode ser ferido sem perder sua forma.</li>\n<li>Os seres são formados pela junção de <strong>matéria orgânica</strong> e <strong>energia espiritual (alma)</strong>. A proporção necessária para assumir forma varia entre realidades.<ul>\n<li>Quanto maior a energia espiritual, maior a afinidade com magia.</li>\n<li>Quanto maior a matéria orgânica, maior a resistência e força física.</li>\n</ul>\n</li>\n<li>Quando um ser vivo é fragmentado pelo <strong>Homem Misterioso</strong>, sua integridade é reformulada conforme a realidade de destino.<ul>\n<li>A energia espiritual <strong>não é alterável</strong>. Se um ser tem 2% de energia, ele continuará com isso. Para ajustar a proporção, apenas matéria orgânica é adicionada.</li>\n</ul>\n</li>\n<li>Apenas a <strong>energia espiritual</strong> pode ser fragmentada. O corpo físico permanece no mundo original e se decompõe normalmente.</li>\n</ul>\n<hr>\n</div>\n<div class=\"bloco\"><h3>As Sete Realidades</h3>\n<h4>Eards</h4>\n<ul>\n<li>Realidade primária de Alan e Mike (Terra).</li>\n<li>Proporção: <strong>98% matéria orgânica / 2% energia espiritual</strong>.</li>\n<li>Fragmentados não conseguem retornar a ela devido à baixa afinidade energética.</li>\n</ul>\n<h4>Median</h4>\n<ul>\n<li>Realidade onde Mike e Alan renascem após morrerem em Eards.</li>\n<li>Proporção: <strong>50% / 50%</strong>.</li>\n<li>Reino inicial da história: <strong>Avalest</strong>.</li>\n</ul>\n<h4>Aquins</h4>\n<ul>\n<li>Realidade construída a partir da água como elemento central.</li>\n</ul>\n<h4>Submundo</h4>\n<ul>\n<li>Destino dos fragmentos de almas corrompidas.</li>\n<li>Lar de <strong>Onis</strong> e <strong>demônios</strong>.</li>\n<li>Possui 5 partições, com:<ul>\n<li>Economia própria</li>\n<li>Civilizações divididas por nível de poder</li>\n<li>Classes sociais</li>\n</ul>\n</li>\n<li>Se assemelha à vida em Eards (favelas, trabalho, prostituição...).</li>\n</ul>\n<h4>Nature</h4>\n<ul>\n<li>Realidade dominada por <strong>plantas</strong> e com alta energia vital.</li>\n<li>Alvo constante do <strong>Exército das Sombras</strong>.</li>\n<li>Bruxas e elfos habitam este mundo.</li>\n</ul>\n<h4>Assolyam</h4>\n<ul>\n<li>Realidade <strong>cyberpunk</strong>, movida por máquinas a vapor.</li>\n<li>Dominada pelas Sombras, usada como base armamentista.</li>\n</ul>\n<h4>Neutor (ou Dracônico)</h4>\n<ul>\n<li>Similar a Median, mas com <strong>dragões</strong> como raça dominante.</li>\n<li>Altamente montanhosa, altitude inóspita para humanos.</li>\n<li>No gameplay, <strong>dungeons</strong> são comuns aqui.</li>\n</ul>\n<hr>\n</div>\n<div class=\"bloco\"><h3>Fragmentação e Renascimento</h3>\n<ul>\n<li>As realidades sustentam o ciclo de renascimento: se um ser morre em uma, pode continuar em outra se sua alma for fragmentada e parte dela permanecer na realidade da morte.</li>\n<li>A alma <strong>não se fragmenta sozinha</strong> — é necessário um agente externo.</li>\n<li>Fragmentar uma alma:<ul>\n<li>Divide corpo físico e mental.</li>\n<li>Provoca <strong>alucinações, perda de memória, fraqueza</strong> e <strong>baixa vitalidade</strong>.</li>\n</ul>\n</li>\n<li>Um fragmento <strong>deve conter no mínimo 12,5% da alma original</strong>.<ul>\n<li>Fragmentos menores são instáveis e não assumem forma — a menos que estejam corrompidos por uma Sombra.</li>\n</ul>\n</li>\n</ul>\n<hr>\n</div>\n<div class=\"bloco\"><h3>Exemplo de Renascimento</h3>\n<ul>\n<li><strong>Mike e Alan</strong> foram fragmentados pelo <strong>Homem Misterioso</strong> ao morrerem em Eards.<ul>\n<li>Seus corpos mortos permaneceram em Eards.</li>\n<li>Os fragmentos renasceram em <strong>Median</strong>.</li>\n</ul>\n</li>\n<li>Quando <strong>Alan é corrompido</strong>, sua alma é fragmentada novamente:<ul>\n<li>Um fragmento vira sua <strong>Sombra</strong>, que permanece em Median.</li>\n</ul>\n</li>\n<li>Após ser parcialmente restaurado por Mike:<ul>\n<li>Sua alma é <strong>reconstruída</strong>, mas ainda <strong>permanece fragmentada</strong>.</li>\n<li>Alan pode controlar ambos os fragmentos, mas <strong>eles não se comunicam entre si</strong>.</li>\n</ul>\n</li>\n</ul>\n</div>"
     }
   }
 }
