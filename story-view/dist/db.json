@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-09T01:19:21.432Z",
+  "lastUpdated": "2025-07-09T01:25:25.645Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -80,7 +80,7 @@
     {
       "id": "01_Prefacio/02_Mundo",
       "title": "O Mundo do Jogo",
-      "icon": "world",
+      "icon": "fa-globe",
       "template": "simple",
       "parent": "01_Prefacio",
       "items": [
