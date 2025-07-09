@@ -105,3 +105,31 @@ body {
 .horario-box i {
   color: #ffca28;
 }
+
+.nav-section {
+  position: relative;
+}
+
+.nav-toggle-btn {
+  display: none;
+  position: absolute;
+  left: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #94a3b8; /* text-stone-400 */
+  transition: transform 0.2s;
+}
+
+.nav-section:hover .nav-toggle-btn {
+  display: inline-block;
+}
+
+.nav-collapsed > ul,
+.nav-collapsed > div {
+  display: none;
+}
+
+.nav-toggle-btn.rotate {
+  transform: rotate(-90deg);
+}
+
