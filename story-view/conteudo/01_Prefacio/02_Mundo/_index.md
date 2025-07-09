@@ -1,5 +1,5 @@
 ---
 titulo: "O Mundo do Jogo"
-icone: "world"
+icone: "fa-globe"
 template: "simple"
 ---
