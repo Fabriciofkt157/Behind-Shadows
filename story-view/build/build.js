@@ -35,26 +35,34 @@ const frontmatterSchema = z.object({
 // Suporte a blocos internos com ### Título
 function processarBlocosEspeciais(markdown) {
   const lines = markdown.split('\n');
-  let result = [];
-  
-  const firstHeadingIndex = lines.findIndex(line => line.match(/^###\s+.*/));
-  if (firstHeadingIndex > 0) {
-      result.push(lines.slice(0, firstHeadingIndex).join('\n'));
-  } else if (firstHeadingIndex === -1) {
-      result.push(lines.join('\n'));
-      return marked.parse(result.join(''));
+  const result = [];
+  let insideBulletBlock = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    if (line.startsWith('* ')) {
+      if (!insideBulletBlock) {
+        result.push('<div class="bullet-block">');
+        insideBulletBlock = true;
+      }
+      const content = line.slice(2).trim();
+      result.push(`<div class="bullet-item">• ${content}</div>`);
+    } else if (line.startsWith('->')) {
+      const content = line.replace(/^->\s*/, '');
+      result.push(`<div class="sub-bullet"><span class="sub-line">|--&gt;</span> ${content}</div>`);
+    } else {
+      if (insideBulletBlock) {
+        result.push('</div>');
+        insideBulletBlock = false;
+      }
+      result.push(marked.parse(line));
+    }
   }
 
-  const contentAfterFirstHeading = lines.slice(firstHeadingIndex).join('\n');
-  const blocks = contentAfterFirstHeading.split(/(?=^###\s+.*$)/m);
-
-  blocks.forEach(block => {
-      if (block.trim() === '') return;
-      const blockLines = block.trim().split('\n');
-      const title = blockLines[0].replace(/^###\s+/, '').trim();
-      const content = blockLines.slice(1).join('\n');
-      result.push(`<div class="bloco"><h3>${title}</h3>\n${marked.parse(content)}</div>`);
-  });
+  if (insideBulletBlock) {
+    result.push('</div>');
+  }
 
   return result.join('\n');
 }
