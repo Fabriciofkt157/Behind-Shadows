@@ -153,11 +153,27 @@ body {
 }
 
 .bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 600;
-  color: #7dd3fc; /* sky-300 */
-  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #a78bfa; /* violet-400 */
+  background-color: rgba(126, 34, 206, 0.1); /* roxo translúcido */
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.25rem;
-  position: relative;
+  border-left: 4px solid #8b5cf6; /* violeta um pouco mais escura */
+}
+
+.bullet-item::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #8b5cf6;
+  border-radius: 9999px;
+  flex-shrink: 0;
 }
 
 .sub-bullet {
