@@ -11,15 +11,27 @@ const sidebarEl = document.getElementById('sidebar');
 
 function renderNavSection(section, container) {
     const sectionDiv = document.createElement('div');
-    sectionDiv.className = section.parent ? 'ml-4 mt-2' : 'mt-4'; 
+    sectionDiv.className = `nav-section ${section.parent ? 'ml-4 mt-2' : 'mt-4'} relative`;
 
     if (section.title) {
         const titleH3 = document.createElement('h3');
-        titleH3.className = 'text-xs font-title text-stone-500 uppercase tracking-wider flex items-center px-3';
-        titleH3.innerHTML = `<i class="fas ${section.icon || 'fa-book'} fa-fw mr-3"></i><span>${section.title}</span>`;
+        titleH3.className = 'text-xs font-title text-stone-500 uppercase tracking-wider flex items-center px-3 relative';
+        
+        const toggleBtn = document.createElement('span');
+        toggleBtn.className = 'nav-toggle-btn absolute left-[-12px]';
+        toggleBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+        toggleBtn.title = 'Mostrar/Ocultar';
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            sectionDiv.classList.toggle('nav-collapsed');
+            toggleBtn.classList.toggle('rotate');
+        });
+
+        titleH3.appendChild(toggleBtn);
+        titleH3.innerHTML += `<i class="fas ${section.icon || 'fa-book'} fa-fw mr-3"></i><span>${section.title}</span>`;
         sectionDiv.appendChild(titleH3);
     }
-    
+
     if (section.items && section.items.length > 0) {
         const itemListUl = document.createElement('ul');
         itemListUl.className = 'space-y-1 mt-1 ml-5 border-l border-stone-700';
