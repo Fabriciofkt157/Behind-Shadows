@@ -5,7 +5,6 @@ import { marked } from 'marked';
 import { z } from 'zod';
 import { fileURLToPath } from 'url';
 
-// Corrige __dirname para ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -14,7 +13,6 @@ const distPath = path.resolve(__dirname, '../dist');
 const configPath = path.join(conteudoPath, 'config.json');
 
 
-// Schema com novos campos personalizados
 const frontmatterSchema = z.object({
   titulo: z.string(),
   subtitulo: z.string().optional(),
