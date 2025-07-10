@@ -46,6 +46,14 @@ function processarBlocosEspeciais(markdown) {
       }
       const content = line.slice(2).trim();
       result.push(`<div class="bullet-item">${marked.parseInline(content)}</div>`);
+    } else if (line.startsWith('-->')) {
+      const content = line.replace(/^-->\s*/, '');
+      result.push(`
+        <div class="sub-bullet-tree">
+          <div class="branch-line"></div>
+          <div class="branch-content">${marked.parseInline(content)}</div>
+        </div>
+      `);
     } else if (line.startsWith('->')) {
       const content = line.replace(/^->\s*/, '');
       result.push(`
@@ -69,6 +77,7 @@ function processarBlocosEspeciais(markdown) {
 
   return result.join('\n');
 }
+
 
 
 
