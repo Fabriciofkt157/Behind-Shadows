@@ -125,6 +125,7 @@ function renderContent(itemId) {
     }
 
     let templateHtml = templateContainer.innerHTML;
+
     if (templateName === 'character') {
         const details = [
             { label: 'Idade', value: item.age },
@@ -143,6 +144,7 @@ function renderContent(itemId) {
         templateHtml = templateHtml.replace('{details_grid}', detailsHtml);
     }
 
+    // Substitui todos os placeholders {chave} pelo valor correspondente do item
     Object.keys(item).forEach(key => {
         const regex = new RegExp(`{${key}}`, 'g');
         let content = item[key] || '';
@@ -163,6 +165,7 @@ function renderContent(itemId) {
         horarioBox.style.display = 'none';
     }
 }
+
 
 function initializeEventHandlers() {
     const sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
