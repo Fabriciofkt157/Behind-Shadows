@@ -45,13 +45,13 @@ function processarBlocosEspeciais(markdown) {
         insideBulletBlock = true;
       }
       const content = line.slice(2).trim();
-      result.push(`<div class="bullet-item">${content}</div>`);
+      result.push(`<div class="bullet-item">${marked.parseInline(content)}</div>`);
     } else if (line.startsWith('->')) {
       const content = line.replace(/^->\s*/, '');
       result.push(`
         <div class="sub-bullet sub-bullet-tree">
           <span class="tree-line"></span>
-          <span>${content}</span>
+          <span>${marked.parseInline(content)}</span>
         </div>
       `);
     } else {
@@ -69,6 +69,7 @@ function processarBlocosEspeciais(markdown) {
 
   return result.join('\n');
 }
+
 
 
 async function processarArquivo(filePath, topicos, secaoPai = null) {
