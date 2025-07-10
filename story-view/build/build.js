@@ -45,10 +45,15 @@ function processarBlocosEspeciais(markdown) {
         insideBulletBlock = true;
       }
       const content = line.slice(2).trim();
-      result.push(`<div class="bullet-item">• ${content}</div>`);
+      result.push(`<div class="bullet-item">${content}</div>`);
     } else if (line.startsWith('->')) {
       const content = line.replace(/^->\s*/, '');
-      result.push(`<div class="sub-bullet"><span class="sub-line">|--&gt;</span> ${content}</div>`);
+      result.push(`
+        <div class="sub-bullet sub-bullet-tree">
+          <span class="tree-line"></span>
+          <span>${content}</span>
+        </div>
+      `);
     } else {
       if (insideBulletBlock) {
         result.push('</div>');
@@ -64,6 +69,7 @@ function processarBlocosEspeciais(markdown) {
 
   return result.join('\n');
 }
+
 
 async function processarArquivo(filePath, topicos, secaoPai = null) {
     if (!filePath.endsWith('.md')) return;
