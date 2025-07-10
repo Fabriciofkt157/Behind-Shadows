@@ -1,11 +1,20 @@
+/* ============================
+   RESET E BASE DO LAYOUT
+   ============================ */
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1c1917;
 }
 
+/* Fonte especial para títulos */
 .font-title {
   font-family: 'MedievalSharp', cursive;
 }
+
+/* ============================
+   ESTILIZAÇÃO DA SCROLLBAR
+   ============================ */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -24,14 +33,28 @@ body {
   background: #78716c;
 }
 
+/* ============================
+   ANIMAÇÕES
+   ============================ */
+
 .content-fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* ============================
+   SIDEBAR E RESPONSIVIDADE
+   ============================ */
 
 #sidebar-toggle-btn {
   display: none;
@@ -56,9 +79,11 @@ body {
   }
 }
 
-/* --- ESTILOS PARA OS BLOCOS DE CONTEÚDO (VERSÃO REFORÇADA) --- */
+/* ============================
+   BLOCOS DE CONTEÚDO PRINCIPAIS
+   ============================ */
 
-/* Seleciona qualquer elemento que tenha a classe 'prose' e estiliza o .bloco dentro dele */
+/* Aplica espaçamentos nos blocos dentro de um container com classe prose */
 [class~="prose"] .bloco {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -72,20 +97,21 @@ body {
   margin-bottom: 0;
 }
 
-/*
-  Força a estilização do h3 dentro de .bloco para sobrescrever o Tailwind.
-  Usamos !important para garantir a prioridade.
-*/
+/* Estilo reforçado para títulos h3 dentro de blocos para sobrescrever Tailwind */
 [class~="prose"] .bloco > h3 {
   font-family: 'MedievalSharp', cursive !important;
   font-size: 1.5rem !important;
   line-height: 2rem !important;
-  color: #bae6fd !important; /* text-sky-200 */
+  color: #bae6fd !important; /* equivalente a text-sky-200 */
   border-bottom: 2px solid rgba(14, 165, 233, 0.3) !important;
   padding-bottom: 0.5rem !important;
   margin-top: 0 !important;
   margin-bottom: 1rem !important;
 }
+
+/* ============================
+   CAIXA DE HORÁRIO / METADADOS
+   ============================ */
 
 .horario-box {
   position: absolute;
@@ -106,6 +132,10 @@ body {
   color: #ffca28;
 }
 
+/* ============================
+   NAVEGAÇÃO: SEÇÕES E TOGGLE
+   ============================ */
+
 .nav-section {
   position: relative;
 }
@@ -124,14 +154,20 @@ body {
   display: inline-block;
 }
 
+/* Esconde listas e conteúdos quando seção está recolhida */
 .nav-collapsed > ul,
 .nav-collapsed > div {
   display: none;
 }
 
+/* Ícone de toggle rotacionado quando ativo */
 .nav-toggle-btn.rotate {
   transform: rotate(-90deg);
 }
+
+/* ============================
+   BLOCOS DE LISTAS COM MARCAÇÃO PERSONALIZADA
+   ============================ */
 
 .bullet-block {
   margin: 1.5rem 0;
@@ -150,6 +186,7 @@ body {
   position: relative;
 }
 
+/* Ponto amarelo antes de cada bullet */
 .bullet-item::before {
   content: '•';
   color: #facc15;
@@ -158,6 +195,10 @@ body {
   left: -1rem;
   top: 0;
 }
+
+/* ============================
+   SUB-BULLETS (NÍVEL 2)
+   ============================ */
 
 .sub-bullet {
   display: flex;
@@ -170,11 +211,16 @@ body {
   font-weight: 400;
 }
 
+/* Linha estilizada com monospace para setinha */
 .sub-line {
   color: #38bdf8; /* sky-400 */
   font-family: monospace;
   flex-shrink: 0;
 }
+
+/* ============================
+   ÁRVORE DE SUB-BULLETS (NÍVEL 3+)
+   ============================ */
 
 .sub-bullet-tree {
   display: flex;
@@ -184,17 +230,30 @@ body {
   position: relative;
 }
 
+/* Linha vertical da árvore */
 .branch-line {
   width: 12px;
   height: 1.25em;
   border-left: 2px solid rgba(203, 213, 225, 0.15); /* slate-300 com opacidade baixa */
   margin-top: 0.25em;
   flex-shrink: 0;
+  position: relative;
 }
 
+/* Linha horizontal que conecta o traço vertical ao texto */
+.branch-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em; /* centraliza verticalmente */
+  width: 1rem;
+  height: 1px;
+  background-color: #3f3f46; /* gray-700 leve e discreto */
+}
+
+/* Conteúdo do ramo */
 .branch-content {
   color: #cbd5e1; /* slate-300 */
   font-size: 0.95rem;
   line-height: 1.4rem;
 }
-
