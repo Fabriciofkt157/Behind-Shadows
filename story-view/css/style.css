@@ -257,3 +257,40 @@ body {
   font-size: 0.95rem;
   line-height: 1.4rem;
 }
+
+/* ============================
+   SUB-SUB-BULLETS (NÍVEL 3: -->)
+   ============================ */
+
+.sub-bullet-tree {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.branch-line {
+  width: 12px;
+  height: 1.25em;
+  border-left: 2px solid rgba(203, 213, 225, 0.15);
+  margin-top: 0.25em;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.branch-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 1rem;
+  height: 1px;
+  background-color: #3f3f46;
+}
+
+.branch-content {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
