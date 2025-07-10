@@ -175,3 +175,26 @@ body {
   font-family: monospace;
   flex-shrink: 0;
 }
+
+.sub-bullet-tree {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.branch-line {
+  width: 12px;
+  height: 1.25em;
+  border-left: 2px solid rgba(203, 213, 225, 0.15); /* slate-300 com opacidade baixa */
+  margin-top: 0.25em;
+  flex-shrink: 0;
+}
+
+.branch-content {
+  color: #cbd5e1; /* slate-300 */
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+
