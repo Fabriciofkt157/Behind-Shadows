@@ -1,21 +1,14 @@
-/* ============================
-   RESET E BASE DO LAYOUT
-   ============================ */
-
+/* RESET E BASE DO LAYOUT */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1c1917;
 }
 
-/* Fonte especial para títulos */
 .font-title {
   font-family: 'MedievalSharp', cursive;
 }
 
-/* ============================
-   ESTILIZAÇÃO DA SCROLLBAR
-   ============================ */
-
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -33,10 +26,7 @@ body {
   background: #78716c;
 }
 
-/* ============================
-   ANIMAÇÕES
-   ============================ */
-
+/* ANIMAÇÕES */
 .content-fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -52,10 +42,7 @@ body {
   }
 }
 
-/* ============================
-   SIDEBAR E RESPONSIVIDADE
-   ============================ */
-
+/* SIDEBAR E RESPONSIVIDADE */
 #sidebar-toggle-btn {
   display: none;
 }
@@ -79,11 +66,7 @@ body {
   }
 }
 
-/* ============================
-   BLOCOS DE CONTEÚDO PRINCIPAIS
-   ============================ */
-
-/* Aplica espaçamentos nos blocos dentro de um container com classe prose */
+/* CONTEÚDO PRINCIPAL */
 [class~="prose"] .bloco {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -97,22 +80,18 @@ body {
   margin-bottom: 0;
 }
 
-/* Estilo reforçado para títulos h3 dentro de blocos para sobrescrever Tailwind */
 [class~="prose"] .bloco > h3 {
   font-family: 'MedievalSharp', cursive !important;
   font-size: 1.5rem !important;
   line-height: 2rem !important;
-  color: #bae6fd !important; /* equivalente a text-sky-200 */
+  color: #bae6fd !important;
   border-bottom: 2px solid rgba(14, 165, 233, 0.3) !important;
   padding-bottom: 0.5rem !important;
   margin-top: 0 !important;
   margin-bottom: 1rem !important;
 }
 
-/* ============================
-   CAIXA DE HORÁRIO / METADADOS
-   ============================ */
-
+/* HORÁRIO */
 .horario-box {
   position: absolute;
   top: 1rem;
@@ -132,10 +111,7 @@ body {
   color: #ffca28;
 }
 
-/* ============================
-   NAVEGAÇÃO: SEÇÕES E TOGGLE
-   ============================ */
-
+/* MENU LATERAL */
 .nav-section {
   position: relative;
 }
@@ -146,7 +122,7 @@ body {
   left: 0.5rem;
   cursor: pointer;
   font-size: 0.8rem;
-  color: #94a3b8; /* text-stone-400 */
+  color: #94a3b8;
   transition: transform 0.2s;
 }
 
@@ -154,25 +130,20 @@ body {
   display: inline-block;
 }
 
-/* Esconde listas e conteúdos quando seção está recolhida */
 .nav-collapsed > ul,
 .nav-collapsed > div {
   display: none;
 }
 
-/* Ícone de toggle rotacionado quando ativo */
 .nav-toggle-btn.rotate {
   transform: rotate(-90deg);
 }
 
-/* ============================
-   BLOCOS DE LISTAS COM MARCAÇÃO PERSONALIZADA
-   ============================ */
-
+/* BULLET (NÍVEL 1) */
 .bullet-block {
   margin: 1.5rem 0;
   padding-left: 1.25rem;
-  border-left: 2px solid #334155; /* slate-700 */
+  border-left: 2px solid #334155;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -181,12 +152,11 @@ body {
 .bullet-item {
   font-weight: 600;
   font-size: 1rem;
-  color: #facc15; /* yellow-400 */
+  color: #facc15;
   padding-left: 0.5rem;
   position: relative;
 }
 
-/* Ponto amarelo antes de cada bullet */
 .bullet-item::before {
   content: '•';
   color: #facc15;
@@ -196,85 +166,21 @@ body {
   top: 0;
 }
 
-/* ============================
-   SUB-BULLETS (NÍVEL 2)
-   ============================ */
-
-.sub-bullet {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.4rem;
-  padding-left: 1rem;
-  margin-left: 0.5rem;
-  color: #cbd5e1; /* slate-300 */
-  font-size: 0.95rem;
-  font-weight: 400;
-}
-
-/* Linha estilizada com monospace para setinha */
-.sub-line {
-  color: #38bdf8; /* sky-400 */
-  font-family: monospace;
-  flex-shrink: 0;
-}
-
-/* ============================
-   ÁRVORE DE SUB-BULLETS (NÍVEL 3+)
-   ============================ */
-
+/* SUB-BULLETS (-> e -->) */
 .sub-bullet-tree {
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
   margin-left: 1.5rem;
   position: relative;
-}
-
-/* Linha vertical da árvore */
-.branch-line {
-  width: 12px;
-  height: 1.25em;
-  border-left: 2px solid rgba(203, 213, 225, 0.15); /* slate-300 com opacidade baixa */
-  margin-top: 0.25em;
-  flex-shrink: 0;
-  position: relative;
-}
-
-/* Linha horizontal que conecta o traço vertical ao texto */
-.branch-line::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.6em; /* centraliza verticalmente */
-  width: 1rem;
-  height: 1px;
-  background-color: #3f3f46; /* gray-700 leve e discreto */
-}
-
-/* Conteúdo do ramo */
-.branch-content {
-  color: #cbd5e1; /* slate-300 */
-  font-size: 0.95rem;
-  line-height: 1.4rem;
-}
-
-/* ============================
-   SUB-SUB-BULLETS (NÍVEL 3: -->)
-   ============================ */
-
-.sub-bullet-tree {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  margin-left: 1.5rem;
-  position: relative;
+  padding-left: 0.2rem;
 }
 
 .branch-line {
   width: 12px;
-  height: 1.25em;
-  border-left: 2px solid rgba(203, 213, 225, 0.15);
-  margin-top: 0.25em;
+  min-height: 1.75rem;
+  border-left: 2px solid rgba(203, 213, 225, 0.3);
+  margin-top: 0.15em;
   flex-shrink: 0;
   position: relative;
 }
@@ -293,4 +199,5 @@ body {
   color: #cbd5e1;
   font-size: 0.95rem;
   line-height: 1.4rem;
+  padding-bottom: 0.15rem;
 }
