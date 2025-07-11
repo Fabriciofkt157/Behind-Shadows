@@ -139,8 +139,7 @@ body {
   transform: rotate(-90deg);
 }
 
-/* --- INÍCIO DA SEÇÃO DE ESTILO DA ÁRVORE --- */
-
+/* --- INÍCIO DA VERSÃO FINAL DO ESTILO DA ÁRVORE --- */
 .bullet-block {
   margin: 1.5rem 0;
   position: relative;
@@ -149,10 +148,10 @@ body {
 .bullet-item {
   font-weight: 600;
   font-size: 1rem;
-  color: #facc15;
+  color: #facc15; 
   padding-left: 1.5rem;
   position: relative;
-  margin-bottom: 0.75rem; 
+  margin-bottom: 0.75rem;
 }
 
 .bullet-item::before {
@@ -166,40 +165,42 @@ body {
 
 .sub-bullet-wrapper {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 1.5rem; 
 }
 
-.sub-bullet-node {
-  position: relative;
-  padding: 0.1rem 0 0.1rem 1.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.sub-bullet-node::before {
+.sub-bullet-wrapper::before {
   content: '';
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 2px;
   height: 100%;
   background: rgba(186, 230, 253, 0.2);
 }
 
+.sub-bullet-node {
+  position: relative;
+  padding: 0.25rem 0 0.25rem 1.75rem;
+}
+
 .sub-bullet-node::after {
   content: '';
   position: absolute;
-  top: 0.9em;
+  top: 1em;
   left: 0;
-  width: 1rem; 
+  width: 1rem;
   height: 2px;
   background: rgba(186, 230, 253, 0.3);
 }
 
-.sub-bullet-wrapper > .sub-bullet-node:last-child {
-    margin-bottom: 0;
-}
 .sub-bullet-wrapper > .sub-bullet-node:last-child::before {
-  height: 0.9em;
+  content: '';
+  position: absolute;
+  background-color: #1c1917;
+  left: -1.5rem; 
+  top: 1em;
+  width: 2px;
+  height: calc(100% - 1em);
 }
 
 .branch-content {
@@ -207,3 +208,5 @@ body {
   font-size: 0.95rem;
   line-height: 1.5rem;
 }
+
+/* --- FIM DA VERSÃO FINAL DO ESTILO DA ÁRVORE --- */
