@@ -139,7 +139,7 @@ body {
   transform: rotate(-90deg);
 }
 
-/* --- INÍCIO DA VERSÃO COM AJUSTES FINOS --- */
+/* --- INÍCIO DA VERSÃO MINIMALISTA (SEM LINHAS) --- */
 
 .bullet-block {
   margin: 1.5rem 0;
@@ -171,31 +171,12 @@ body {
 
 .sub-bullet-node {
   position: relative;
-  padding: 0.15rem 0 0.15rem 1.75rem;
+  padding: 0.15rem 0;
 }
 
-.sub-bullet-node::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: rgba(186, 230, 253, 0.2);
-}
-
+.sub-bullet-node::before,
 .sub-bullet-node::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 1.05em;
-  width: 1rem;
-  height: 2px;
-  background: rgba(186, 230, 253, 0.3);
-}
-
-.sub-bullet-node:last-child::before {
-  height: 1.05em;
+  display: none;
 }
 
 .branch-content {
@@ -204,4 +185,4 @@ body {
   line-height: 1.5rem;
 }
 
-/* --- FIM DA VERSÃO COM AJUSTES FINOS --- */
+/* --- FIM DA VERSÃO MINIMALISTA (SEM LINHAS) --- */
