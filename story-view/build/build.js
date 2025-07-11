@@ -57,9 +57,9 @@ function processarBlocosEspeciais(markdown) {
     } else if (line.startsWith('->')) {
       const content = line.replace(/^->\s*/, '');
       result.push(`
-        <div class="sub-bullet sub-bullet-tree">
-          <span class="tree-line"></span>
-          <span>${marked.parseInline(content)}</span>
+        <div class="sub-bullet-tree">
+          <div class="branch-line"></div>
+          <div class="branch-content">${marked.parseInline(content)}</div>
         </div>
       `);
     } else {
@@ -77,9 +77,6 @@ function processarBlocosEspeciais(markdown) {
 
   return result.join('\n');
 }
-
-
-
 
 async function processarArquivo(filePath, topicos, secaoPai = null) {
     if (!filePath.endsWith('.md')) return;
