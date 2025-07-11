@@ -39,7 +39,7 @@
     <div id="simple-template-display">
       <div class="bg-stone-800 rounded-lg shadow-lg p-6 content-fade-in border border-stone-700">
         <h2 class="text-4xl text-sky-200 font-title mb-2">{title}</h2>
-        <p class="text-stone-400 mb-6 italic">"{subtitle}"</p>
+        <p class="text-stone-400 mb-6 italic subtitle-field">{subtitle}</p>
         <div class="prose prose-invert max-w-none text-stone-300 leading-relaxed">{contentHtml}</div>
       </div>
     </div>
@@ -51,7 +51,6 @@
             <div class="flex-grow">
               <h2 class="text-4xl text-sky-200 font-title">{title}</h2>
               <p class="text-sky-300 font-semibold mb-4 text-lg">"{subtitle}"</p>
-              <!-- CORREÇÃO: A grade de detalhes agora é um placeholder único -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-stone-300">
                 {details_grid}
               </div>
