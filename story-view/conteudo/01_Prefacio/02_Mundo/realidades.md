@@ -31,8 +31,8 @@ template: simple
     --> **Avalest** é o reino onde a história se passa inicialmente.
   -> **Aquins**: realidade onde o mundo foi construído tendo a água como princípio.
   -> **Submundo**: realidade para onde o fragmento da alma de um corrompido é levada; **Onis e demônios** são encontrados aqui.
-    -> Possui 5 partições com características semelhantes: Economia própria, civilizações com divisões de acordo com nível de poder e classes sociais bem definidas.
-    -> De modo geral, se assemelha à vida em Eards (favelas, trabalho, prostituição, ...).
+    --> Possui 5 partições com características semelhantes: Economia própria, civilizações com divisões de acordo com nível de poder e classes sociais bem definidas.
+    --> De modo geral, se assemelha à vida em Eards (favelas, trabalho, prostituição, ...).
   -> **Nature**: realidade onde plantas são a raça dominante; possui muita energia vital, o que a torna alvo do Exército das Sombras.
     --> **Bruxas e elfos** são encontrados aqui.
   -> **Assolyam**: realidade cyberpunk, o mundo foi construído a partir das máquinas a vapor.
