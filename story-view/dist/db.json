@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-11T16:08:44.074Z",
+  "lastUpdated": "2025-07-11T16:24:54.588Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -84,6 +84,10 @@
       "template": "simple",
       "parent": "01_Prefacio",
       "items": [
+        {
+          "id": "elementos",
+          "title": "Elementos e a Manifestação de Magias"
+        },
         {
           "id": "realidades",
           "title": "Realidades e o Princípio do Renascimento"
@@ -249,6 +253,15 @@
       "subtitle": "Otto Wern",
       "icon": "fa-user",
       "contentHtml": "<h3>Sobre</h3>\n<p>Jhonata, Amanda e Otto morreram ao mesmo tempo e foram juntos pro Novo Mundo. Nele, eles se juntaram ao Império de Avalest.</p>\n<h3>Personalidade</h3>\n<p>Tranquilo e &quot;desligado&quot; a maior parte do tempo. Quando cercado por muitas pessoas que não conhece, tende a ficar retraído e tímido.</p>\n<h3>Curiosidade</h3>\n<p>Jhonatas e Amanda o chamam de Cenoura devido ao seu cabelo ruivo — há algumas cenas reforçando isso, como piadas e seu aniversário onde recebe uma roupa laranja para combinar com o apelido. De início, Alan acha que seu nome é Otavio e Otto é seu apelido, pouco tempo depois, Alan o chama de Cenoura.</p>\n"
+    },
+    "elementos": {
+      "titulo": "Elementos e a Manifestação de Magias",
+      "icone": "fa-sparkles",
+      "template": "simple",
+      "title": "Elementos e a Manifestação de Magias",
+      "subtitle": "",
+      "icon": "fa-sparkles",
+      "contentHtml": "<h3>O mundo do jogo é composto a partir de 5 elementos fundamentais, a fusão desses elementos forma a natureza do mundo. O controle desses elementos pode acontecer a partir de dois fatores:</h3>\n<p><strong>mana</strong>: são pedras formadas naturalmente a partir de energia natural, em outras palavras, é energia natural solidificada.</p>\n<p><strong>runas</strong>: são gemas que, quando estimuladas por magia ancestral, armazenam uma identidade mágica, quando estimuladas novamente por essa magia, reproduzem em grande escala a magia original.</p>\n"
     },
     "realidades": {
       "titulo": "Realidades e o Princípio do Renascimento",
