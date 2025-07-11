@@ -216,4 +216,18 @@ body {
   line-height: 1.5rem;
 }
 
-/* --- FIM DA VERSÃO COM LINHAS APENAS PARA NETOS (-->) --- */
+/* --- LÓGICA PARA EXIBIÇÃO CONDICIONAL DO SUBTÍTULO --- */
+
+.subtitle-field:empty {
+  display: none;
+}
+
+.subtitle-field:not(:empty)::before {
+  content: '"';
+  margin-right: 0.25em;
+}
+
+.subtitle-field:not(:empty)::after {
+  content: '"';
+  margin-left: 0.25em;
+}
