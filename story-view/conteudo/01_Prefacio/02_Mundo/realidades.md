@@ -1,10 +1,8 @@
 ---
-titulo: O Mundo do Jogo
+titulo: Realidades e o Princípio do Renascimento
 icone: fa-globe
 template: simple
 ---
-
-# O Mundo no Jogo
 
 * O mundo do jogo existe em um multiverso composto por **7 realidades** e um **"verso"** que agrupa todas elas no mesmo plano.
   -> Esse plano superior é onde habita o **Homem Misterioso**, e pode ser referenciado como **"Dimensão Entre os Reinos"**.
