@@ -30,52 +30,70 @@ const frontmatterSchema = z.object({
   personagens: z.array(z.string()).optional()
 });
 
-// Suporte a blocos internos com ### Título
+/**
+ * Processa o markdown personalizado para gerar uma estrutura de árvore aninhada em HTML.
+ * - '*' cria um bloco pai.
+ * - '->' cria um filho do último item de nível superior.
+ * - '-->' cria um neto (filho do último '->').
+ */
 function processarBlocosEspeciais(markdown) {
-  const lines = markdown.split('\n');
-  const result = [];
-  let insideBulletBlock = false;
+    const lines = markdown.split('\n').filter(line => line.trim() !== '');
+    let html = '';
+    let currentBlock = null;
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
-
-    if (line.startsWith('* ')) {
-      if (!insideBulletBlock) {
-        result.push('<div class="bullet-block">');
-        insideBulletBlock = true;
-      }
-      const content = line.slice(2).trim();
-      result.push(`<div class="bullet-item">${marked.parseInline(content)}</div>`);
-    } else if (line.startsWith('-->')) {
-      const content = line.replace(/^-->\s*/, '');
-      result.push(`
-        <div class="sub-bullet-tree">
-          <div class="branch-line"></div>
-          <div class="branch-content">${marked.parseInline(content)}</div>
-        </div>
-      `);
-    } else if (line.startsWith('->')) {
-      const content = line.replace(/^->\s*/, '');
-      result.push(`
-        <div class="sub-bullet-tree">
-          <div class="branch-line"></div>
-          <div class="branch-content">${marked.parseInline(content)}</div>
-        </div>
-      `);
-    } else {
-      if (insideBulletBlock) {
-        result.push('</div>');
-        insideBulletBlock = false;
-      }
-      result.push(marked.parse(line));
+    function closeCurrentBlock() {
+        if (currentBlock) {
+            html += renderNode(currentBlock) + '</div>';
+            currentBlock = null;
+        }
     }
-  }
 
-  if (insideBulletBlock) {
-    result.push('</div>');
-  }
+    function renderNode(node) {
+        let nodeHtml = '';
+        if (node.level === 0) { // Tópico principal (*)
+            nodeHtml += `<div class="bullet-item">${marked.parseInline(node.content)}</div>`;
+        } else { // Sub-tópicos (->, -->)
+            nodeHtml += `<div class="sub-bullet-node">
+                      <div class="branch-line"></div>
+                      <div class="branch-content">${marked.parseInline(node.content)}</div>
+                   </div>`;
+        }
 
-  return result.join('\n');
+        if (node.children.length > 0) {
+            nodeHtml += '<div class="sub-bullet-wrapper">';
+            nodeHtml += node.children.map(renderNode).join('');
+            nodeHtml += '</div>';
+        }
+        return nodeHtml;
+    }
+    
+    let lastNodeLevel1 = null;
+    let lastNodeLevel2 = null;
+
+    for (const line of lines) {
+        const trimmedLine = line.trim();
+        
+        if (trimmedLine.startsWith('* ')) {
+            closeCurrentBlock();
+            currentBlock = { level: 0, content: trimmedLine.slice(2), children: [] };
+            html += '<div class="bullet-block">';
+            lastNodeLevel1 = currentBlock;
+        } else if (trimmedLine.startsWith('-->') && lastNodeLevel2) {
+            const node = { level: 3, content: trimmedLine.slice(3).trim(), children: [] };
+            lastNodeLevel2.children.push(node);
+        } else if (trimmedLine.startsWith('->')) {
+            if (!lastNodeLevel1) continue;
+            const node = { level: 2, content: trimmedLine.slice(2).trim(), children: [] };
+            lastNodeLevel1.children.push(node);
+            lastNodeLevel2 = node;
+        } else {
+            closeCurrentBlock();
+            html += marked.parse(trimmedLine);
+        }
+    }
+
+    closeCurrentBlock();
+    return html;
 }
 
 async function processarArquivo(filePath, topicos, secaoPai = null) {
@@ -106,6 +124,7 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     };
 }
 
+// O restante do arquivo (processarDiretorio, gerarDbJson) pode permanecer o mesmo.
 async function processarDiretorio(dir) {
   const secoes = [];
   const topicos = {};
