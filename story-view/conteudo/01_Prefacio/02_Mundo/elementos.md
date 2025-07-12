@@ -42,3 +42,47 @@ Os elementos são:
      --> Energia é extremamente condensada, o que significa que quando liberada ao seu estado natural, ocupa um grande volume rapidamente, gerando a corrente de ar.
      --> Apesar de ser rápido e forte, esse elemento exige muito treinamento para a liberação correta da energia.
 
+* É comum encontrar usuários que utilizam mais de um elemento, na verdade, é raro encontrar alguém que não use.No entanto, a proficiência em um elemento dificulta o aprendizado de seu elemento oposto, devido a dificuldade em combinar ambos, consequentemente aperfeiçoando apenas um deles por vez.
+  -> Os opostos são (ser um oposto não significa que ambos se anulam, eles apenas são incompatíveis):
+    --> Ar e Elétrico;
+    --> Elétrico e Pedra;
+    --> Fogo e Elétrico;
+    --> Fogo e Água;
+    --> Água e Pedra;
+
+* A junção dos 5 elementos constitui dois elementos únicos: Sombra ou Luz. Esse ato é impossível para 99% das pessoas — são mortos pela incompatibilidade entre os elementos (unir todos os elementos incompatíveis num só). A formação da Sombra ou Luz exige a fusão permanente das runas de cada elemento (dos 5) com a alma do usuário 
+  -> O erro mais comum entre os que tentam: 
+    --> Eles não sabem sobre a fusão permanente, apenas aqueles que foram fragmentados e reconstituídos podem realizar esse ato.
+    --> Nesse caso, ao tentar manifestar os 5 elementos de uma vez com uma fusão simples, de duas coisas, uma acontece: abuso de energia vital (alma), ficando sem e não conseguindo mais assumir forma, ou morte pelos 5 elementos que se manifestam descontroladamente.
+  -> A fusão natural dos elementos só acontece quando a runa desse elemento está fundida com a alma do usuário, caso contrário, a fusão entre os elementos será forçada, resultando em um elemento extremamente instável.
+  -> O usuário que realizar esse feito, poderá controlar apenas a Luz ou a Sombra — o elemento se manifesta de acordo com a compatibilidade com a alma do usuário. A fusão de Luz e Sombra resulta no poder de controlar o tempo e o rumo das vidas guiadas por ele.
+  -> O surgimento de Luz e Sombra no mesmo usuário só é possível com a fusão da alma do usuário de elemento oposto. Esse feito é impossível, a alma não pode assumir forma.
+    --> Homem Misterioso é um exemplo disso: ele é o resultado da fusão de dois usuários que controlavam Luz e Sombra, suas almas não puderam assumir forma e o resultado foi uma Entidade sem forma física — o Homem Misterioso utiliza a Sombra para "assumir" forma, basicamente, é a personificação da Sombra (elemento).
+    --> Além disso, o Homem Misterioso é uma fusão e funciona de forma semelhante ao Alan corrompido, alterna entre fragmentos para controlar cada elemento: um deles controla a Luz e o outro a Sombra, no caso, a Entidade controla ambos os fragmentos. 
+    --> Isso impõe uma restrição: o controle do Tempo leva tempo, devido a fusão que precisa do manifesto dos dois fragmentos.
+
+
+* Sombra (elemento): capacidade de um individuo em controlar matéria escura. Regras: 
+  -> O elemento Sombra não pode surgir com energia natural, apenas vital (alma).
+  -> Diferentemente dos outros elementos, Sombra não precisa da energia do individuo para se formar, apenas para controla-la.
+  -> Exemplificando: 
+    --> O elemento Fogo exige a energia do usuário no local onde a combustão será iniciada, pois usa a energia como combustível primário. 
+    --> Já com a Sombra, a energia é utilizada para marcação e controle. Como a energia utilizada é energia espiritual, o usuário não precisa de mana para manifestar a Sombra, ao invés disso, usa seus pensamentos — simplesmente desejando que ela apareça em tal lugar.
+  -> A sombra pode assumir forma própria, sendo física ou na forma de outro elemento.
+  -> Exemplificando: 
+    --> Alan recorrentemente usa uma foice de matéria escura (Sombra) durante suas lutas. Esse é um exemplo de forma física de Sombra.
+    --> Alan também utiliza a Sombra pra criar um fogo preto, esse fogo é 100x mais volátil do que Fogo (elemento), no entanto, para controlar o movimento dele, é necessário o uso de energia vital o tempo todo, caso contrário, queimará tudo que tocar. Esse é um exemplo de manifestação em forma de outro elemento.
+    --> Além disso, Sombra também pode assumir o controle mental de outros indivíduos. Alan utiliza isso em algumas missões de infiltração para Sky (organização).
+
+* Luz (elemento): capacidade de um individuo manifestar eventos físicos não visíveis. Regras:
+  -> Bem como Sombra, Luz não pode surgir com energia natural, apenas vital (alma).
+  -> Diferente de Sombra que é visível e assume forma física, Luz atinge seus oponentes sem chances de defesas ou desvios. Em outras palavras, o que estiver na mente do usuário, acontecerá.
+  -> Exemplificando: Mike pode utilizar a Luz e simular os efeitos de Fogo (elemento) de forma quase imediata. 
+  -> Exemplo prático: 
+    --> Mike usa a Luz para queimar um oponente.
+    --> O oponente começará a ser queimado, mas sem fogo visível. Obs: mesmo principio da Sombra: o fogo de Luz é 100x mais volátil que Fogo (elemento).
+   -> Como Luz não assume forma física, alguns elementos que exigem matéria para surtir efeito no oponente, como pedra e água, não podem ser formados na forma de Luz.
+   -> Por não precisar de forma física, Luz não possui delay para atingir seu alvo.
+
+* OBS: Tanto Luz quanto Sombra desintegram a matéria do alvo, isso significa que o alvo não sentirá dor ao entrar em contato.
+  -> Exemplificando: Quando Alan utiliza a foice de Sombra, o inimigo atingido não é rasgado, como aconteceria com uma lâmina, a carne que antes estava onde a foice está é desintegrada. O mesmo vale para os elementos que forem formados com Sombra ou Luz.
