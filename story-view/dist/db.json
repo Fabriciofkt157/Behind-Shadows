@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-11T16:24:54.588Z",
+  "lastUpdated": "2025-07-12T02:08:52.056Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -261,7 +261,7 @@
       "title": "Elementos e a Manifestação de Magias",
       "subtitle": "",
       "icon": "fa-sparkles",
-      "contentHtml": "<h3>O mundo do jogo é composto a partir de 5 elementos fundamentais, a fusão desses elementos forma a natureza do mundo. O controle desses elementos pode acontecer a partir de dois fatores:</h3>\n<p><strong>mana</strong>: são pedras formadas naturalmente a partir de energia natural, em outras palavras, é energia natural solidificada.</p>\n<p><strong>runas</strong>: são gemas que, quando estimuladas por magia ancestral, armazenam uma identidade mágica, quando estimuladas novamente por essa magia, reproduzem em grande escala a magia original.</p>\n"
+      "contentHtml": "<div class=\"bullet-block\"><div class=\"bullet-item\">O mundo do jogo é composto a partir de 5 elementos fundamentais, a fusão desses elementos forma a natureza do mundo. O controle desses elementos pode acontecer a partir de dois fatores:</div><div class=\"sub-bullet-wrapper\"><div class=\"sub-bullet-node\">\n                      <div class=\"branch-line\"></div>\n                      <div class=\"branch-content\"><strong>mana</strong>: são pedras formadas naturalmente a partir de energia natural, em outras palavras, é energia natural solidificada.</div>\n                   </div><div class=\"sub-bullet-node\">\n                      <div class=\"branch-line\"></div>\n                      <div class=\"branch-content\"><strong>runas</strong>: são gemas que, quando estimuladas por magia ancestral, armazenam uma identidade mágica, quando estimuladas novamente por essa magia, reproduzem em grande escala a magia original.</div>\n                   </div><div class=\"sub-bullet-wrapper\"><div class=\"sub-bullet-node\">\n                      <div class=\"branch-line\"></div>\n                      <div class=\"branch-content\">A magia ancestral tem origem a partir do Homem Misterioso: no início dos tempos, 7 discípulos foram escolhidos para difundir os conhecimentos do Homem Misterioso aos habitantes de cada realidade, cada discípulo possuía uma porção diferente do conhecimento original, isso dá origem as diferenças entre cada realidade.</div>\n                   </div></div><div class=\"sub-bullet-node\">\n                      <div class=\"branch-line\"></div>\n                      <div class=\"branch-content\">Os elementos são:</div>\n                   </div></div></div><ul>\n<li>Elétrico: trata-se da capacidade de excitar o movimento de elétrons para uma direção específica, esse movimento depende especialmente do material. Essa capacidade se propaga na forma de ondas, resultando em luz sólida (pode colidir com objetos, nesse caso, o objeto tem seus elétrons forçados a se mover, promovendo uma descarga elétrica).</li>\n</ul>\n<ul>\n<li>Teste</li>\n</ul>\n"
     },
     "realidades": {
       "titulo": "Realidades e o Princípio do Renascimento",
