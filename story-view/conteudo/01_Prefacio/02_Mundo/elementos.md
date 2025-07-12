@@ -12,7 +12,7 @@ template: simple
 Os elementos são:
 
 * Elétrico: trata-se da capacidade de excitar o movimento de elétrons para uma direção específica, esse movimento depende especialmente do material. Essa capacidade se propaga na forma de ondas, resultando em luz sólida (pode colidir com objetos, nesse caso, o objeto tem seus elétrons forçados a se mover, promovendo uma descarga elétrica).
-  -> Possui algumas regras:
+  -> Regras:
      --> o poder do elemento elétrico é definido pela densidade, quanto maior a densidade, mais difícil é o controle dele e quanto maior a densidade, mais escura é a luz (exemplo: branco < azul claro < azul escuro < roxo < roxo escuro < preto)
      --> se a pessoa estiver imersa em uma substância altamente condutora, como água ou metal liquido, a eletricidade é conduzida por toda a substância, atingindo tudo que também estiver imerso (incluindo o conjurador).
      --> em caso de encontro entre dois elementos elétricos vindos de vetores exatamente opostos (-><-) (ex: duas pessoas, exatamente de frente uma pra outra), ambos os conjuradores são atingidos (nesse caso, luz não pode colidir com luz), o dano causado é de acordo com o poder do conjurador.
@@ -20,10 +20,11 @@ Os elementos são:
      --> elemento elétrico é extremamente resistente a fusão com outros elementos, a maior parte das magias resulta em um ataque combinado e não em um elemento novo.
 
 * Água: é a capacidade de condensar o vapor de água presente no ar ou fundir hidrogênio e oxigênio, se não houver nenhum desses dois fatores, o elemento água não pode ser usado.
-  --> É um elemento de baixo índice de fusão: dificilmente forma um novo elemento, é mais comum o surgimento de uma alteração dela, por exemplo, água e ar: gelo; água e fogo: vapor, ou um ataque combinado como água e elétrico que formam água eletrizada.
+  -> Regras:
+    --> É um elemento de baixo índice de fusão: dificilmente forma um novo elemento, é mais comum o surgimento de uma alteração dela, por exemplo, água e ar: gelo; água e fogo: vapor, ou um ataque combinado como água e elétrico que formam água eletrizada.
 
 * Fogo: habilidade de iniciar combustão a partir de energia natural (mana) ou espiritual (Onis).
-  -> Possui algumas regras:
+  -> Regras:
     --> Energia é altamente volátil, ou seja, ao iniciar a combustão, a energia acaba rapidamente, sendo necessário outro material para continuar a combustão, no caso, o alvo.
     --> Para iniciar a combustão, uma grande quantidade de energia é necessária, o que torna a condução lenta e facilmente detectável (exige alta concentração por parte do usuário). A forma mais eficaz é por meio da deposição, ou seja, chegar próximo ao alvo e anexar a energia nele.
   -> Surge a partir da energia depositada ou conduzida no alvo, exemplo prático:
