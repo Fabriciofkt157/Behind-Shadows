@@ -36,6 +36,31 @@ const frontmatterSchema = z.object({
  * - '->' cria um filho do último item de nível superior.
  * - '-->' cria um neto (filho do último '->').
  */
+
+function processarListas(text) {
+    // Regex para encontrar blocos que começam com ': {' e terminam com '}'
+    const listRegex = /:\s*\{([^}]*)\}/g;
+
+    return text.replace(listRegex, (match, blockContent) => {
+        const items = blockContent.trim().split('\n');
+        let listHtml = '<ul class="inline-list">';
+
+        for (const item of items) {
+            const trimmedItem = item.trim();
+            if (trimmedItem.startsWith('- ')) {
+                const itemContent = trimmedItem.slice(2).trim();
+                // Usamos marked.parseInline para suportar **negrito** e *itálico* dentro dos itens
+                listHtml += `<li>${marked.parseInline(itemContent)}</li>`;
+            }
+        }
+
+        listHtml += '</ul>';
+        // A substituição retorna apenas a lista HTML, 
+        // pois o título/label já está no texto original.
+        return listHtml; 
+    });
+}
+
 function processarBlocosEspeciais(markdown) {
     const lines = markdown.split('\n').filter(line => line.trim() !== '');
     let html = '';
@@ -79,16 +104,16 @@ function processarBlocosEspeciais(markdown) {
             html += '<div class="bullet-block">';
             lastNodeLevel1 = currentBlock;
         } else if (trimmedLine.startsWith('-->') && lastNodeLevel2) {
-            const node = { level: 3, content: trimmedLine.slice(3).trim(), children: [] };
+            const node = { level: 3, content: processarListas(trimmedLine.slice(3).trim()), children: [] };
             lastNodeLevel2.children.push(node);
         } else if (trimmedLine.startsWith('->')) {
             if (!lastNodeLevel1) continue;
-            const node = { level: 2, content: trimmedLine.slice(2).trim(), children: [] };
+            const node = { level: 2, content: processarListas(trimmedLine.slice(2).trim()), children: [] };           
             lastNodeLevel1.children.push(node);
             lastNodeLevel2 = node;
         } else {
             closeCurrentBlock();
-            html += marked.parse(trimmedLine);
+            html += marked.parse(processarListas(trimmedLine));
         }
     }
 

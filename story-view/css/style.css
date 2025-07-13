@@ -231,3 +231,16 @@ body {
   content: '"';
   margin-left: 0.25em;
 }
+/* --- ESTILOS PARA LISTAS INLINE ({...}) --- */
+
+.inline-list {
+  list-style-type: disc; /* Usa o '•' padrão */
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+  padding-left: 1.5rem; /* Indentação da lista em relação ao seu "título" */
+}
+
+.inline-list li {
+  padding-left: 0.25rem; /* Pequeno espaço entre o bullet e o texto do item */
+  margin-bottom: 0.25em;
+}
