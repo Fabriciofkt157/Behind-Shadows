@@ -38,24 +38,29 @@ template: simple
   --> Sistema de Troca: Não há moeda. Bens e serviços são trocados diretamente entre os membros com base em acordos de confiança. Ex: um pescador troca peixe por ervas medicinais de um curandeiro.
   --> Sistema de Favores: Favores são registrados em um "Livro de Confiança", onde cada morador anota os serviços prestados e recebidos, servindo de memória coletiva. Ex: Um NPC pode estar devendo um favor a outro, e isso pode influenciar decisões narrativas ou desbloquear quests.
 -> A economia é dividida em setores essenciais, todos geridos por membros voluntários ou designados pela comunidade (conselhos ou assembleias).
-        -> Agricultura e Criação:
-           * Plantação de grãos e hortaliças, especialmente resistentes ao clima de Median.
-           * Criação de animais de pequeno porte (galinhas, cabras).
-           * Compostagem comunitária e colheitas sazonais.
-        -> Ofícios e Construção:
-           * Carpinteiros, ferreiros, construtores — essencial para manutenção das casas e expansão.
-           * Alan pode interagir com esse setor para fabricar ou melhorar itens.
-        -> Medicina e Tratamento:
-           * Curandeiros, boticários e parteiras.
-           * Uso de ervas e práticas mágicas (sem tecnologia avançada ainda).
-           * Recursos limitados, então o conhecimento deles é altamente valorizado.
-        -> Defesa e Patrulha:
-           * Diferente do Império, aqui, os defensores são voluntários; geralmente são militares que faziam parte do Império e decidiram abandonar o posto.
-           * Patrulhas são rotativas, todos com idade e habilidade suficientes participam (essa é uma das obrigações de todo integrante da comunidade). 
-        -> Educação:
-           * O conhecimento é repassado por contadores de histórias, anciãos e quaisquer integrante com mão de obra qualificada.
+  --> Agricultura e Criação: {
+    - Plantação de grãos e hortaliças, especialmente resistentes ao clima de Median.
+    - Criação de animais de pequeno porte (galinhas, cabras).
+    - Compostagem comunitária e colheitas sazonais.
+  }
+  --> Ofícios e Construção: {
+    - Carpinteiros, ferreiros, construtores — essencial para manutenção das casas e expansão.
+    - Alan pode interagir com esse setor para fabricar ou melhorar itens.
+  }
+  --> Medicina e Tratamento: {
+    - Curandeiros, boticários e parteiras.
+    - Uso de ervas e práticas mágicas (sem tecnologia avançada ainda).
+    - Recursos limitados, então o conhecimento deles é altamente valorizado.
+  }
+  --> Defesa e Patrulha: {
+    - Diferente do Império, aqui, os defensores são voluntários; geralmente são militares que faziam parte do Império e decidiram abandonar o posto.
+    - Patrulhas são rotativas, todos com idade e habilidade suficientes participam (essa é uma das obrigações de todo integrante da comunidade).
+  }
+  --> Educação: {
+    - O conhecimento é repassado por contadores de histórias, anciãos e quaisquer integrante com mão de obra qualificada.
+  }
 
--Sky: Organização formada incialmente por Alan, Mike, Raika, Rit e Deni com o objetivo de eliminar o Império.
+* Sky: Organização formada incialmente por Alan, Mike, Raika, Rit e Deni com o objetivo de eliminar o Império.
 -> História: 
    * No decorrer da história, Mike e Alan constroem uma casa (pagam construtores) muito maior do que a casa inicial no Distrito (Alan desejava um espaço maior para suas invenções); quando finalizada, os dois chegam a conclusão de que o espaço era grande demais para apenas os dois, nesse caso, convidam seus amigos diretos (Rit, Deni e Raika) para morarem com eles.
    * Em uma das tradicionais conversas entre os 5 em volta da fogueira, Raika sugere que o Império não era mais necessário: a defesa fornecida não é eficaz, somando as sombras que invadem facilmente, gangues assaltando camponeses e praticando terrorismo; o Império cobra um preço muito alto pro pouco que oferece.
