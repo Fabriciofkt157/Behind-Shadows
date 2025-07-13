@@ -30,36 +30,45 @@ const frontmatterSchema = z.object({
   personagens: z.array(z.string()).optional()
 });
 
-/**
- * Processa o markdown personalizado para gerar uma estrutura de árvore aninhada em HTML.
- * - '*' cria um bloco pai.
- * - '->' cria um filho do último item de nível superior.
- * - '-->' cria um neto (filho do último '->').
- */
-
+// --- NOVA VERSÃO DA FUNÇÃO processarListas ---
 function processarListas(text) {
-    // Regex para encontrar blocos que começam com ': {' e terminam com '}'
-    const listRegex = /:\s*\{([^}]*)\}/g;
+    // Procura pelo padrão que inicia a lista
+    const listStartIndex = text.indexOf(': {');
+    if (listStartIndex === -1) {
+        // Se não encontrar o padrão, retorna o texto original sem modificação
+        return text;
+    }
 
-    return text.replace(listRegex, (match, blockContent) => {
-        const items = blockContent.trim().split('\n');
-        let listHtml = '<ul class="inline-list">';
+    // Separa o texto que vem antes da lista e o conteúdo da lista
+    const labelText = text.substring(0, listStartIndex);
+    const blockContentMatch = text.substring(listStartIndex).match(/:\s*\{([^}]*)\}/);
 
-        for (const item of items) {
-            const trimmedItem = item.trim();
-            if (trimmedItem.startsWith('- ')) {
-                const itemContent = trimmedItem.slice(2).trim();
-                // Usamos marked.parseInline para suportar **negrito** e *itálico* dentro dos itens
-                listHtml += `<li>${marked.parseInline(itemContent)}</li>`;
-            }
-        }
+    if (!blockContentMatch || blockContentMatch.length < 2) {
+        return text; // Retorna o texto original se o formato da lista for inválido
+    }
 
-        listHtml += '</ul>';
-        // A substituição retorna apenas a lista HTML, 
-        // pois o título/label já está no texto original.
-        return listHtml; 
-    });
+    const blockContent = blockContentMatch[1];
+
+    // Divide os itens por um hífen, permitindo itens na mesma linha ou em linhas separadas
+    const items = blockContent.split('-').map(item => item.trim()).filter(item => item);
+
+    if (items.length === 0) {
+        // Se não houver itens válidos, retorna o texto antes da lista
+        return labelText;
+    }
+
+    // Constrói a lista em HTML
+    let listHtml = '<ul class="inline-list">';
+    for (const item of items) {
+        // Usa marked.parseInline para que negrito/itálico funcionem dentro dos itens
+        listHtml += `<li>${marked.parseInline(item)}</li>`;
+    }
+    listHtml += '</ul>';
+
+    // Retorna o texto original que vinha antes da lista + a lista em HTML
+    return labelText + listHtml;
 }
+
 
 function processarBlocosEspeciais(markdown) {
     const lines = markdown.split('\n').filter(line => line.trim() !== '');
@@ -95,7 +104,7 @@ function processarBlocosEspeciais(markdown) {
     let lastNodeLevel1 = null;
     let lastNodeLevel2 = null;
 
-    for (const line of lines) {
+    for (cnst line of lines) {
         const trimmedLine = line.trim();
         
         if (trimmedLine.startsWith('* ')) {
