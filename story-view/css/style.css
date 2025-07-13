@@ -1,14 +1,19 @@
-/* RESET E BASE DO LAYOUT */
+/* ============================================= */
+/* RESET E BASE DO LAYOUT                      */
+/* ============================================= */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1c1917;
+  color: #d6d3d1;
 }
 
 .font-title {
   font-family: 'MedievalSharp', cursive;
 }
 
-/* SCROLLBAR */
+/* ============================================= */
+/* SCROLLBAR                                   */
+/* ============================================= */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -26,7 +31,9 @@ body {
   background: #78716c;
 }
 
-/* ANIMAÇÕES */
+/* ============================================= */
+/* ANIMAÇÕES                                   */
+/* ============================================= */
 .content-fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -42,7 +49,9 @@ body {
   }
 }
 
-/* SIDEBAR E RESPONSIVIDADE */
+/* ============================================= */
+/* SIDEBAR E RESPONSIVIDADE                      */
+/* ============================================= */
 #sidebar-toggle-btn {
   display: none;
 }
@@ -66,32 +75,9 @@ body {
   }
 }
 
-/* CONTEÚDO PRINCIPAL */
-[class~="prose"] .bloco {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-[class~="prose"] .bloco:first-child {
-  margin-top: 0;
-}
-
-[class~="prose"] .bloco:last-child {
-  margin-bottom: 0;
-}
-
-[class~="prose"] .bloco > h3 {
-  font-family: 'MedievalSharp', cursive !important;
-  font-size: 1.5rem !important;
-  line-height: 2rem !important;
-  color: #bae6fd !important;
-  border-bottom: 2px solid rgba(14, 165, 233, 0.3) !important;
-  padding-bottom: 0.5rem !important;
-  margin-top: 0 !important;
-  margin-bottom: 1rem !important;
-}
-
-/* HORÁRIO */
+/* ============================================= */
+/* CAIXA DE HORÁRIO                             */
+/* ============================================= */
 .horario-box {
   position: absolute;
   top: 1rem;
@@ -100,147 +86,136 @@ body {
   align-items: center;
   gap: 6px;
   font-size: 0.9rem;
-  background: #2c2c2c;
+  background: #292524;
   padding: 6px 10px;
   border-radius: 6px;
   color: #ddd;
   z-index: 2;
 }
 
-.horario-box i {
-  color: #ffca28;
+/* ============================================= */
+/* ESTILOS PARA CONTEÚDO MARKDOWN (.prose)     */
+/* ============================================= */
+
+/* Parágrafos e espaçamento geral */
+.prose {
+  line-height: 1.7;
 }
 
-/* MENU LATERAL */
-.nav-section {
-  position: relative;
+.prose p {
+  margin-bottom: 1.25em;
 }
 
-.nav-toggle-btn {
-  display: none;
-  position: absolute;
-  left: 0.5rem;
-  cursor: pointer;
-  font-size: 0.8rem;
-  color: #94a3b8;
-  transition: transform 0.2s;
+/* Títulos */
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: 'MedievalSharp', cursive;
+  color: #bae6fd;
+  border-bottom: 1px solid #44403c;
+  padding-bottom: 0.4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
-.nav-section:hover .nav-toggle-btn {
-  display: inline-block;
+.prose h2 {
+  font-size: 1.875rem;
 }
 
-.nav-collapsed > ul,
-.nav-collapsed > div {
-  display: none;
+.prose h3 {
+  font-size: 1.5rem;
 }
 
-.nav-toggle-btn.rotate {
-  transform: rotate(-90deg);
+.prose h4 {
+  font-size: 1.25rem;
+  border-bottom: none;
 }
 
-/* --- INÍCIO DA VERSÃO COM LINHAS APENAS PARA NETOS (-->) --- */
-
-.bullet-block {
-  margin: 1.5rem 0;
-  position: relative;
+/* Links */
+.prose a {
+  color: #7dd3fc;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
 }
 
-.bullet-item {
+.prose a:hover {
+  color: #e0f2fe;
+  text-decoration: underline;
+}
+
+/* Listas */
+.prose ul,
+.prose ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.25em;
+}
+
+.prose li {
+  margin-bottom: 0.5em;
+}
+
+.prose li::marker {
+  color: #78716c;
+}
+
+/* Citações */
+.prose blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 3px solid #57534e;
+  font-style: italic;
+  color: #a8a29e;
+  background-color: #1c1917;
+}
+
+/* Linha Horizontal */
+.prose hr {
+  border-color: #44403c;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+/* Código */
+.prose :not(pre) > code {
+  background-color: rgba(186, 230, 253, 0.1);
+  color: #e0f2fe;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.prose pre {
+  background-color: #0c0a09;
+  border: 1px solid #44403c;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  color: #d6d3d1;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: 0.9em;
+}
+
+/* Tabelas */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid #57534e;
+  padding: 0.6em 0.8em;
+}
+
+.prose th {
+  background-color: #292524;
+  color: #e5e7eb;
   font-weight: 600;
-  font-size: 1rem;
-  color: #facc15;
-  padding-left: 1.5rem;
-  position: relative;
-  margin-bottom: 0.5rem;
-}
-
-.bullet-item::before {
-  content: '•';
-  color: #facc15;
-  font-size: 1.2rem;
-  position: absolute;
-  left: 0;
-  top: -0.1rem;
-}
-
-.sub-bullet-wrapper {
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.sub-bullet-node {
-  position: relative;
-  padding: 0.15rem 0;
-}
-
-.sub-bullet-node::before,
-.sub-bullet-node::after {
-  display: none;
-}
-
-.sub-bullet-wrapper .sub-bullet-wrapper .sub-bullet-node {
-  padding: 0.15rem 0 0.15rem 1.75rem;
-}
-
-.sub-bullet-wrapper .sub-bullet-wrapper .sub-bullet-node::before,
-.sub-bullet-wrapper .sub-bullet-wrapper .sub-bullet-node::after {
-  display: block;
-  content: '';
-  position: absolute;
-}
-
-.sub-bullet-wrapper .sub-bullet-wrapper .sub-bullet-node::before {
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: rgba(186, 230, 253, 0.2);
-}
-
-.sub-bullet-wrapper .sub-bullet-wrapper .sub-bullet-node::after {
-  left: 0;
-  top: 1em;
-  width: 1rem;
-  height: 2px;
-  background: rgba(186, 230, 253, 0.3);
-}
-
-.sub-bullet-wrapper .sub-bullet-wrapper .sub-bullet-node:last-child::before {
-  height: 1em;
-}
-
-.branch-content {
-  color: #cbd5e1;
-  font-size: 0.95rem;
-  line-height: 1.5rem;
-}
-
-/* --- LÓGICA PARA EXIBIÇÃO CONDICIONAL DO SUBTÍTULO --- */
-
-.subtitle-field:empty {
-  display: none;
-}
-
-.subtitle-field:not(:empty)::before {
-  content: '"';
-  margin-right: 0.25em;
-}
-
-.subtitle-field:not(:empty)::after {
-  content: '"';
-  margin-left: 0.25em;
-}
-/* --- ESTILOS PARA LISTAS INLINE ({...}) --- */
-
-.inline-list {
-  list-style-type: disc; /* Usa o '•' padrão */
-  margin-top: 0.5em;
-  margin-bottom: 0.75em;
-  padding-left: 1.5rem; /* Indentação da lista em relação ao seu "título" */
-}
-
-.inline-list li {
-  padding-left: 0.25rem; /* Pequeno espaço entre o bullet e o texto do item */
-  margin-bottom: 0.25em;
-}
+    }
