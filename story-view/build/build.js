@@ -104,7 +104,7 @@ function processarBlocosEspeciais(markdown) {
     let lastNodeLevel1 = null;
     let lastNodeLevel2 = null;
 
-    for (cnst line of lines) {
+    for (const line of lines) {
         const trimmedLine = line.trim();
         
         if (trimmedLine.startsWith('* ')) {
