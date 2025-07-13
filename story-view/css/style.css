@@ -1,6 +1,4 @@
-/* ============================================= */
-/* RESET E BASE DO LAYOUT                      */
-/* ============================================= */
+/* Base */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1c1917;
@@ -11,9 +9,7 @@ body {
   font-family: 'MedievalSharp', cursive;
 }
 
-/* ============================================= */
-/* SCROLLBAR                                   */
-/* ============================================= */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -31,9 +27,7 @@ body {
   background: #78716c;
 }
 
-/* ============================================= */
-/* ANIMAÇÕES                                   */
-/* ============================================= */
+/* Animations */
 .content-fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -49,9 +43,7 @@ body {
   }
 }
 
-/* ============================================= */
-/* SIDEBAR E RESPONSIVIDADE                      */
-/* ============================================= */
+/* Layout */
 #sidebar-toggle-btn {
   display: none;
 }
@@ -75,9 +67,6 @@ body {
   }
 }
 
-/* ============================================= */
-/* CAIXA DE HORÁRIO                             */
-/* ============================================= */
 .horario-box {
   position: absolute;
   top: 1rem;
@@ -93,11 +82,7 @@ body {
   z-index: 2;
 }
 
-/* ============================================= */
-/* ESTILOS PARA CONTEÚDO MARKDOWN (.prose)     */
-/* ============================================= */
-
-/* Parágrafos e espaçamento geral */
+/* Prose */
 .prose {
   line-height: 1.7;
 }
@@ -106,7 +91,6 @@ body {
   margin-bottom: 1.25em;
 }
 
-/* Títulos */
 .prose h2,
 .prose h3,
 .prose h4 {
@@ -131,7 +115,6 @@ body {
   border-bottom: none;
 }
 
-/* Links */
 .prose a {
   color: #7dd3fc;
   text-decoration: none;
@@ -144,7 +127,6 @@ body {
   text-decoration: underline;
 }
 
-/* Listas */
 .prose ul,
 .prose ol {
   padding-left: 1.5em;
@@ -159,24 +141,21 @@ body {
   color: #78716c;
 }
 
-/* Citações */
 .prose blockquote {
   margin-left: 0;
   padding-left: 1em;
   border-left: 3px solid #57534e;
   font-style: italic;
-  color: #a8a29e;
+  color: #78716c;
   background-color: #1c1917;
 }
 
-/* Linha Horizontal */
 .prose hr {
   border-color: #44403c;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
 }
 
-/* Código */
 .prose :not(pre) > code {
   background-color: rgba(186, 230, 253, 0.1);
   color: #e0f2fe;
@@ -201,17 +180,19 @@ body {
   font-size: 0.9em;
 }
 
-/* Tabelas */
 .prose table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1.5em;
+  display: block;
+  overflow-x: auto;
 }
 
 .prose th,
 .prose td {
   border: 1px solid #57534e;
   padding: 0.6em 0.8em;
+  white-space: nowrap;
 }
 
 .prose th {
