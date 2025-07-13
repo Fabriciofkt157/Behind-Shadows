@@ -199,4 +199,34 @@ body {
   background-color: #292524;
   color: #e5e7eb;
   font-weight: 600;
-    }
+}
+
+/* Menu Lateral Interativo */
+.nav-section {
+  position: relative;
+}
+
+.nav-toggle-btn {
+  display: none;
+  position: absolute;
+  left: -0.75rem; /* Ajustado para melhor posicionamento */
+  top: 0.2rem;   /* Ajustado para melhor posicionamento */
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #94a3b8; /* slate-400 */
+  transition: transform 0.2s;
+  padding: 0.1rem 0.25rem;
+}
+
+.nav-section:hover .nav-toggle-btn {
+  display: inline-block;
+}
+
+.nav-collapsed > ul,
+.nav-collapsed > div {
+  display: none;
+}
+
+.nav-toggle-btn.rotate {
+  transform: rotate(-90deg);
+}
