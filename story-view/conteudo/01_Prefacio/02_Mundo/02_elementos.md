@@ -4,97 +4,107 @@ icone: fa-sparkles
 template: simple
 ---
 
-* O mundo do jogo é composto a partir de 5 elementos fundamentais, a fusão desses elementos forma a natureza do mundo. O controle desses elementos pode acontecer a partir de dois fatores:
-  -> **mana**: são pedras formadas naturalmente a partir de energia natural, em outras palavras, é energia natural solidificada.
-  -> **runas**: são gemas que, quando estimuladas por magia ancestral, armazenam uma identidade mágica, quando estimuladas novamente por essa magia, reproduzem em grande escala a magia original. 
-    --> A magia ancestral tem origem a partir do Homem Misterioso: no início dos tempos, 7 discípulos foram escolhidos para difundir os conhecimentos do Homem Misterioso aos habitantes de cada realidade, cada discípulo possuía uma porção diferente do conhecimento original, isso dá origem as diferenças entre cada realidade.
-  
-Os elementos são:
+O mundo do jogo é composto a partir de 5 elementos fundamentais, cuja fusão forma a natureza do mundo. O controle desses elementos pode acontecer a partir de dois fatores:
 
-* Elétrico: trata-se da capacidade de excitar o movimento de elétrons para uma direção específica, esse movimento depende especialmente do material. Essa capacidade se propaga na forma de ondas, resultando em luz sólida (pode colidir com objetos, nesse caso, o objeto tem seus elétrons forçados a se mover, promovendo uma descarga elétrica).
-  -> Regras:
-     --> o poder do elemento elétrico é definido pela densidade, quanto maior a densidade, mais difícil é o controle dele e quanto maior a densidade, mais escura é a luz (exemplo: branco < azul claro < azul escuro < roxo < roxo escuro < preto)
-     --> se a pessoa estiver imersa em uma substância altamente condutora, como água ou metal liquido, a eletricidade é conduzida por toda a substância, atingindo tudo que também estiver imerso (incluindo o conjurador).
-     --> em caso de encontro entre dois elementos elétricos vindos de vetores exatamente opostos (-><-) (ex: duas pessoas, exatamente de frente uma pra outra), ambos os conjuradores são atingidos (nesse caso, luz não pode colidir com luz), o dano causado é de acordo com o poder do conjurador.
-     --> em caso de colisão entre dois elementos elétricos vindos de vetores diferentes, não opostos (|<-), vence o elemento com maior poder (exemplo: armadura elétrica repele qualquer golpe, independente do elemento, mesmo elétrico, no entanto, se a magia elétrica do inimigo for mais densa do que a armadura, ela é penetrada). Vindos de vetores iguais, o poder dos dois é somado.
-     --> elemento elétrico é extremamente resistente a fusão com outros elementos, a maior parte das magias resulta em um ataque combinado e não em um elemento novo.
+* **Mana:** Pedras formadas naturalmente a partir de energia natural, ou seja, energia natural solidificada.
+* **Runas:** Gemas que, quando estimuladas por magia ancestral, armazenam uma identidade mágica. Ao serem estimuladas novamente, reproduzem em grande escala a magia original.
+    * A magia ancestral tem origem no **Homem Misterioso**: no início dos tempos, 7 discípulos foram escolhidos para difundir seus conhecimentos aos habitantes de cada realidade. Cada discípulo possuía uma porção diferente do conhecimento original, o que deu origem às diferenças entre cada realidade.
 
-* Água: é a capacidade de condensar o vapor de água presente no ar ou fundir hidrogênio e oxigênio, se não houver nenhum desses dois fatores, o elemento água não pode ser usado.
-  -> Regras:
-    --> É um elemento de baixo índice de fusão: dificilmente forma um novo elemento, é mais comum o surgimento de uma alteração dela, por exemplo, água e ar: gelo; água e fogo: vapor, ou um ataque combinado como água e elétrico que formam água eletrizada.
+---
 
-* Fogo: habilidade de iniciar combustão a partir de energia natural (mana) ou espiritual (Onis).
-  -> Regras:
-    --> Energia é altamente volátil, ou seja, ao iniciar a combustão, a energia acaba rapidamente, sendo necessário outro material para continuar a combustão, no caso, o alvo.
-    --> Para iniciar a combustão, uma grande quantidade de energia é necessária, o que torna a condução lenta e facilmente detectável (exige alta concentração por parte do usuário). A forma mais eficaz é por meio da deposição, ou seja, chegar próximo ao alvo e anexar a energia nele.
-  -> Surge a partir da energia depositada ou conduzida no alvo, exemplo prático:
-     --> Pessoa conduz a energia de uma pedra de mana até o alvo > inicia a combustão a distância.
-     --> 2 pessoas estão duelando com espadas > uma dela deposita energia tocando na pessoa > se afasta e inicia a combustão
-  -> O alvo da combustão também pode ser outro elemento, como vento (ar) ou pedra.
+## Os 5 Elementos Fundamentais
 
-* Pedra: capacidade de solidificar materiais terrosos ou, em usuários avançados, outros elementos, em seguida conduzindo o material solidificado.
-  -> Consiste na deposição de energia no material que será solidificado. Exemplo:
-     --> 2 pessoas duelando no "mano a mano" > ao mesmo tempo que estão lutando, um usuário do elemento pedra deposita energia com os pés na região do solo onde está pisando > ao se afastar da região energizada, o usuário pode controlar a região e usa-la como quiser, por exemplo, surgir estacas no chão ou paredes ao redor para comprimir o alvo.
-  -> Além disso, o elemento Pedra exige uma conexão com o usuário, por exempl, uma linha de energia ligada ao material energizado. Se essa conexão for quebrada, o elemento Pedra se desfaz e volta a ser o que era antes (exceto para outros elementos).
+### Elétrico
+Trata-se da capacidade de excitar o movimento de elétrons para uma direção específica, dependendo do material. Essa capacidade se propaga na forma de ondas, resultando em luz sólida que pode colidir com objetos, forçando o movimento de seus elétrons e promovendo uma descarga elétrica.
 
-* Ar/Vento: capacidade de provocar diferenças de pressão a partir de energia, dessa forma conduzindo correntes de ar.
-  -> Elemento com ataques extremamente rápidos e eficazes: consiste em devolver a energia para seu estado natural, simplesmente exalando ela no ar.
-     --> Energia é extremamente condensada, o que significa que quando liberada ao seu estado natural, ocupa um grande volume rapidamente, gerando a corrente de ar.
-     --> Apesar de ser rápido e forte, esse elemento exige muito treinamento para a liberação correta da energia.
+> #### Regras do Elemento Elétrico
+> * O poder é definido pela densidade: quanto maior a densidade, mais difícil o controle e mais escura a luz (ex: branco < azul claro < roxo < preto).
+> * Se o conjurador estiver imerso em uma substância altamente condutora (água, metal líquido), a eletricidade se espalha por toda a substância, atingindo a todos, inclusive ele.
+> * Em um encontro frontal de magias elétricas, ambos os conjuradores são atingidos, pois luz não colide com luz. O dano é proporcional ao poder de cada um.
+> * Em colisões não frontais, vence o elemento mais denso. Magias de vetores iguais têm seu poder somado.
+> * É um elemento extremamente resistente a fusões, geralmente resultando em ataques combinados.
 
-* É comum encontrar usuários que utilizam mais de um elemento, na verdade, é raro encontrar alguém que não use.No entanto, a proficiência em um elemento dificulta o aprendizado de seu elemento oposto, devido a dificuldade em combinar ambos, consequentemente aperfeiçoando apenas um deles por vez.
-  -> Os opostos são (ser um oposto não significa que ambos se anulam, eles apenas são incompatíveis):
-    --> Ar e Elétrico;
-    --> Elétrico e Pedra;
-    --> Fogo e Elétrico;
-    --> Fogo e Água;
-    --> Água e Pedra;
+### Água
+A capacidade de condensar o vapor de água presente no ar ou de fundir hidrogênio e oxigênio. Sem um desses fatores, o elemento não pode ser usado.
 
-* A junção dos 5 elementos constitui dois elementos únicos: Sombra ou Luz. Esse ato é impossível para 99% das pessoas — são mortos pela incompatibilidade entre os elementos (unir todos os elementos incompatíveis num só). A formação da Sombra ou Luz exige a fusão permanente das runas de cada elemento (dos 5) com a alma do usuário 
-  -> O erro mais comum entre os que tentam: 
-    --> Eles não sabem sobre a fusão permanente, apenas aqueles que foram fragmentados e reconstituídos podem realizar esse ato.
-    --> Nesse caso, ao tentar manifestar os 5 elementos de uma vez com uma fusão simples, de duas coisas, uma acontece: abuso de energia vital (alma), ficando sem e não conseguindo mais assumir forma, ou morte pelos 5 elementos que se manifestam descontroladamente.
-  -> A fusão natural dos elementos só acontece quando a runa desse elemento está fundida com a alma do usuário, caso contrário, a fusão entre os elementos será forçada, resultando em um elemento extremamente instável.
-  -> O usuário que realizar esse feito, poderá controlar apenas a Luz ou a Sombra — o elemento se manifesta de acordo com a compatibilidade com a alma do usuário. A fusão de Luz e Sombra resulta no poder de controlar o tempo e o rumo das vidas guiadas por ele.
-  -> O surgimento de Luz e Sombra no mesmo usuário só é possível com a fusão da alma do usuário de elemento oposto. Esse feito é impossível, a alma não pode assumir forma.
-    --> Homem Misterioso é um exemplo disso: ele é o resultado da fusão de dois usuários que controlavam Luz e Sombra, suas almas não puderam assumir forma e o resultado foi uma Entidade sem forma física — o Homem Misterioso utiliza a Sombra para "assumir" forma, basicamente, é a personificação da Sombra (elemento).
-    --> Além disso, o Homem Misterioso é uma fusão e funciona de forma semelhante ao Alan corrompido, alterna entre fragmentos para controlar cada elemento: um deles controla a Luz e o outro a Sombra, no caso, a Entidade controla ambos os fragmentos. 
-    --> Isso impõe uma restrição: o controle do Tempo leva tempo, devido a fusão que precisa do manifesto dos dois fragmentos.
+> #### Regras do Elemento Água
+> * Possui baixo índice de fusão. Dificilmente forma um novo elemento, sendo mais comum gerar alterações de estado (ex: água + ar = gelo; água + fogo = vapor) ou ataques combinados (água eletrizada).
 
+### Fogo
+A habilidade de iniciar combustão a partir de energia natural (mana) ou espiritual (Onis).
 
-* Sombra (elemento): capacidade de um individuo em controlar matéria escura. Regras: 
-  -> O elemento Sombra não pode surgir com energia natural, apenas vital (alma).
-  -> Diferentemente dos outros elementos, Sombra não precisa da energia do individuo para se formar, apenas para controla-la.
-  -> Exemplificando: 
-    --> O elemento Fogo exige a energia do usuário no local onde a combustão será iniciada, pois usa a energia como combustível primário. 
-    --> Já com a Sombra, a energia é utilizada para marcação e controle. Como a energia utilizada é energia espiritual, o usuário não precisa de mana para manifestar a Sombra, ao invés disso, usa seus pensamentos — simplesmente desejando que ela apareça em tal lugar.
-  -> A sombra pode assumir forma própria, sendo física ou na forma de outro elemento.
-  -> Exemplificando: 
-    --> Alan recorrentemente usa uma foice de matéria escura (Sombra) durante suas lutas. Esse é um exemplo de forma física de Sombra.
-    --> Alan também utiliza a Sombra pra criar um fogo preto, esse fogo é 100x mais volátil do que Fogo (elemento), no entanto, para controlar o movimento dele, é necessário o uso de energia vital o tempo todo, caso contrário, queimará tudo que tocar. Esse é um exemplo de manifestação em forma de outro elemento.
-    --> Além disso, Sombra também pode assumir o controle mental de outros indivíduos. Alan utiliza isso em algumas missões de infiltração para Sky (organização).
+> #### Regras do Elemento Fogo
+> * A energia é altamente volátil e se esgota rapidamente após a ignição, necessitando de outro material (o alvo) para continuar a queima.
+> * A ignição exige uma grande quantidade de energia, tornando a conjuração lenta e facilmente detectável. A forma mais eficaz é por deposição de energia, através do toque.
 
-* Luz (elemento): capacidade de um individuo manifestar eventos físicos não visíveis. Regras:
-  -> Bem como Sombra, Luz não pode surgir com energia natural, apenas vital (alma).
-  -> Diferente de Sombra que é visível e assume forma física, Luz atinge seus oponentes sem chances de defesas ou desvios. Em outras palavras, o que estiver na mente do usuário, acontecerá.
-  -> Exemplificando: Mike pode utilizar a Luz e simular os efeitos de Fogo (elemento) de forma quase imediata. 
-  -> Exemplo prático: 
-    --> Mike usa a Luz para queimar um oponente.
-    --> O oponente começará a ser queimado, mas sem fogo visível. Obs: mesmo principio da Sombra: o fogo de Luz é 100x mais volátil que Fogo (elemento).
-   -> Como Luz não assume forma física, alguns elementos que exigem matéria para surtir efeito no oponente, como pedra e água, não podem ser formados na forma de Luz.
-   -> Por não precisar de forma física, Luz não possui delay para atingir seu alvo.
+*Exemplo prático:* Um usuário pode conduzir energia de uma pedra de mana para iniciar a combustão a distância, ou tocar em um adversário durante um duelo, depositar a energia e iniciar a combustão depois de se afastar.
 
-* OBS: Tanto Luz quanto Sombra desintegram a matéria do alvo, isso significa que o alvo não sentirá dor ao entrar em contato.
-  -> Exemplificando: Quando Alan utiliza a foice de Sombra, o inimigo atingido não é rasgado, como aconteceria com uma lâmina, a carne que antes estava onde a foice está é desintegrada. O mesmo vale para os elementos que forem formados com Sombra ou Luz.
+### Pedra
+A capacidade de solidificar materiais terrosos (ou, em nível avançado, outros elementos) e então manipulá-los.
 
+> #### Regras do Elemento Pedra
+> * Consiste na deposição de energia no material a ser solidificado. *Exemplo: um usuário deposita energia no chão com os pés durante um combate e, ao se afastar, controla a área energizada para criar estacas ou paredes.*
+> * Exige uma conexão constante com o usuário (ex: uma linha de energia). Se a conexão for quebrada, o material volta ao seu estado original.
 
-* As Sombras: Uma Sombra (entidade) é um fragmento de alma controlado por um usuário do elemento Sombra. O processo de corrupção funciona da seguinte forma:
-  -> Tudo começa com o primeiro contato da vítima com o elemento sombra de um corrompido.
-  -> Ao ser tocado pela Sombra, a alma (ou fragmento da alma) da vítima é fragmentada em 2. Durante a corrupção, um dos fragmentos é teleportado para uma das partições do submundo, já a outra, sofre um processo de fusão forçada, onde um fragmento falso, que simula o fragmento do Submundo, é criado a partir do fragmento restante e se une a ele. Com essa união, o fragmento falso assume controle do fragmento original, manifestando as características de uma Sombra. OBS: esse é um dos sinais de que o Homem Misterioso é, na verdade, o responsável pelo Exército das Sombras, já que para viajar entre dimensões é necessário o poder de controlar o tempo.
-  -> O processo de fusão forçada acontece com uma nova fragmentação da Sombra original (entidade), um fragmento se funde com o fragmento da nova vítima e o outro permanece na Sombra original.
-  -> O processo para descorromper um corrompido consiste em assumir o poder sobre o elemento Sombra que está no controle do fragmento. Existem duas formas de fazer isso:
-    --> **Selamento**: o elemento Sombra troca de hospedeiro, saindo do fragmento e indo para o objeto de selamento. 
-    --> Como exemplo: Mike usa desse método para descorromper Alan. O método dele consiste em um ritual que força a fusão do fragmento corrompido com o original se desfazer, quando isso acontece, a Sombra tenta buscar um hospedeiro próximo, no caso, o hospedeiro se tornou a runa de selamento utilizada no ritual. Quanto ao outro fragmento, quando Alan derrota o falso General (o real é a Raika), o portal criado pelo Homem Misterioso é reaberto e o fragmento do Submundo pode voltar para Median, Alan reaparece no local do ritual pois seus pertences são como âncoras para a alma dele. Quando a fusão é desfeita, o fragmento original tentará se estabilizar, nesse ponto, o outro fragmento entra em ação: ele se funde com o fragmento de Median. Dessa forma, o fragmento de Median é descorrompido, mas o fragmento do Submundo continua com a corrupção, mas dessa vez, Alan está no controle.
-    -->"Parcialmente restaurado" devido ao fato de os dois fragmentos não voltarem a ser um, agora, Alan é composto por 25% + 25% da sua constituição antes de morrer em Eards; Alan alterna entre os dois fragmentos (por isso a relação 25 + 25), já Mike, controla 50% em modo único, o que em teoria, torna ele mais forte do que Alan, no entanto, Alan ganha novas habilidades com o fragmento do Submundo (nesse estado, Alan, mesmo com a metade da integridade que Mike possui, venceria Mike em uma luta).
-    --> **Exorcismo/banimento**: aqueles que controlam o elemento Sombra ou Luz podem controlar/extinguir a sombra que controla o fragmento corrompido, para isso, o poder daquele que realizará o procedimento deve ser maior de quem conjurou a corrupção.
-    --> Quando Alan possuir o controle das Sombras (domínio do elemento Sombra), ele fará o processo para extinguir o fragmento corrompido e posteriormente desfragmentar a alma dele.
+### Ar/Vento
+A capacidade de provocar diferenças de pressão a partir de energia, conduzindo correntes de ar.
+
+> #### Regras do Elemento Ar/Vento
+> * Os ataques são extremamente rápidos e eficazes, consistindo em devolver a energia ao seu estado natural ao exalá-la.
+> * A energia é extremamente condensada e se expande rapidamente ao ser liberada, gerando a corrente de ar.
+> * Apesar da força, exige muito treinamento para a liberação correta da energia.
+
+---
+
+## Proficiência e Elementos Opostos
+É comum encontrar usuários que utilizam mais de um elemento. No entanto, a proficiência em um elemento dificulta o aprendizado de seu oposto, devido à incompatibilidade na combinação. Os opostos são:
+
+* Ar e Elétrico
+* Elétrico e Pedra
+* Fogo e Elétrico
+* Fogo e Água
+* Água e Pedra
+
+---
+
+## Elementos Superiores: Luz e Sombra
+A junção dos 5 elementos constitui dois elementos únicos: `Sombra` ou `Luz`. Esse ato é impossível para 99% das pessoas, que morrem pela incompatibilidade. A formação de `Sombra` ou `Luz` exige a fusão permanente das runas dos 5 elementos com a alma do usuário.
+
+* **O erro mais comum:** Aqueles que tentam não sabem sobre a necessidade da fusão permanente. Apenas quem já foi fragmentado e reconstituído pode realizar o ato. Ao tentar uma fusão simples, o usuário ou esgota sua energia vital (perdendo a forma) ou é morto pelos 5 elementos se manifestando descontroladamente.
+* A fusão natural só ocorre quando a runa do elemento está fundida à alma. Caso contrário, a fusão é forçada e resulta em um elemento extremamente instável.
+* O usuário que realiza o feito poderá controlar apenas `Luz` ou `Sombra`, dependendo da compatibilidade de sua alma.
+* A fusão de `Luz` e `Sombra` resulta no poder de controlar o tempo. O surgimento de ambos no mesmo usuário só é possível com a fusão da alma de um usuário do elemento oposto, um feito considerado impossível.
+    * O **Homem Misterioso** é a exceção. Ele é o resultado da fusão de dois usuários que controlavam `Luz` e `Sombra`. Suas almas não puderam assumir forma, resultando em uma Entidade sem forma física que usa a Sombra para se manifestar. Ele alterna entre seus fragmentos internos para controlar cada elemento, o que impõe uma restrição: o controle do Tempo leva tempo.
+
+### O Elemento Sombra
+É a capacidade de um indivíduo controlar matéria escura.
+> * Não pode surgir com energia natural, apenas vital (alma).
+> * Diferente de outros elementos, a `Sombra` não precisa da energia do indivíduo para se formar, apenas para ser controlada. A energia espiritual (pensamento) é usada para marcação e controle.
+> * Pode assumir forma própria, seja física ou na forma de outro elemento.
+> * *Exemplo 1: Alan recorrentemente usa uma foice de matéria escura (forma física).*
+> * *Exemplo 2: Alan também cria um fogo preto, 100x mais volátil que o fogo comum, que exige controle constante para não queimar tudo que tocar (forma de outro elemento).*
+> * Pode assumir o controle mental de outros indivíduos.
+
+### O Elemento Luz
+É a capacidade de um indivíduo manifestar eventos físicos não visíveis.
+> * Assim como a `Sombra`, não pode surgir com energia natural, apenas vital.
+> * Diferente da `Sombra`, a `Luz` atinge seus oponentes sem chance de defesa ou desvio. O que estiver na mente do usuário, acontecerá.
+> * *Exemplo: Mike pode usar a `Luz` para simular os efeitos do `Fogo` de forma quase imediata, queimando um oponente sem chamas visíveis.*
+> * Como não assume forma física, não pode manifestar elementos que exigem matéria, como `Pedra` e `Água`.
+
+> **Nota Importante:** Tanto `Luz` quanto `Sombra` desintegram a matéria do alvo. O alvo não sente dor, pois a carne é desintegrada em vez de cortada ou queimada.
+
+---
+
+## A Entidade "Sombra" e o Processo de Corrupção
+Uma `Sombra` (entidade) é um fragmento de alma controlado por um usuário do elemento `Sombra`. O processo de corrupção funciona da seguinte forma:
+
+1.  A vítima tem o primeiro contato com o elemento `Sombra` de um corrompido.
+2.  A alma da vítima é fragmentada em duas. Um fragmento é teleportado para o **Submundo**. O outro sofre uma fusão forçada com um "fragmento falso" criado pela `Sombra` original.
+3.  O fragmento falso assume o controle do original, manifestando as características de uma `Sombra`.
+
+O processo para reverter a corrupção consiste em assumir o poder sobre o elemento `Sombra` que está no controle do fragmento:
+
+* **Selamento:** O elemento `Sombra` troca de hospedeiro.
+    * *No caso de Alan, Mike realiza um ritual que desfaz a fusão forçada. A `Sombra` busca um novo hospedeiro, que se torna a runa de selamento. O fragmento original de Alan no **Submundo** é libertado e se funde novamente com seu fragmento em **Median**. Alan é descorrompido, mas agora possui um fragmento puro e um fragmento corrompido sob seu controle, alternando entre eles.*
+* **Exorcismo/Banimento:** Usuários de `Luz` ou `Sombra` podem extinguir a `Sombra` controladora se seu poder for maior que o do corruptor original.
