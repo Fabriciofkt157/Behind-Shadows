@@ -12,7 +12,6 @@ const conteudoPath = path.resolve(__dirname, '../conteudo');
 const distPath = path.resolve(__dirname, '../dist');
 const configPath = path.join(conteudoPath, 'config.json');
 
-
 const frontmatterSchema = z.object({
   titulo: z.string(),
   subtitulo: z.string().optional(),
@@ -30,111 +29,11 @@ const frontmatterSchema = z.object({
   personagens: z.array(z.string()).optional()
 });
 
-// --- NOVA VERSÃO DA FUNÇÃO processarListas ---
-function processarListas(text) {
-    // Procura pelo padrão que inicia a lista
-    const listStartIndex = text.indexOf(': {');
-    if (listStartIndex === -1) {
-        // Se não encontrar o padrão, retorna o texto original sem modificação
-        return text;
-    }
-
-    // Separa o texto que vem antes da lista e o conteúdo da lista
-    const labelText = text.substring(0, listStartIndex);
-    const blockContentMatch = text.substring(listStartIndex).match(/:\s*\{([^}]*)\}/);
-
-    if (!blockContentMatch || blockContentMatch.length < 2) {
-        return text; // Retorna o texto original se o formato da lista for inválido
-    }
-
-    const blockContent = blockContentMatch[1];
-
-    // Divide os itens por um hífen, permitindo itens na mesma linha ou em linhas separadas
-    const items = blockContent.split('-').map(item => item.trim()).filter(item => item);
-
-    if (items.length === 0) {
-        // Se não houver itens válidos, retorna o texto antes da lista
-        return labelText;
-    }
-
-    // Constrói a lista em HTML
-    let listHtml = '<ul class="inline-list">';
-    for (const item of items) {
-        // Usa marked.parseInline para que negrito/itálico funcionem dentro dos itens
-        listHtml += `<li>${marked.parseInline(item)}</li>`;
-    }
-    listHtml += '</ul>';
-
-    // Retorna o texto original que vinha antes da lista + a lista em HTML
-    return labelText + listHtml;
-}
-
-
-function processarBlocosEspeciais(markdown) {
-    const lines = markdown.split('\n').filter(line => line.trim() !== '');
-    let html = '';
-    let currentBlock = null;
-
-    function closeCurrentBlock() {
-        if (currentBlock) {
-            html += renderNode(currentBlock) + '</div>';
-            currentBlock = null;
-        }
-    }
-
-    function renderNode(node) {
-        let nodeHtml = '';
-        if (node.level === 0) { // Tópico principal (*)
-            nodeHtml += `<div class="bullet-item">${marked.parseInline(node.content)}</div>`;
-        } else { // Sub-tópicos (->, -->)
-            nodeHtml += `<div class="sub-bullet-node">
-                      <div class="branch-line"></div>
-                      <div class="branch-content">${marked.parseInline(node.content)}</div>
-                   </div>`;
-        }
-
-        if (node.children.length > 0) {
-            nodeHtml += '<div class="sub-bullet-wrapper">';
-            nodeHtml += node.children.map(renderNode).join('');
-            nodeHtml += '</div>';
-        }
-        return nodeHtml;
-    }
-    
-    let lastNodeLevel1 = null;
-    let lastNodeLevel2 = null;
-
-    for (const line of lines) {
-        const trimmedLine = line.trim();
-        
-        if (trimmedLine.startsWith('* ')) {
-            closeCurrentBlock();
-            currentBlock = { level: 0, content: trimmedLine.slice(2), children: [] };
-            html += '<div class="bullet-block">';
-            lastNodeLevel1 = currentBlock;
-        } else if (trimmedLine.startsWith('-->') && lastNodeLevel2) {
-            const node = { level: 3, content: processarListas(trimmedLine.slice(3).trim()), children: [] };
-            lastNodeLevel2.children.push(node);
-        } else if (trimmedLine.startsWith('->')) {
-            if (!lastNodeLevel1) continue;
-            const node = { level: 2, content: processarListas(trimmedLine.slice(2).trim()), children: [] };           
-            lastNodeLevel1.children.push(node);
-            lastNodeLevel2 = node;
-        } else {
-            closeCurrentBlock();
-            html += marked.parse(processarListas(trimmedLine));
-        }
-    }
-
-    closeCurrentBlock();
-    return html;
-}
-
 async function processarArquivo(filePath, topicos, secaoPai = null) {
     if (!filePath.endsWith('.md')) return;
 
     const raw = await fs.readFile(filePath, 'utf8');
-    const { data, content } = matter(raw);
+    const { data, content } = matter(raw); // Separa o frontmatter do conteúdo
     const valid = frontmatterSchema.safeParse(data);
 
     if (!valid.success) {
@@ -154,11 +53,12 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
         subtitle: data.subtitulo || '',
         template: data.template || (secaoPai?.template ?? 'simple'),
         icon: data.icone || secaoPai?.icon || 'fa-book',
-        contentHtml: processarBlocosEspeciais(content)
+        // Usamos diretamente a função padrão da biblioteca `marked` para converter
+        // o conteúdo Markdown em HTML, sem nenhuma lógica customizada.
+        contentHtml: marked.parse(content)
     };
 }
 
-// O restante do arquivo (processarDiretorio, gerarDbJson) pode permanecer o mesmo.
 async function processarDiretorio(dir) {
   const secoes = [];
   const topicos = {};
