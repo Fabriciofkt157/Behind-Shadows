@@ -9,16 +9,27 @@ const mainContentEl = document.getElementById('main-content');
 const codexTitleEl = document.getElementById('codex-title');
 const sidebarEl = document.getElementById('sidebar');
 
+function customSort(a, b, key = 'id') {
+  const aHasOrder = typeof a.ordem === 'number';
+  const bHasOrder = typeof b.ordem === 'number';
+
+  if (aHasOrder && bHasOrder) {
+    return a.ordem - b.ordem;
+  }
+  if (aHasOrder) return -1;
+  if (bHasOrder) return 1;
+
+  return a[key].localeCompare(b[key]);
+}
+
 function renderNavSection(section, container) {
     const sectionDiv = document.createElement('div');
     sectionDiv.className = `nav-section ${section.parent ? 'ml-4 mt-2' : 'mt-4'} relative`;
 
     if (section.title) {
-        // Cria o título
         const titleH3 = document.createElement('h3');
         titleH3.className = 'text-xs font-title text-stone-500 uppercase tracking-wider flex items-center px-3 relative';
 
-        // Botão de colapso
         const toggleBtn = document.createElement('span');
         toggleBtn.className = 'nav-toggle-btn absolute left-[-12px]';
         toggleBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
@@ -29,28 +40,23 @@ function renderNavSection(section, container) {
             toggleBtn.classList.toggle('rotate');
         });
 
-        // Ícone da seção
         const iconEl = document.createElement('i');
         iconEl.className = `fas ${section.icon || 'fa-book'} fa-fw mr-3`;
 
-        // Texto do título
         const spanTitle = document.createElement('span');
         spanTitle.textContent = section.title;
 
-        // Monta o <h3>
         titleH3.appendChild(toggleBtn);
         titleH3.appendChild(iconEl);
         titleH3.appendChild(spanTitle);
-
         sectionDiv.appendChild(titleH3);
     }
 
-    // Lista de itens
     if (section.items && section.items.length) {
         const ul = document.createElement('ul');
         ul.className = 'space-y-1 mt-1 ml-5 border-l border-stone-700';
         section.items
-            .sort((a, b) => a.title.localeCompare(b.title))
+            .sort((a, b) => customSort(a, b, 'title'))
             .forEach(item => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
@@ -64,11 +70,10 @@ function renderNavSection(section, container) {
         sectionDiv.appendChild(ul);
     }
 
-    // Sub-seções recursivas
     if (section.children && section.children.length) {
         const childrenContainer = document.createElement('div');
         section.children
-            .sort((a, b) => a.id.localeCompare(b.id))
+            .sort((a, b) => customSort(a, b, 'id'))
             .forEach(child => renderNavSection(child, childrenContainer));
         sectionDiv.appendChild(childrenContainer);
     }
@@ -102,7 +107,7 @@ function buildNavMenu() {
     });
 
     rootSections
-        .sort((a, b) => a.id.localeCompare(b.id))
+        .sort((a, b) => customSort(a, b, 'id'))
         .forEach(section => renderNavSection(section, navMenuEl));
 }
 
@@ -113,14 +118,12 @@ function renderContent(itemId) {
 
     const item = db.topics[itemId];
     if (!item) {
-        console.warn(`Tópico com id "${itemId}" não encontrado. Carregando página inicial.`);
         return renderContent('home');
     }
 
     const templateName = item.template || 'simple';
     const templateContainer = document.getElementById(`${templateName}-template-display`);
     if (!templateContainer) {
-        console.error(`Template de visualização para '${templateName}' não encontrado.`);
         return mainContentEl.innerHTML = `<p>Erro: Template '${templateName}' não existe.</p>`;
     }
 
@@ -144,7 +147,6 @@ function renderContent(itemId) {
         templateHtml = templateHtml.replace('{details_grid}', detailsHtml);
     }
 
-    // Substitui todos os placeholders {chave} pelo valor correspondente do item
     Object.keys(item).forEach(key => {
         const regex = new RegExp(`{${key}}`, 'g');
         let content = item[key] || '';
@@ -165,7 +167,6 @@ function renderContent(itemId) {
         horarioBox.style.display = 'none';
     }
 }
-
 
 function initializeEventHandlers() {
     const sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
@@ -217,7 +218,6 @@ async function init() {
         buildNavMenu();
         initializeEventHandlers();
     } catch (err) {
-        console.error("Falha ao inicializar:", err);
         mainContentEl.innerHTML = `
           <div class="text-center p-8 bg-red-900/50 rounded-lg text-red-300">
             <h2 class="text-3xl font-title">Erro ao carregar o Códice</h2>
