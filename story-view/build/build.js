@@ -33,13 +33,18 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     if (!filePath.endsWith('.md')) return;
 
     const raw = await fs.readFile(filePath, 'utf8');
-    const { data, content } = matter(raw); // Separa o frontmatter do conteúdo
+    let { data, content } = matter(raw);
     const valid = frontmatterSchema.safeParse(data);
 
     if (!valid.success) {
         console.warn(`⚠️  Erro de validação em ${filePath}:`, valid.error.flatten().fieldErrors);
         return;
     }
+
+    const navButtonRegex = />> \[(.*?)\]\((.*?)\)/g;
+    content = content.replace(navButtonRegex, (match, text, url) => {
+        return `<a href="${url}" class="nav-button"><i class="fas fa-arrow-right"></i> ${text}</a>`;
+    });
 
     const id = path.basename(filePath, '.md');
     
@@ -53,12 +58,9 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
         subtitle: data.subtitulo || '',
         template: data.template || (secaoPai?.template ?? 'simple'),
         icon: data.icone || secaoPai?.icon || 'fa-book',
-        // Usamos diretamente a função padrão da biblioteca `marked` para converter
-        // o conteúdo Markdown em HTML, sem nenhuma lógica customizada.
         contentHtml: marked.parse(content)
     };
 }
-
 async function processarDiretorio(dir) {
   const secoes = [];
   const topicos = {};
