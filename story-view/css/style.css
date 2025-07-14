@@ -230,3 +230,49 @@ body {
 .nav-toggle-btn.rotate {
   transform: rotate(-90deg);
 }
+
+/* Botão de Navegação Interna */
+.nav-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-right: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #292524;
+  color: #e5e7eb;
+  border: 1px solid #57534e;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #57534e;
+  color: #fff;
+  border-color: #78716c;
+  transform: translateY(-2px);
+}
+
+.nav-button .fas {
+  margin-right: 0.5rem;
+  font-size: 0.9em;
+}
+
+/* Templates Específicos */
+.cutscene-script p {
+  margin-bottom: 1em !important;
+}
+
+.cutscene-script strong {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  color: #a8a29e;
+  margin-bottom: -0.5em;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.gameplay-segment {
+  border-left: 4px solid #7dd3fc;
+}
