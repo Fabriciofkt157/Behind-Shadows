@@ -60,6 +60,23 @@
         <div class="px-6 py-4 bg-black/20 prose prose-invert max-w-none text-stone-300 leading-relaxed">{contentHtml}</div>
       </div>
     </div>
+    <div id="cutscene-template-display">
+  <div class="bg-stone-800 rounded-lg shadow-lg content-fade-in border border-stone-700">
+    <div class="p-6 border-b border-stone-700">
+      <h2 class="text-4xl text-sky-200 font-title mb-2">{title}</h2>
+      <p class="text-stone-400 mb-2 italic subtitle-field">{subtitle}</p>
+    </div>
+    <div class="p-6 prose prose-invert max-w-none text-stone-300 leading-relaxed cutscene-script">{contentHtml}</div>
+  </div>
+</div>
+
+<div id="gameplay-template-display">
+  <div class="bg-stone-800 rounded-lg shadow-lg p-6 content-fade-in border border-stone-700 gameplay-segment">
+    <h2 class="text-4xl text-sky-200 font-title mb-2">{title}</h2>
+    <p class="text-stone-400 mb-6 italic subtitle-field">{subtitle}</p>
+    <div class="prose prose-invert max-w-none text-stone-300 leading-relaxed">{contentHtml}</div>
+  </div>
+</div>
   </div>
   <script src="js/app.js" type="module"></script>
 </body>
