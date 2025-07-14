@@ -16,7 +16,8 @@ const frontmatterSchema = z.object({
   titulo: z.string(),
   subtitulo: z.string().optional(),
   icone: z.string().optional(),
-  template: z.enum(['simple', 'character', 'inventory', 'timeline', 'evento', 'termo', 'mapa', 'grupo', 'cutscene']).optional(),
+  ordem: z.number().optional(),
+  template: z.enum(['simple', 'character', 'inventory', 'timeline', 'evento', 'termo', 'mapa', 'grupo', 'cutscene', 'gameplay']).optional(),
   image_url: z.string().optional(),
   age: z.string().optional(),
   birthday: z.string().optional(),
@@ -49,7 +50,7 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     const id = path.basename(filePath, '.md');
     
     if (secaoPai && secaoPai.items) {
-      secaoPai.items.push({ id, title: data.titulo });
+      secaoPai.items.push({ id, title: data.titulo, ordem: data.ordem });
     }
 
     topicos[id] = {
@@ -61,6 +62,7 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
         contentHtml: marked.parse(content)
     };
 }
+
 async function processarDiretorio(dir) {
   const secoes = [];
   const topicos = {};
@@ -82,7 +84,8 @@ async function processarDiretorio(dir) {
         icon: data.icone || 'fa-book',
         template: data.template || 'simple',
         parent: parentId,
-        items: []
+        items: [],
+        ordem: data.ordem
       };
       secoes.push(secaoAtual);
     }
