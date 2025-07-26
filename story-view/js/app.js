@@ -1,6 +1,6 @@
-//js/app.js
+// js/app.js
 
-const DB_PATH = 'dist/db.json';
+const DB_PATH = './db.json';
 
 let db = null;
 
@@ -69,9 +69,8 @@ function renderNavSection(section, container) {
                     iconEl.className = `fas ${item.icon} fa-fw mr-2 text-xs opacity-70`;
                     a.appendChild(iconEl);
                 }
-                
+
                 a.appendChild(document.createTextNode(item.title));
-                
                 li.appendChild(a);
                 ul.appendChild(li);
             });
@@ -97,7 +96,7 @@ function buildNavMenu() {
     homeLink.className = 'block text-stone-300 hover:bg-stone-700 hover:text-sky-300 rounded-md px-3 py-2 text-sm font-medium';
     homeLink.innerHTML = '<i class="fas fa-dungeon w-6 mr-2"></i>Início';
     homeLink.dataset.target = 'home';
-    navMenuel.appendChild(homeLink);
+    navMenuEl.appendChild(homeLink); // Corrigido aqui
 
     const sectionsMap = new Map();
     const rootSections = [];
