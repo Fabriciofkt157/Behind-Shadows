@@ -28,8 +28,8 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Executar build.js
-        run: node build/build.js
+      - name: Executar build.cjs
+        run: node build/build.cjs
 
       - name: Verificar mudanças
         run: |
