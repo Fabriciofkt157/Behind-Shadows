@@ -276,3 +276,20 @@ body {
 .gameplay-segment {
   border-left: 4px solid #7dd3fc;
 }
+
+/* Estilos para Diálogos de Cutscene */
+.dialogo-linha {
+  margin-bottom: 0.75em !important; /* Menor espaçamento entre falas */
+  line-height: 1.6;
+}
+
+.personagem-nome {
+  color: #7dd3fc; /* Cor azul-céu para o nome, igual aos links */
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.personagem-fala {
+  color: #d6d3d1; /* Cor padrão do texto */
+  font-style: italic; /* Deixa a fala em itálico para diferenciar */
+}

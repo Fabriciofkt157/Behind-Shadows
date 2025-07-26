@@ -47,10 +47,20 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
         return `<a href="${url}" class="nav-button"><i class="fas fa-arrow-right"></i> ${text}</a>`;
     });
 
+    const dialogoRegex = /^(?!>|#|\*|-|\s*`)\s*([\w\sÁ-úÀ-ù()]+):\s*(.*)/gm;
+    content = content.replace(dialogoRegex, (match, personagem, fala) => {
+        return `<p class="dialogo-linha"><strong class="personagem-nome">${personagem.trim()}:</strong> <span class="personagem-fala">${fala.trim()}</span></p>`;
+    });
+
     const id = path.basename(filePath, '.md');
     
     if (secaoPai && secaoPai.items) {
-      secaoPai.items.push({ id, title: data.titulo, ordem: data.ordem });
+        secaoPai.items.push({ 
+        id, 
+        title: data.titulo, 
+        ordem: data.ordem,
+        icon: data.icone 
+      });
     }
 
     topicos[id] = {
