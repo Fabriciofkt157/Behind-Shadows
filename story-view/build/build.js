@@ -1,8 +1,12 @@
-const fs = require('fs-extra');
-const path = require('path');
-const matter = require('gray-matter');
-const { marked } = require('marked');
-const { z } = require('zod');
+import fs from 'fs-extra';
+import path from 'path';
+import matter from 'gray-matter';
+import { marked } from 'marked';
+import { z } from 'zod';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const conteudoPath = path.resolve(__dirname, '../conteudo');
 const distPath = path.resolve(__dirname, '../dist');
@@ -43,15 +47,10 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
         return `<a href="${url}" class="nav-button"><i class="fas fa-arrow-right"></i> ${text}</a>`;
     });
 
-    const dialogoRegex = /^(?!>|#|\*|-|\s*`)\s*([\w\sÁ-úÀ-ù()]+):\s*(.*)/gm;
-    content = content.replace(dialogoRegex, (match, personagem, fala) => {
-        return `<p class="dialogo-linha"><strong class="personagem-nome">${personagem.trim()}:</strong> <span class="personagem-fala">${fala.trim()}</span></p>`;
-    });
-
     const id = path.basename(filePath, '.md');
-
+    
     if (secaoPai && secaoPai.items) {
-        secaoPai.items.push({ id, title: data.titulo, ordem: data.ordem });
+      secaoPai.items.push({ id, title: data.titulo, ordem: data.ordem });
     }
 
     topicos[id] = {
@@ -78,7 +77,7 @@ async function processarDiretorio(dir) {
       const raw = await fs.readFile(fullPath, 'utf8');
       const { data } = matter(raw);
       const secaoId = path.relative(conteudoPath, currentDir).replace(/\\/g, '/');
-
+      
       secaoAtual = {
         id: secaoId,
         title: data.titulo.replace(/_/g, ' '),
