@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-27T01:54:09.266Z",
+  "lastUpdated": "2025-07-27T01:59:23.285Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -122,7 +122,8 @@
       "items": [
         {
           "id": "01_O_Fim",
-          "title": "O Fim?"
+          "title": "O Fim?",
+          "ordem": 1
         },
         {
           "id": "02_Novo_Mundo",
@@ -331,6 +332,7 @@
       "titulo": "O Fim?",
       "subtitulo": "Cutscene: O fim?",
       "template": "cutscene",
+      "ordem": 1,
       "icone": "fa-film",
       "title": "O Fim?",
       "subtitle": "Cutscene: O fim?",
