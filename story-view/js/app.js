@@ -1,6 +1,6 @@
 // js/app.js
 
-const DB_PATH = './db.json';
+const DB_PATH = 'dist/db.json';
 
 let db = null;
 
@@ -61,16 +61,9 @@ function renderNavSection(section, container) {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
                 a.href = `#${item.id}`;
-                a.className = 'block text-stone-400 hover:text-sky-300 text-sm py-1 pl-4 flex items-center';
+                a.className = 'block text-stone-400 hover:text-sky-300 text-sm py-1 pl-4';
+                a.textContent = item.title;
                 a.dataset.target = item.id;
-
-                if (item.icon) {
-                    const iconEl = document.createElement('i');
-                    iconEl.className = `fas ${item.icon} fa-fw mr-2 text-xs opacity-70`;
-                    a.appendChild(iconEl);
-                }
-
-                a.appendChild(document.createTextNode(item.title));
                 li.appendChild(a);
                 ul.appendChild(li);
             });
@@ -96,7 +89,7 @@ function buildNavMenu() {
     homeLink.className = 'block text-stone-300 hover:bg-stone-700 hover:text-sky-300 rounded-md px-3 py-2 text-sm font-medium';
     homeLink.innerHTML = '<i class="fas fa-dungeon w-6 mr-2"></i>Início';
     homeLink.dataset.target = 'home';
-    navMenuEl.appendChild(homeLink); // Corrigido aqui
+    navMenuEl.appendChild(homeLink);
 
     const sectionsMap = new Map();
     const rootSections = [];
