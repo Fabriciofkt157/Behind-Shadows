@@ -318,3 +318,46 @@ body {
   max-width: 90%;
   display: block; /* Reseta o flex para ocupar a linha */
 }
+
+/* Gameplay - estilo de sessão jogável */
+.gameplay-block {
+  padding: 1rem;
+  background-color: #1c1917;
+  border-left: 4px solid #7dd3fc;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.gameplay-line {
+  padding-left: 1rem;
+  position: relative;
+}
+.gameplay-line::before {
+  content: "🎮";
+  position: absolute;
+  left: 0;
+  color: #7dd3fc;
+}
+
+.gameplay-info {
+  background-color: #292524;
+  padding: 0.75rem;
+  border-left: 3px solid #a78bfa;
+  margin: 1rem 0;
+  border-radius: 6px;
+  color: #d6d3d1;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.gameplay-action {
+  background-color: #1e293b;
+  color: #a5f3fc;
+  font-style: italic;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid #0ea5e9;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
