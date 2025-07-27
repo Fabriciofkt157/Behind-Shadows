@@ -276,3 +276,17 @@ body {
 .gameplay-segment {
   border-left: 4px solid #7dd3fc;
 }
+
+.cutscene-script p {
+  margin-bottom: 1em !important;
+}
+
+.cutscene-script strong {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  color: #a8a29e; /* stone-400 */
+  margin-bottom: -0.5em;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
