@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-07-27T01:59:23.285Z",
+  "lastUpdated": "2025-07-27T01:59:55.934Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -127,7 +127,8 @@
         },
         {
           "id": "02_Novo_Mundo",
-          "title": "Chegada ao Novo Mundo"
+          "title": "Chegada ao Novo Mundo",
+          "ordem": 2
         }
       ],
       "ordem": 1
@@ -343,6 +344,7 @@
       "titulo": "Chegada ao Novo Mundo",
       "subtitulo": "Cutscene: Novo Mundo",
       "template": "cutscene",
+      "ordem": 2,
       "icone": "fa-film",
       "title": "Chegada ao Novo Mundo",
       "subtitle": "Cutscene: Novo Mundo",
