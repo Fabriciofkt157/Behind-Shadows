@@ -2,6 +2,7 @@
 titulo: "Chegada ao Novo Mundo"
 subtitulo: "Cutscene: Novo Mundo"
 template: cutscene
+ordem: 2
 icone: fa-film
 ---
 
