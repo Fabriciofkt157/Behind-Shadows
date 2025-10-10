@@ -26,3 +26,5 @@ Aproveite e dê uma olhada no meu portfólio:
 
 Toda ajuda é bem-vinda! Se você deseja fazer sugestões ou reportar bugs, entre em contato pelo email:  
 [fabriciotanquellafkt2@gmail.com](mailto:fabriciotanquellafkt2@gmail.com)
+
+
