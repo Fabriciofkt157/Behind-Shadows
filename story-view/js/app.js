@@ -3,24 +3,19 @@
 const DB_PATH = 'dist/db.json';
 
 let db = null;
-let characterDataMap = new Map(); // Mapa para acesso rápido aos dados dos personagens
+let characterDataMap = new Map(); 
 
 const navMenuEl = document.getElementById('nav-menu');
 const mainContentEl = document.getElementById('main-content');
 const codexTitleEl = document.getElementById('codex-title');
 const sidebarEl = document.getElementById('sidebar');
 
-/**
- * Mapeia os dados dos personagens para acesso rápido.
- * Isso evita ter que percorrer todos os tópicos toda vez que uma cutscene é renderizada.
- */
 function mapCharacterData() {
   if (!db || !db.topics) return;
   
   for (const topicId in db.topics) {
     const topic = db.topics[topicId];
     if (topic.template === 'character') {
-      // O campo 'title' pode ter vários nomes, ex: "Alan / Lon"
       const names = topic.title.split('/').map(name => name.trim());
       
       const characterInfo = {
@@ -28,11 +23,10 @@ function mapCharacterData() {
         imageUrl: topic.image_url || `https://placehold.co/80x80/292524/7dd3fc?text=${names[0][0]}`
       };
 
-      // Adiciona todas as variações de nome ao mapa
       names.forEach(name => {
         characterDataMap.set(name, characterInfo);
       });
-      // Adiciona o nome completo do subtítulo também, se existir (ex: "Alan Dount")
+      
       if (topic.subtitle) {
          characterDataMap.set(topic.subtitle.trim(), characterInfo);
       }
@@ -40,17 +34,14 @@ function mapCharacterData() {
   }
 }
 
-/**
- * Estiliza o conteúdo de uma cutscene para parecer um chat.
- * Adiciona avatares, links e alinha os balões de diálogo.
- */
+
 function styleChatBubbles() {
   const scriptContainer = mainContentEl.querySelector('.cutscene-script .prose');
   if (!scriptContainer) return;
 
   const lines = Array.from(scriptContainer.querySelectorAll('p'));
   let lastSpeaker = null;
-  let currentSide = 'right'; // Começa com 'right' para o primeiro toggle ir para 'left'
+  let currentSide = 'right';
 
   lines.forEach(line => {
     const speakerTag = line.querySelector('strong');
@@ -65,10 +56,9 @@ function styleChatBubbles() {
 
     const character = characterDataMap.get(speakerName);
 
-    // Limpa o parágrafo para reconstruir com a nova estrutura
     line.innerHTML = ''; 
 
-    if (character) { // É uma linha de diálogo de um personagem conhecido
+    if (character) { 
       if (speakerName !== lastSpeaker) {
         currentSide = (currentSide === 'left') ? 'right' : 'left';
       }
@@ -98,7 +88,7 @@ function styleChatBubbles() {
       
       lastSpeaker = speakerName;
 
-    } else { // É uma linha de ação/narração
+    } else { 
       line.classList.add('chat-action');
       line.innerHTML = dialogText;
     }
@@ -250,16 +240,25 @@ function renderContent(itemId) {
         if (key === 'image_url' && !content) {
             content = `https://placehold.co/200x200/292524/7dd3fc?text=${item.title ? item.title[0] : '?'}`;
         }
+        if (key === 'contentHtml') {
+           content = parseAndLinkGlossaryTerms(content);
+        }
         templateHtml = templateHtml.replace(regex, content);
     });
 
     mainContentEl.innerHTML = templateHtml;
     mainContentEl.scrollTop = 0;
     
-    // Aplica o estilo de chat se o template for 'cutscene'
     if (item.template === 'cutscene') {
         styleChatBubbles();
     }
+
+    tippy('.glossary-term', {
+      allowHTML: true,
+      theme: 'custom',
+      interactive: false,
+      animation: 'scale-subtle',
+    });
 
     const horarioBox = document.querySelector('.horario-box');
     if (item.horario) {
@@ -317,11 +316,10 @@ async function init() {
             lastUpdatedEl.textContent = `Última atualização: ${date.toLocaleDateString()} às ${date.toLocaleTimeString()}`;
         }
 
-        mapCharacterData(); // Mapeia os personagens assim que o DB é carregado
+        mapCharacterData();
         buildNavMenu();
         initializeEventHandlers();
         
-        // Carrega o conteúdo inicial baseado no hash da URL
         renderContent(window.location.hash.slice(1) || 'home');
 
     } catch (err) {
@@ -336,3 +334,20 @@ async function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+function parseAndLinkGlossaryTerms(contentHtml) {
+  if (!db.glossary || Object.keys(db.glossary).length === 0) {
+    return contentHtml;
+  }
+  const glossaryKeys = Object.keys(db.glossary).map(key => 
+    key.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  );
+  const regex = new RegExp(`\\b(${glossaryKeys.join('|')})\\b`, 'gi');
+  return contentHtml.replace(regex, (match) => {
+    const termData = db.glossary[Object.keys(db.glossary).find(key => key.toLowerCase() === match.toLowerCase())];
+    if (termData) {
+      return `<a href="${termData.link}" class="glossary-term" data-tippy-content="${termData.definition}">${match}</a>`;
+    }
+    return match;
+  });
+}

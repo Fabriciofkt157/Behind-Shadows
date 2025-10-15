@@ -1,4 +1,3 @@
-/* Base */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1c1917;
@@ -9,7 +8,6 @@ body {
   font-family: 'MedievalSharp', cursive;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -24,7 +22,6 @@ body {
   background: #78716c;
 }
 
-/* Animations */
 .content-fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -39,7 +36,6 @@ body {
   }
 }
 
-/* Layout */
 #sidebar-toggle-btn {
   display: none;
 }
@@ -77,7 +73,6 @@ body {
   z-index: 2;
 }
 
-/* Prose (Estilos de texto genéricos) */
 .prose {
   line-height: 1.7;
 }
@@ -165,7 +160,6 @@ body {
   font-weight: 600;
 }
 
-/* Menu Lateral Interativo */
 .nav-section { position: relative; }
 .nav-toggle-btn {
   display: none;
@@ -182,7 +176,6 @@ body {
 .nav-collapsed > ul, .nav-collapsed > div { display: none; }
 .nav-toggle-btn.rotate { transform: rotate(-90deg); }
 
-/* Botão de Navegação Interna */
 .nav-button {
   display: inline-block;
   margin-top: 1.5rem;
@@ -207,15 +200,10 @@ body {
   font-size: 0.9em;
 }
 
-/* Templates Específicos */
 .gameplay-segment {
   border-left: 4px solid #7dd3fc;
 }
 
-
-/* === ESTILOS PARA CUTSCENE EM FORMATO DE CHAT === */
-
-/* Container geral da cutscene */
 .cutscene-template-display > .bg-stone-800 {
   border: none;
   background-color: transparent;
@@ -227,7 +215,6 @@ body {
   gap: 1rem;
 }
 
-/* Base do parágrafo (container flexível para avatar e balão) */
 .cutscene-script .prose p.chat-bubble {
   margin: 0;
   padding: 0;
@@ -237,7 +224,6 @@ body {
   gap: 0.75rem;
 }
 
-/* Avatar do personagem */
 .chat-avatar {
   width: 40px;
   height: 40px;
@@ -247,7 +233,6 @@ body {
   flex-shrink: 0;
 }
 
-/* Balão com o texto */
 .chat-text-content {
   padding: 0.75rem 1.1rem;
   border-radius: 20px;
@@ -261,7 +246,6 @@ body {
   padding: 0;
 }
 
-/* Link com o nome do personagem */
 .chat-speaker-name {
   display: block;
   font-weight: 700;
@@ -271,30 +255,26 @@ body {
   transition: color 0.2s;
 }
 
-/* ALINHAMENTO E CORES */
-
-/* Balão da ESQUERDA */
 .chat-left {
   align-self: flex-start;
 }
 .chat-left .chat-text-content {
-  background-color: #44403c; /* stone-700 */
+  background-color: #44403c; 
   border-bottom-left-radius: 5px;
 }
 .chat-left .chat-speaker-name {
-  color: #a7f3d0; /* emerald-200 */
+  color: #a7f3d0;
 }
 .chat-left .chat-speaker-name:hover {
   color: #fff;
 }
 
-/* Balão da DIREITA */
 .chat-right {
   align-self: flex-end;
   flex-direction: row-reverse;
 }
 .chat-right .chat-text-content {
-  background-color: #15803d; /* green-700 */
+  background-color: #15803d; 
   color: #f0fdf4;
   border-bottom-right-radius: 5px;
 }
@@ -305,7 +285,6 @@ body {
   color: #fff;
 }
 
-/* Ações e Narrações */
 .chat-action {
   align-self: center;
   text-align: center;
@@ -316,10 +295,9 @@ body {
   border-radius: 20px;
   padding: 0.5rem 1rem;
   max-width: 90%;
-  display: block; /* Reseta o flex para ocupar a linha */
+  display: block; 
 }
 
-/* Gameplay - estilo de sessão jogável */
 .gameplay-block {
   padding: 1rem;
   background-color: #1c1917;
@@ -361,3 +339,43 @@ body {
   font-size: 0.9em;
 }
 
+
+.glossary-term {
+  color: #a5f3fc;
+  border-bottom: 1px dotted #a5f3fc;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.glossary-term:hover {
+  color: #1c1917; 
+  background-color: #a5f3fc; 
+}
+
+
+.tippy-box[data-theme~='custom'] {
+  background-color: #0c0a09; 
+  color: #d6d3d1; 
+  border-radius: 6px;
+  border: 1px solid #57534e; 
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #0c0a09;
+}
+.tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #0c0a09;
+}
+
+.tippy-content[data-theme~='custom'] {
+  padding: 0.6rem 0.8rem;
+}
+
+.tippy-box[data-animation='scale-subtle'] {
+  transform-origin: top;
+  transition-property: transform, visibility, opacity;
+}

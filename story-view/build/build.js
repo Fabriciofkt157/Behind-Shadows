@@ -17,7 +17,7 @@ const frontmatterSchema = z.object({
   subtitulo: z.string().optional(),
   icone: z.string().optional(),
   ordem: z.number().optional(),
-  template: z.enum(['simple', 'character', 'inventory', 'timeline', 'evento', 'termo', 'mapa', 'grupo', 'cutscene', 'gameplay']).optional(),
+  template: z.enum(['simple', 'character', 'inventory', 'timeline', 'evento', 'termo', 'mapa', 'grupo', 'cutscene', 'gameplay', 'glossary']).optional(),
   image_url: z.string().optional(),
   age: z.string().optional(),
   birthday: z.string().optional(),
@@ -31,6 +31,40 @@ const frontmatterSchema = z.object({
   horario: z.string().optional()
 });
 
+async function processarGlossario() {
+  const glossaryFilePath = path.join(conteudoPath, '01_Prefacio', 'glossario.md');
+  const glossaryData = {};
+
+  if (!fs.existsSync(glossaryFilePath)) {
+    console.warn('⚠️  Arquivo glossario.md não encontrado. Pulando a geração do glossário.');
+    return null;
+  }
+
+  try {
+    const raw = await fs.readFile(glossaryFilePath, 'utf8');
+    const { content } = matter(raw);
+
+    const glossaryRegex = /###\s+(.*?)\s*\n+>\s(.*?)\s*\n+\[=> Ver mais em:\s+(.*?)\]/g;
+    
+    let match;
+    while ((match = glossaryRegex.exec(content)) !== null) {
+      const term = match[1].trim();
+      const definition = match[2].trim();
+      const link = match[3].trim();
+
+      if (term) {
+        glossaryData[term] = { definition, link };
+      }
+    }
+    console.log(`✅ Glossário processado com ${Object.keys(glossaryData).length} termos.`);
+    return glossaryData;
+  } catch (error) {
+    console.error('❌ Erro ao processar o arquivo de glossário:', error);
+    return null;
+  }
+}
+
+
 async function processarArquivo(filePath, topicos, secaoPai = null) {
   if (!filePath.endsWith('.md')) return;
 
@@ -39,17 +73,15 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
   const valid = frontmatterSchema.safeParse(data);
 
   if (!valid.success) {
-    console.warn(`⚠️  Erro de validação em ${filePath}:`, valid.error.flatten().fieldErrors);
+    console.warn(`⚠️  Erro de validação em ${filePath}:`, valid.error.flatten().fieldErrors);
     return;
   }
 
-  // Substituição de botões de navegação (>> [Texto](#link))
   const navButtonRegex = />> \[(.*?)\]\((.*?)\)/g;
   content = content.replace(navButtonRegex, (match, text, url) => {
     return `<a href="${url}" class="nav-button"><i class="fas fa-arrow-right"></i> ${text}</a>`;
   });
 
-  // Parser para blocos de <gameplay>
   content = content.replace(/<gameplay(:.*?)?>([\s\S]*?)<\/gameplay>/g, (_, label, innerContent) => {
     const lines = innerContent.trim().split('\n');
     const parsed = lines.map(line => {
@@ -73,7 +105,9 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
   const id = path.basename(filePath, '.md');
 
   if (secaoPai && secaoPai.items) {
-    secaoPai.items.push({ id, title: data.titulo, ordem: data.ordem });
+    if (id !== 'glossario') {
+        secaoPai.items.push({ id, title: data.titulo, ordem: data.ordem });
+    }
   }
 
   topicos[id] = {
@@ -148,7 +182,9 @@ async function processarDiretorio(dir) {
 
 async function gerarDbJson() {
   const config = await fs.readJson(configPath).catch(() => ({ siteTitle: 'Story-View' }));
+  
   const { secoes, topicos } = await processarDiretorio(conteudoPath);
+  const glossario = await processarGlossario();
 
   const finalDb = {
     siteTitle: config.siteTitle || 'Behind Shadows',
@@ -156,6 +192,10 @@ async function gerarDbJson() {
     sections: secoes,
     topics: topicos
   };
+  
+  if (glossario) {
+      finalDb.glossary = glossario;
+  }
 
   await fs.ensureDir(distPath);
   await fs.writeJson(path.join(distPath, 'db.json'), finalDb, { spaces: 2 });
