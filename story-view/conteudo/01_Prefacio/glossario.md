@@ -4,6 +4,24 @@ icone: "fa-book"
 template: "glossary"
 ordem: 2
 ---
+## Sobre o Jogo
+
+
+### Vida
+Representa o quanto o personagem é capaz de aguentar antes de desmaiar. Os pontos de vida sofrem alteração de acordo com a realidade em que o personagem está.
+[=> Ver mais em: #fundamentos]
+
+### Defesa
+Resistência à redução de vida ao ser atingido por um golpe inimigo.
+[=> Ver mais em: #fundamentos]
+
+### Stamina
+> Indica o quanto o personagem pode correr ou realizar ataques consecutivos sem ter sua movimentação reduzida.
+[=> Ver mais em: #fundamentos]
+
+### Mana
+Indispensável para conjurar magias em Median. Cada magia possui um custo de mana variável.
+[=> Ver mais em: #fundamentos]
 
 ## Personagens e Entidades
 ### Homem Misterioso
@@ -26,3 +44,4 @@ ordem: 2
 > Organização formada pelos protagonistas com o objetivo inicial de se opor ao Império de Avalest.
 
 [=> Ver mais em: #03_grupos]
+
