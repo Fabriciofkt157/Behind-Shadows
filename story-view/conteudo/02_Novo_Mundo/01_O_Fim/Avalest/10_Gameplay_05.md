@@ -1,5 +1,5 @@
 ---
-titulo: Missão: Vila Abandonada
+titulo: Missão Vila Abandonada
 template: simple
 icone: fa-scroll
 ordem: 8
