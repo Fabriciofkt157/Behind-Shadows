@@ -306,17 +306,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.gameplay-line {
-  padding-left: 1rem;
-  position: relative;
-}
-.gameplay-line::before {
-  content: "🎮";
-  position: absolute;
-  left: 0;
-  color: #7dd3fc;
-}
-
 .gameplay-info {
   background-color: #292524;
   padding: 0.75rem;

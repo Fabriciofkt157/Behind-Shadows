@@ -27,14 +27,14 @@ Mike: Acho que é por aí que eu começo.
   Dentro de Avalest, o jogador poderá falar com diversos NPCs e obter informações importantes.
 ]
 
-[Para a continuação da história, o jogador deve entrar em Avalest. Quando for 16h e o jogador ainda estiver explorando fora, Mike dirá progressivamente a cada 2 minutos:
+Para a continuação da história, o jogador deve entrar em Avalest. Quando for 16h e o jogador ainda estiver explorando fora, Mike dirá progressivamente a cada 2 minutos:
   - Mike: Eu tô perdido? É, eu tô perdido.  
   - Mike: Acho que pra cá só vai ter mais um monte de nada, pro outro lado deve ter alguma coisa.  
   - Mike: Eu devia procurar uma cidade ou algo assim.  
   - Mike: Alan tem cara de que saberia o que fazer aqui.  
   - Mike: Droga! Tô ficando com fome.  
   [O tempo continua progredindo até as 18h e trava até que o jogador chegue em Avalest.]
-]
+
 </gameplay>
 
 <cutscene: A Chegada em Avalest>

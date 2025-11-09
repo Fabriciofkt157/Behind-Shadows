@@ -81,26 +81,54 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
   content = content.replace(navButtonRegex, (match, text, url) => {
     return `<a href="${url}" class="nav-button"><i class="fas fa-arrow-right"></i> ${text}</a>`;
   });
-
-  content = content.replace(/<gameplay(:.*?)?>([\s\S]*?)<\/gameplay>/g, (_, label, innerContent) => {
+  
+  const parseGameContent = (innerContent) => {
     const lines = innerContent.trim().split('\n');
     const parsed = lines.map(line => {
-      if (line.trim().startsWith('[') && line.trim().endsWith(']')) {
-        return `<div class="gameplay-info">${line.trim().slice(1, -1)}</div>`;
+      const trimmedLine = line.trim();
+      if (trimmedLine.startsWith('[') && trimmedLine.endsWith(']')) {
+        return `<div class="gameplay-info">${trimmedLine.slice(1, -1)}</div>`;
       }
-      if (line.trim().startsWith('(') && line.trim().endsWith(')')) {
-        return `<div class="gameplay-action">${line.trim().slice(1, -1)}</div>`;
+      if (trimmedLine.startsWith('(') && trimmedLine.endsWith(')')) {
+        return `<div class="gameplay-action">${trimmedLine.slice(1, -1)}</div>`;
       }
-      const falaMatch = line.match(/^(.+?):\s(.+)$/);
-      if (falaMatch) {
+      const falaMatch = line.match(/^(.+?):\s(.+)$/); 
+      if (falaMatch && !trimmedLine.startsWith('-')) {
         const personagem = falaMatch[1].trim();
         const fala = falaMatch[2].trim();
         return `<p class="gameplay-line"><strong>${personagem}:</strong> ${fala}</p>`;
       }
+      if (trimmedLine === '') return ''; 
+      if (trimmedLine.startsWith('-')) {
+        return line;
+      }
+
       return `<p>${line}</p>`;
     });
-    return `<section class="gameplay-block">${parsed.join('\n')}</section>`;
+    return marked.parse(parsed.join('\n'));
+  };
+
+
+  content = content.replace(/<gameplay(:.*?)?>([\s\S]*?)<\/gameplay>/g, (_, label, innerContent) => {
+    const title = label ? `<h4 class="gameplay-title">${label.slice(1).trim()}</h4>` : '';
+    const parsedContent = parseGameContent(innerContent);
+    return `<section class="gameplay-block">${title}\n${parsedContent}</section>`;
   });
+
+
+  content = content.replace(/<cutscene(:.*?)?>([\s\S]*?)<\/cutscene>/g, (_, label, innerContent) => {
+    const title = label ? `<h4 class="cutscene-title">${label.slice(1).trim()}</h4>` : '';
+    const parsedContent = parseGameContent(innerContent); 
+    return `<section class="cutscene-block">${title}\n${parsedContent}</section>`;
+  });
+
+
+  content = content.replace(/<dialogo(:.*?)?>([\s\S]*?)<\/dialogo>/g, (_, label, innerContent) => {
+    const title = label ? `<h4 class="dialogo-title">${label.slice(1).trim()}</h4>` : '';
+    const parsedContent = marked.parse(innerContent);
+    return `<section class="dialogo-block">${title}\n${parsedContent}</section>`;
+  });
+
 
   const id = path.basename(filePath, '.md');
 
@@ -116,9 +144,11 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     subtitle: data.subtitulo || '',
     template: data.template || (secaoPai?.template ?? 'simple'),
     icon: data.icone || secaoPai?.icon || 'fa-book',
-    contentHtml: marked.parse(content)
+    contentHtml: marked.parse(content) 
   };
 }
+
+
 
 async function processarDiretorio(dir) {
   const secoes = [];
