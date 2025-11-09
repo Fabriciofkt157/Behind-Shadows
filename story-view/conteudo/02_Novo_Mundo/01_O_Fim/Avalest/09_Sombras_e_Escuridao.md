@@ -116,39 +116,67 @@ horario: '08:00'
 *O jogador pode escolher o que fazer a seguir:*
 
 **Opção 1: Ir agora**
+
 **Mike:** *Acho que deu.*
+
 **Rit:** *Vamo' lá buscar o Deni.*
+
 *O jogador seguirá Rit até sua casa. Durante a caminhada:*
+
 **Rit:** *Gosta de fazer alguma coisa, Mike?*
+
 **Mike:** *Tipo o que?*
+
 **Rit:** *Caçar, tiro ao alvo, escalada; algo assim.*
+
 **Mike:** *Natação, mas não faço muito frequentemente.*
+
 **Rit:** *Nadar? É algo legal. Gosto de escalada.*
+
 *Ao chegarem na casa:*
+
 **Rit:** *Vou lá ver o Deni, não sai daí.*
+
 *Mike espera lá fora. Logo, Rit e Deni saem da casa.*
+
 **Rit:** *Pronto, a "dama" já se arrumou.*
+
 **Deni:** *Ah Rit, dá um tempo!*
+
 **Mike:** *(riso leve)*
 
 **Opção 2: Explorar primeiro**
+
 **Mike:** *Pera aí. Acho que deveríamos ir atrás de mais coisas.*
+
 **Rit:** *Tá legal. Vou buscar o Deni, me encontra no PUB 17h.*
+
 **Mike:** *Beleza.*
+
 *O jogador está livre para andar pela cidade. O jogo dá início à missão automaticamente ou através de um botão "Pronto".*
+
 *Se o relógio do jogo atingir 16h:*
+
 **Mike:** *Melhor eu ir, o Rit já deve estar me esperando.*
+
 *Se o relógio atingir 17h:*
+
 **Mike:** *Ah droga! Já são 17 horas. O Rit vai me esganar, já era pra eu estar lá a essa hora. Melhor eu correr.*
+
 *(A tela escurece e o jogador aparece no PUB às 17:20h).*
+
 **Mike:** *Cheguei, cheguei.*
+
 **Deni:** *Demorou hein, Mike.*
+
 **Mike:** *Foi mal.*
+
 **Rit:** *Tá tranquilo, a gente só vai as 18 horas.*
 
 *Independente da escolha, a cena avança.*
 
 **Rit:** *Vam'bora, deu a hora.*
+
 **Deni:** *Vamo' lá.*
 
 *A tela escurece com a mensagem: "Rit, Deni e Mike foram até o local da missão."*

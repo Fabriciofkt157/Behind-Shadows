@@ -137,11 +137,11 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
 **Mike:** *(tédio) tá, vamo' ver no que vai dar.*
 
-* (Se o jogador for correndo): 
+*(Se o jogador for correndo):*
 
 **Deni:** *É. Ele vai meter o sarrafo.*
 
-* (Se o jogador for furtivo): 
+*(Se o jogador for furtivo):*
 
 **Deni:** *Tá legal, vamos com calma então.*
 
