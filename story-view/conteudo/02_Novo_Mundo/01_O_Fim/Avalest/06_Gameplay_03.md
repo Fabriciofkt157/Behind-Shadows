@@ -229,3 +229,5 @@ horario: '09:00'
 **Mike:** *Ok.*
 
 *O jogador agora controla Mike e deve ir até o PUB. Quando chegar, Rit e seu irmão estarão esperando na porta.*
+
+>> [cutscene: Reencontro](#07_Reencontro)
