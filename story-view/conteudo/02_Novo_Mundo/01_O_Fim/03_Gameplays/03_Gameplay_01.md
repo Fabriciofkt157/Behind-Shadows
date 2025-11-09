@@ -6,7 +6,7 @@ ordem: 1
 horario: 08h
 ---
 
-
+<gameplay: exploração livre com Mike>
 Mike: Tá... eu tô num mundo novo.  
 Mike: O que eu deveria fazer?  
 Mike: Eu não conheço o lugar, nem ninguém por aqui.  
@@ -35,16 +35,21 @@ Mike: Acho que é por aí que eu começo.
   - Mike: Droga! Tô ficando com fome.  
   [O tempo continua progredindo até as 18h e trava até que o jogador chegue em Avalest.]
 ]
+</gameplay>
 
-
+<cutscene: A Chegada em Avalest>
 (cena curta mostrando Mike boquiaberto com o tamanho de Avalest, em seguida a câmera sobe e mostra Avalest de cima)  
 [O tempo avança até as 20h e trava até o jogador chegar no PUB]
+</cutscene>
 
+<gameplay: exploração livre no mapa de Avalest com Mike>
 [
   Avançando em direção ao centro de Avalest, Mike se depara com "O Mercadão" [identificador: "Mercado Central"].  
     -> A rua do Mercadão é circular, cheia de barracas com frutas, verduras, carnes e outros produtos orgânicos.  
     -> O jogador encontrará NPCs descansando que dão dicas sobre onde ir.
 ]
+
+<dialogo: Vendedores do Mercado Central>
 
 - Vendedor de tomates:  
     Mike: Olá! Ah... Eu cheguei recentemente por aqui, tô meio perdido. Pode me localizar?  
@@ -88,17 +93,18 @@ Mike: Acho que é por aí que eu começo.
     Vendedor: Precisando, volta aqui!  
     Mike: Beleza! Te vejo por aí.
 
+</dialogo>
 
 [O jogo só avança após o jogador entrar na estrada rumo ao Centro. No caminho, o jogador encontra um mural.]
 
 [Se o jogador avançar sem falar com Rit, a seguinte cena ocorre.]
 
-
+<cutscene: Mural Início>
 (Mike se depara com uma caixa com mapas no mural)  
 Mike: São mapas? Acho que não tem problema eu pegar um.  
 (Mike abre o mapa)  
 Mike: Tá, eu tô aqui. Acho que vou pra essa parte — tem várias casas e lojas. (Mike aponta para a região do PUB)
-
+</cutscene>
 
 [Nova missão principal: "Vá até o Centro"]
 
@@ -108,4 +114,4 @@ Mike: Tá, eu tô aqui. Acho que vou pra essa parte — tem várias casas e loja
   Ao final da rua, o jogador chega na Praça Principal. À esquerda, está o PUB.  
   A cena seguinte ocorre quando o jogador encara diretamente a entrada do PUB.
 ]
-
+</gameplay>
