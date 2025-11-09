@@ -239,3 +239,87 @@ horario: '08:00'
 **Alan:** *Vou pro PUB, aliviar um pouco.*
 
 *O jogador agora deve ir com Alan até o PUB.*
+
+---
+
+## Cutscene: Um Possível Amigo?
+
+*A cena mostra Alan entrando pela porta do PUB e se sentando na mesma mesa de sempre. A câmera foca em Mike, que está sentado sozinho em outra mesa.*
+
+**Alan:** *O Mike tá sozinho, deve ter rolado alguma coisa.*
+
+**Alan:** *Acho que vou lá falar com ele.*
+
+*Alan se levanta e vai até a mesa de Mike.*
+
+**Alan:** *Mike ... Você tá legal?*
+
+**Mike:** *Hm?* (Ele olha para trás e vê Alan)
+
+**Mike:** *(sorrisinho) Tô sim. Você ... Tá bem?*
+
+**Mike:** *Nunca veio falar comigo, então ...*
+
+**Alan:** *É, eu tô ligado. É só que ... Você tava aqui sozinho, o que não é muito comum, então passei aqui pra saber se não rolou alguma coisa.*
+
+**Mike:** *Tendi. Bom, senta aí, só pra bater papo.*
+
+**Alan:** *Tá legal.*
+
+**Mike:** *...*
+
+**Mike:** *Não sei sobre o que falar ...*
+
+**Alan:** *(sorriso de canto) Você curte beber algo?*
+
+**Mike:** *Nah, nada alcoólico. As pessoas parecem meio viciadas aqui.*
+
+**Alan:** *Eu curto cerveja as vezes.*
+
+**Alan:** *O problema é que não tem nada melhor por aqui.*
+
+**Mike:** *Nunca cheguei a experimentar na verdade.*
+
+**Alan:** *Fez certo, no começo tu diz que não gosta, mas quando vê tu já tá no quarto copo.*
+
+**Mike:** *(riso leve)*
+
+**Alan:** *Olha ... Foi mal por ter sido mala contigo antes.*
+
+**Mike:** *Tá de boa.*
+
+*Uma garçonete passa pela mesa.*
+
+**Garçonete:** *Precisam de alguma coisa?*
+
+**Alan:** *Me vê uma cerveja, por favor.*
+
+**Garçonete:** *Claro!*
+
+**Alan:** *Quer uma também?*
+
+**Mike:** *Acho que passo essa.*
+
+**Alan:** *Tá bom.* (sorrisinho)
+
+**Alan:** *Só isso por hora.*
+
+**Garçonete:** *Ok.*
+
+**Mike:** *Tenta não ficar bebâdo, vou te jogar no lago se ficar.*
+
+**Alan:** *(risada)*
+
+**Alan:** *Relaxa, não vou ficar chapado com 1 copo.*
+
+**Mike:** *Espero.* (riso)
+
+**Garçonete:** *Aqui.*
+
+*Alan toma um gole.*
+
+**Mike:** *Cacete, metade de uma vez.*
+
+**Alan:** *(Gargalhada) Só um pouquinho.*
+
+*A tela escurece com a mensagem: "Continuaram a conversar por um tempo, a noite acabou bem e os dois foram pra casa."*
