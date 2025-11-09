@@ -197,8 +197,6 @@ horario: '16:00'
 
 ### Notas de Jogo: Fim da Cutscene
 
-*Fim da cutscene. O jogador poderá conhecer a casa e ao redor dela, juntamente com algumas funcionalidades (Referência: "mecanicas.txt" #"construções/casa Mike").*
-
 *O jogador poderá explorar a casa e os arredores até as 23h. Mike falará de tempos em tempos que deveria ir para a cama, em intervalos de 1 hora:*
 
 * **21:00:** **Mike:** *Acho que deveria ir pra cama.*
