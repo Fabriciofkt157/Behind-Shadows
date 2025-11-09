@@ -20,4 +20,6 @@ Este documento reúne todas as escrituras do jogo, abrangendo desde a história 
 - **MODELO DE NARRATIVA:** A história é contada a partir de cutscenes para momentos cruciais, e conversas entre os personagens durante o gameplay (God of War e The Last of Us são exemplos).
 - **ESTILO GRÁFICO:** 3D semi-realista. O mundo é construído em 3 dimensões, tentando se aproximar da realidade, mas sem preocupações em ser idêntico ao mundo real.
 - **ESTILO GAMEPLAY:** Exploração em terceira pessoa (God of War, Final Fantasy XV são algumas referências). Combate frenético ou estratégico (The Last of Us é um exemplo).
-  
+
+### Nomenclaturas do códice
+- **Falas paralelas:** São falas sequenciais que acontecem enquanto o jogador controla o personagem atual. É muito comum em personagens que pensam verbalmente, ou seja, falam em voz alta o que estão pensando — Alan é um exemplo. É possível que em certas cenas as "falas paralelas" sejam implícitas, ou seja, não é dito claramente que são, mas dado o contexto, são falas paralelas e não cutscenes.
