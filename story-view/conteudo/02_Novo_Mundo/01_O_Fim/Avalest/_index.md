@@ -1,6 +1,6 @@
 ---
 
-titulo: Gameplays
+titulo: Avalast (Gameplays e cutscenes)
 
 ordem: 3
 

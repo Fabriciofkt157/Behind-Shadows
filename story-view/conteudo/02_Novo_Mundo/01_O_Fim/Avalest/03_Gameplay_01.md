@@ -136,3 +136,5 @@ Se o jogador não tiver falado com Rit (o vendedor de ferramentas), a seguinte c
 **Nova missão principal: "Vá até o Centro"**
 
 Ao longo da estrada, o cenário muda de rural para urbano. O jogador finalmente chega à Praça Principal da Área Central. À sua esquerda, está o PUB "Casa da Canela". A próxima cena ocorrerá quando o jogador se aproximar da entrada do PUB.
+
+>> [cutscene: PUB](#04_PUB)
