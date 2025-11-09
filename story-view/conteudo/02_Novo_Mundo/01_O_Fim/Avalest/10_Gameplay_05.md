@@ -3,7 +3,7 @@ titulo: Missão Vila Abandonada
 template: simple
 icone: fa-scroll
 ordem: 8
-horario: '08:00'
+horario: '20:00'
 ---
 
 
@@ -243,7 +243,7 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
     
     *Mike cai junto com o Observador; a espada que estava em seu abdômen o perfura mais fundo, atravessando-o.* 
     
-    *Mike avista sua espada que caiu ao seu lado e usa suas últimas forças para pegar a espada e perfura o peitoral do Observador, o matando.*
+    *Mike avista sua espada que caiu ao seu lado e usa suas últimas forças para pega-la e perfurar o peitoral do Observador, o matando.*
 
     *Mike desmaia (Mike caído. O jogador deve concluir a missão com Deni e deve resgatar Mike).*
 
