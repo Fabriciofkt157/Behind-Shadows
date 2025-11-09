@@ -193,6 +193,8 @@ horario: '09:00'
     **General:** *Vamos lá Mike, descansa e tenta de novo.*
 
 *(Se o Jogador falhar, ainda pode tentar de novo até conseguir)*
+
+
 ---
 
 ## Pós-Teste
