@@ -3,11 +3,11 @@ titulo: Novo amigo?
 subtitulo: Jogador entra no PUB com Mike
 template: simple
 icone: fa-scroll
-ordem: 1
+ordem: 2
 horario: '16:00'
 ---
 
-## No Pub da "Casa da Canela"
+## No Pub "Casa da Canela"
 
 *O jogador entra no PUB controlando Mike. Alan está sentado em uma mesa à direita, próximo ao centro. Enquanto Mike caminha até uma mesa, ele observa Alan, que o observa de canto.*
 

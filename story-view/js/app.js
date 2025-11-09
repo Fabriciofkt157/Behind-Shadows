@@ -280,6 +280,24 @@ function initializeEventHandlers() {
         }
     });
 
+    // --- NOVO BLOCO DE CÓDIGO ADICIONADO ---
+    // Impede o "pulo" padrão para links de âncora dentro do conteúdo principal
+    mainContentEl.addEventListener('click', e => {
+        const target = e.target.closest('a');
+        
+        // Verifica se é um link de âncora interno (glossário, nav-button)
+        if (target && target.getAttribute('href')?.startsWith('#')) {
+            const hash = target.getAttribute('href');
+            
+            // Impede o pulo padrão do navegador
+            e.preventDefault();
+            
+            // Define manualmente o hash, o que acionará o 'hashchange' listener
+            window.location.hash = hash;
+        }
+    });
+    // --- FIM DO NOVO BLOCO ---
+
     sidebarToggleBtn.addEventListener('click', e => {
         e.stopPropagation();
         sidebarEl.classList.toggle('open');
