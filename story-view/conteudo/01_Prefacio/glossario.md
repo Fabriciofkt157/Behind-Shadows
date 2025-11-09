@@ -4,8 +4,13 @@ icone: "fa-book"
 template: "glossary"
 ordem: 2
 ---
-## Sobre o Jogo
 
+## Sobre o Códice
+### falas paralelas
+São falas sequenciais que acontecem enquanto o jogador controla o personagem atual.
+[=> Ver mais em: #home]
+
+## Sobre o Jogo
 
 ### Vida
 Representa o quanto o personagem é capaz de aguentar antes de desmaiar. Os pontos de vida sofrem alteração de acordo com a realidade em que o personagem está.
