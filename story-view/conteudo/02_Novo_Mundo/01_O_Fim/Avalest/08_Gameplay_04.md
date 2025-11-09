@@ -209,11 +209,17 @@ horario: '08:00'
 
 * **Resultado (Vitória):**
     *Alan corta as cordas. O pedregulho cai em cima da Sombra, dissipando-a. A estrutura inteira desmorona, mas Alan fica acima dos escombros.*
+
     **Alan:** *Tá porra, achei que ia morrer.*
+
     *(Alan se levanta, mancando por 5 minutos).*
+
     **Alan:** *É ... Deu por hoje.*
+
     *Junto aos escombros, Alan avista um caderno velho. Ele o pega e abre.*
-    *(Conteúdo: Escrituras Caderno De Adeus (CDA1)")*
+
+    *(Conteúdo: Escrituras: Caderno De Adeus (CDA1)")*
+    
     **Alan:** *Espera, aquele cara... Era uma sombra? Faz sentido. Isso explica tudo.*
 
 ---
