@@ -368,3 +368,57 @@ body {
   transform-origin: top;
   transition-property: transform, visibility, opacity;
 }
+
+/* --- NOVOS ESTILOS PARA BLOCOS --- */
+
+.gameplay-title,
+.cutscene-title,
+.dialogo-title {
+  font-family: 'MedievalSharp', cursive;
+  color: #a5f3fc; /* cyan */
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #57534e;
+  padding-bottom: 0.5rem;
+}
+
+.cutscene-block {
+  padding: 1rem;
+  background-color: #1c1917;
+  border-left: 4px solid #a78bfa; /* Roxo (como o .gameplay-info) */
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.dialogo-block {
+  padding: 1rem;
+  background-color: #1c1917;
+  border-left: 4px solid #fde047; /* Amarelo */
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+/* Estiliza as listas de diálogo dentro do .dialogo-block */
+.dialogo-block ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.dialogo-block > .prose > ul > li,
+.dialogo-block ul > li {
+  font-weight: bold;
+  color: #e0f2fe; /* Azul claro */
+  margin-top: 1rem;
+  padding-left: 0;
+}
+.dialogo-block > .prose > ul > li > ul,
+.dialogo-block ul > li > ul {
+  padding-left: 1.5rem;
+  border-left: 2px solid #44403c;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.dialogo-block > .prose > ul > li > ul > li,
+.dialogo-block ul > li > ul > li {
+  font-weight: normal;
+  color: #d6d3d1;
+}
