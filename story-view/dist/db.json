@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-11-09T06:15:06.647Z",
+  "lastUpdated": "2025-11-09T06:17:48.034Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -103,6 +103,20 @@
           "title": "Grupos, Organizações e Impérios"
         }
       ]
+    },
+    {
+      "id": "01_Prefacio/03_Itens",
+      "title": "Itens",
+      "icon": "fa-book",
+      "template": "simple",
+      "parent": "01_Prefacio",
+      "items": [
+        {
+          "id": "escrituras",
+          "title": "Escrituras encontradas no jogo"
+        }
+      ],
+      "ordem": 1
     },
     {
       "id": "02_Novo_Mundo",
