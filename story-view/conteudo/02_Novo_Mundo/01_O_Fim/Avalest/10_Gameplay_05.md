@@ -43,35 +43,35 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 > *Se forem vistos por uma sombra, a sombra começa a persegui-los e o jogador deverá dissipar a sombra. A cada 15 segundos sem dissipar a sombra que os viu, uma nova sombra começa a segui-los.*
 
 *Durante a limpeza:*
-* **(Se Mike se expõe demais):** 
+**Se Mike se expor demais:** 
 
-**Deni:** *Calma aí Mike, você vai matar a gente.*
+* **Deni:** *Calma aí Mike, você vai matar a gente.*
 
-* **(Se visto pela primeira vez):** 
+**(Se visto pela primeira vez):** 
 
-*[Deni puxa Mike de volta]* 
+* *Deni puxa Mike de volta* 
 
 **Deni:** *Quase ...* 
 
 **Mike:** *Valeu!*
 
-* **(Ao dissipar a 1ª sombra):** 
+**Ao dissipar a 1ª sombra:** 
 
-**Mike:** *Cacete! Funcionou.* 
+* **Mike:** *Cacete! Funcionou.* 
 
-**Deni:** *É. Faltam 7.*
+* **Deni:** *É. Faltam 7.*
 
-* **(Ao dissipar 5 sombras):** 
+**Ao dissipar 5 sombras:** 
 
-**Deni:** *Isso aí, tamo' quase lá.*
+* **Deni:** *Isso aí, tamo' quase lá.*
 
-* **(Ao dissipar todas):** 
+**Ao dissipar todas:** 
 
-*[O grupo se reúne]* 
+* *O grupo se reúne* 
 
-**Rit:** *(riso sarcástico) Boa! Continuaram vivos.* 
+* **Rit:** *(riso sarcástico) Boa! Continuaram vivos.* 
 
-**Mike:** *É.*
+* **Mike:** *É.*
 
 ### Parte 2: Os Observadores
 
@@ -99,21 +99,21 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
 *Nota de Jogo: Dependendo da configuração de idade:*
 
-* *(Abaixo de 18):* 
+*(Abaixo de 18):* 
 
-**Rit:** *Deixa isso com a gente Mike.*
+* **Rit:** *Deixa isso com a gente Mike.*
 
-* *(18 ou mais):* 
+*(18 ou mais):* 
 
-**Deni:** *A gente vai macetar eles até eles abrirem o bico.* 
+* **Deni:** *A gente vai macetar eles até eles abrirem o bico.* 
 
-**Mike:** *(assustado)* 
+* **Mike:** *(assustado)* 
 
-**Rit:** *Deni! ... Ele não precisava saber disso ...* 
+* **Rit:** *Deni! ... Ele não precisava saber disso ...* 
 
-**General:** *Deixa essa parte comigo e o Rit, Mike.*
+* **General:** *Deixa essa parte comigo e o Rit, Mike.*
 
-**General:** *Certo. Vamos lá. Mike e Deni, vocês dois vão pela direita. Vão dar cobertura e surpreender a cobertura deles. ... Dispersar!*
+* **General:** *Certo. Vamos lá. Mike e Deni, vocês dois vão pela direita. Vão dar cobertura e surpreender a cobertura deles. ... Dispersar!*
 
 ### Parte 3: A Cobertura
 
