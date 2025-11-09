@@ -1,6 +1,6 @@
 {
   "siteTitle": "Behind Shadows",
-  "lastUpdated": "2025-10-31T16:05:19.774Z",
+  "lastUpdated": "2025-11-09T01:48:13.070Z",
   "sections": [
     {
       "id": "01_Prefacio",
@@ -132,6 +132,21 @@
         }
       ],
       "ordem": 1
+    },
+    {
+      "id": "02_Novo_Mundo/01_O_Fim/03_Gameplays",
+      "title": "Gameplays",
+      "icon": "fa-trophy",
+      "template": "simple",
+      "parent": "02_Novo_Mundo/01_O_Fim",
+      "items": [
+        {
+          "id": "03_Gameplay_01",
+          "title": "Exploração com Mike em Avalest",
+          "ordem": 1
+        }
+      ],
+      "ordem": 3
     }
   ],
   "topics": {
@@ -360,6 +375,17 @@
       "subtitle": "Cutscene: Novo Mundo",
       "icon": "fa-film",
       "contentHtml": "<p><strong>Mike:</strong> ...Isso é...</p>\n<p><strong>Alan:</strong> <em>[com ódio]</em> VOCÊ!</p>\n<p><em>(Alan acerta um soco no rosto de Mike e o segura pelo braço)</em></p>\n<p><strong>Alan:</strong> <em>[com ódio]</em> EU NEM TE CONHEÇO E ME ARRASTOU PRA ESSE FIM DE MUNDO!</p>\n<p><strong>Mike:</strong> Sério mesmo que prefere renascer?</p>\n<p><strong>Alan:</strong> <em>[com raiva contida]</em> IDIOTA.</p>\n<p><strong>Mike:</strong> Escuta... o que te faz pensar que renascer resolveria alguma coisa?</p>\n<p><strong>Alan:</strong> <em>[triste]</em> Eu nunca pude escolher o que aconteceria com a minha vida... nem no final dela.</p>\n<p><strong>Mike:</strong> Ah, é? Então me diz: você reencarnou... se fosse abortado, teria alguma escolha? Acha que aquele cara teria dado uma atenção especial? Imagina como seria renascer, mas com alguma deficiência. Em vez disso, você está aqui, &quot;perfeitinho&quot;, bem na minha frente.</p>\n<p><strong>Alan:</strong> <em>[com ódio]</em> DE QUE MERDA ISSO TE IMPORTA?! NÃO É A SUA VIDA, É A MINHA! QUEM PASSARIA POR ISSO SERIA EU!</p>\n<p><strong>Mike:</strong> Olha ao redor. Isso aqui é sua segunda chance. Esse lugar enfrenta problemas completamente diferentes dos que você vivia.</p>\n<p><strong>Mike:</strong> <em>[com olhar sério]</em> Se prefere renascer naquele mundo e enfrentar os mesmos problemas, só que com uma cara nova, numa vida miserável... Então o problema nunca foi o mundo em que vivia... e sim você.</p>\n<p><strong>Alan:</strong> ...</p>\n<p><strong>Mike:</strong> <em>[amigável]</em> Vamos de novo. Olha, de qualquer forma, a gente tá aqui. Você ainda vai poder renascer. Tenta dar uma chance... se morrer de novo, é só renascer e pronto. Vamo tentar achar um lugar pr—\n<em>(Alan vira as costas e começa a andar; Mike o segue)</em></p>\n<p><strong>Mike:</strong> Onde tá indo?</p>\n<p><strong>Alan:</strong> <em>[bravo]</em> CAI FORA! Cada um pro seu lado.</p>\n<p><strong>Mike:</strong> <em>[triste]</em> Ah, qual é!</p>\n<p><strong>Alan:</strong> Se manda.</p>\n"
+    },
+    "03_Gameplay_01": {
+      "titulo": "Exploração com Mike em Avalest",
+      "template": "gameplay",
+      "icone": "fa-person-walking",
+      "ordem": 1,
+      "horario": "08h",
+      "title": "Exploração com Mike em Avalest",
+      "subtitle": "",
+      "icon": "fa-person-walking",
+      "contentHtml": "<p>Mike: Tá... eu tô num mundo novo.<br>Mike: O que eu deveria fazer?<br>Mike: Eu não conheço o lugar, nem ninguém por aqui.<br>Mike: Acho que é por aí que eu começo.</p>\n<p>[\n  Obs: os nomes das áreas vão mudar futuramente no jogo, nesse momento, Mike conhece elas por esses nomes.<br>  O jogador começará com a missão &quot;Conseguir informações&quot;.<br>  A hora do dia que o jogo começa é 8h.<br>  O jogador começa o jogo em uma área chamada &quot;A Fazenda&quot; [identificador: &quot;Fazenda Thomp&#39;s&quot;], uma das áreas afastadas de Avalest.<br>  Avançando um pouco, indo na direção onde Alan foi (plantação adentro), o jogador encontra uma nova área chamada &quot;O Rio&quot; [identificador: &quot;Caverna Submersa&quot;].<br>  Seguindo a rua de terra (onde o jogador começou o jogo):<br>    -&gt; Em um dos lados o jogador se depara com um grande morro que impede sua passagem.<br>       Se o jogador for para a esquerda, chegará em &quot;O Rio&quot; [identificador: &quot;Caverna Submersa&quot;];<br>       se for para a direita, chegará em uma mina de extração de carvão chamada &quot;A Mina de Carvão&quot; [identificador: &quot;Mina de Kalgrun&quot;].<br>    -&gt; Para o outro lado, o jogador chegará aos muros de Avalest, que Mike chama de &quot;A Muralha&quot; e, depois de entrar, &quot;A Muralha de Avalest&quot; [identificador: &quot;Portão 4&quot;].<br>       Ao entrar, o jogador verá um letreiro escrito Avalest.<br>  Dentro de Avalest, o jogador poderá falar com diversos NPCs e obter informações importantes.\n]</p>\n<p>[Para a continuação da história, o jogador deve entrar em Avalest. Quando for 16h e o jogador ainda estiver explorando fora, Mike dirá progressivamente a cada 2 minutos:</p>\n<ul>\n<li>Mike: Eu tô perdido? É, eu tô perdido.  </li>\n<li>Mike: Acho que pra cá só vai ter mais um monte de nada, pro outro lado deve ter alguma coisa.  </li>\n<li>Mike: Eu devia procurar uma cidade ou algo assim.  </li>\n<li>Mike: Alan tem cara de que saberia o que fazer aqui.  </li>\n<li>Mike: Droga! Tô ficando com fome.<br>  [O tempo continua progredindo até as 18h e trava até que o jogador chegue em Avalest.]\n]</li>\n</ul>\n<p>(cena curta mostrando Mike boquiaberto com o tamanho de Avalest, em seguida a câmera sobe e mostra Avalest de cima)<br>[O tempo avança até as 20h e trava até o jogador chegar no PUB]</p>\n<p>[\n  Avançando em direção ao centro de Avalest, Mike se depara com &quot;O Mercadão&quot; [identificador: &quot;Mercado Central&quot;].<br>    -&gt; A rua do Mercadão é circular, cheia de barracas com frutas, verduras, carnes e outros produtos orgânicos.<br>    -&gt; O jogador encontrará NPCs descansando que dão dicas sobre onde ir.\n]</p>\n<ul>\n<li><p>Vendedor de tomates:<br>  Mike: Olá! Ah... Eu cheguei recentemente por aqui, tô meio perdido. Pode me localizar?<br>  Vendedor: Claro!<br>  Vendedor: Nós estamos no Mercado Central [identificador: &quot;Mercado Central&quot;], onde se vendem frutas, verduras, vegetais e produtos locais.<br>  Vendedor: É uma área mais afastada do centro, pois muitos agricultores vêm das redondezas.<br>  Vendedor: Dando a volta aqui (no Mercadão) e seguindo reto nessa estrada, você chega na Área Central [identificador: &quot;Área Central de Avalest&quot;].<br>  Mike: Beleza, muito obrigado!</p>\n</li>\n<li><p>Vendedor de carnes:<br>  Mike: É... Oi, eu sou novo aqui em Avalest. Pode me explicar um pouco sobre o lugar?<br>  Vendedor: Posso sim! Acredito que esteja procurando um lugar pra morar.<br>  Mike: Também (sorriso de canto).<br>  Vendedor: Bom. Há quatro áreas principais:<br>- O Castelo, no centro. Onde vivem o Imperador e a Família Real.<br>- A Área Nobre, ao redor do castelo.<br>  Mike (expressão inocente): Por que das aspas?<br>  Vendedor: Porque são pessoas que se acham superiores só porque têm dinheiro.<br>  Mike: É, faz sentido.<br>  Vendedor: Continuando:<br>- A Área Central: cheia de mercados, ferreiros, magos, tavernas, salões de chá...<br>  Um PUB famoso é a &quot;Casa da Canela&quot; [identificador: &quot;PUB&quot;].<br>- E por fim, essa área em que estamos, mais humilde e com casas simples, mercados acessíveis, e NPCs úteis.<br>  Mike: Entendi! Muito obrigado!<br>  Vendedor: Toma, você tá muito &#39;magrelo&#39;.<br>  (Vendedor entrega 3 sanduíches para Mike)<br>  Mike: Uau, valeu!<br>  Mike: Eu vou indo nessa, até mais!<br>  Vendedor: Até! Volte aqui quando quiser comprar algo.<br>  Mike: Claro!</p>\n</li>\n<li><p>Vendedor de ferramentas [identificador: &quot;Rit&quot;]:<br>  Mike: Oi! Eu sou novo por aqui... tô tentando entender melhor esse lugar.<br>  Vendedor: Aoba! Ouvi dizer que novos moradores estavam chegando. Você deve ser um deles.<br>  Mike (sorriso tímido): Acho que sim.<br>  Vendedor: Foi mal, tô ocupado agora e não consigo ajudar muito.<br>  Mike: Tranquilo!<br>  Vendedor: Mas toma — um mapa vai ajudar.<br>  (Vendedor entrega um mapa para Mike)<br>  Mike (impressionado): Nossa! Valeu demais!<br>  Vendedor: Precisando, volta aqui!<br>  Mike: Beleza! Te vejo por aí.</p>\n</li>\n</ul>\n<p>[O jogo só avança após o jogador entrar na estrada rumo ao Centro. No caminho, o jogador encontra um mural.]</p>\n<p>[Se o jogador avançar sem falar com Rit, a seguinte cena ocorre.]</p>\n<p>(Mike se depara com uma caixa com mapas no mural)<br>Mike: São mapas? Acho que não tem problema eu pegar um.<br>(Mike abre o mapa)<br>Mike: Tá, eu tô aqui. Acho que vou pra essa parte — tem várias casas e lojas. (Mike aponta para a região do PUB)</p>\n<p>[Nova missão principal: &quot;Vá até o Centro&quot;]</p>\n<p>[\n  Ao longo da estrada, Mike passa por plantações e casas afastadas.<br>  Conforme o jogador se aproxima do Centro, o ambiente muda para um cenário urbano com chão de pedra, lojas, casas refinadas e muitos NPCs.<br>  Ao final da rua, o jogador chega na Praça Principal. À esquerda, está o PUB.<br>  A cena seguinte ocorre quando o jogador encara diretamente a entrada do PUB.\n]</p>\n"
     }
   },
   "glossary": {
