@@ -194,7 +194,6 @@ horario: '09:00'
 
 *(Se o Jogador falhar, ainda pode tentar de novo até conseguir)*
 
-
 ---
 
 ## Pós-Teste

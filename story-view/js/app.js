@@ -247,7 +247,13 @@ function renderContent(itemId) {
     });
 
     mainContentEl.innerHTML = templateHtml;
-    mainContentEl.scrollTop = 0;
+    
+    // --- ESTA É A CORREÇÃO ---
+    // O 'parentElement' (o <main>) é o container que tem o scroll.
+    if (mainContentEl.parentElement) {
+        mainContentEl.parentElement.scrollTop = 0;
+    }
+    // --- FIM DA CORREÇÃO ---
     
     if (item.template === 'cutscene') {
         styleChatBubbles();
@@ -280,23 +286,16 @@ function initializeEventHandlers() {
         }
     });
 
-    // --- NOVO BLOCO DE CÓDIGO ADICIONADO ---
-    // Impede o "pulo" padrão para links de âncora dentro do conteúdo principal
+    // Este bloco (da correção anterior) continua necessário
     mainContentEl.addEventListener('click', e => {
         const target = e.target.closest('a');
         
-        // Verifica se é um link de âncora interno (glossário, nav-button)
         if (target && target.getAttribute('href')?.startsWith('#')) {
             const hash = target.getAttribute('href');
-            
-            // Impede o pulo padrão do navegador
             e.preventDefault();
-            
-            // Define manualmente o hash, o que acionará o 'hashchange' listener
             window.location.hash = hash;
         }
     });
-    // --- FIM DO NOVO BLOCO ---
 
     sidebarToggleBtn.addEventListener('click', e => {
         e.stopPropagation();
