@@ -23,3 +23,5 @@ Este documento reúne todas as escrituras do jogo, abrangendo desde a história 
 
 ### Nomenclaturas do códice
 - **Falas paralelas:** São falas sequenciais que acontecem enquanto o jogador controla o personagem atual. É muito comum em personagens que pensam verbalmente, ou seja, falam em voz alta o que estão pensando — Alan é um exemplo. É possível que em certas cenas as "falas paralelas" sejam implícitas, ou seja, não é dito claramente que são, mas dado o contexto, são falas paralelas e não cutscenes.
+
+
