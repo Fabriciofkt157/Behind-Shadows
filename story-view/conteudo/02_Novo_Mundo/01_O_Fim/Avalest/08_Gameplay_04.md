@@ -121,7 +121,7 @@ horario: '08:00'
 
 **Alan:** *Ah que gênio, como se ele fosse esperar pacientemente eu soterrar ele ali.*
 
-### Quebra-Cabeça (Parte 2): A Escalada
+### Puzzle (Parte 2): A Escalada
 
 *Alan olha para o teto da caverna. A câmera mostra estruturas de madeira segurando um pedregulho gigante.*
 
@@ -153,7 +153,7 @@ horario: '08:00'
 
 **Alan:** *Acabou tudo mesmo né? ...*
 
-### Quebra-Cabeça (Parte 3): O Salto
+### Puzzle (Parte 3): O Salto
 
 *Ao se aproximar das instalações de madeira no topo da escalada.*
 
@@ -187,7 +187,7 @@ horario: '08:00'
         **Alan:** *Vambora'. Vou dar um jeito de trancar esse lugar, depois dou um jeito nessa coisa.*
         *(Missão falha/adiada. O jogador deve sair da caverna).*
 
-### Quebra-Cabeça (Parte 4): Cortando as Cordas
+### Puzzle (Parte 4): Cortando as Cordas
 
 *Assumindo que o salto foi bem-sucedido, o jogador move Alan por 4 vigas até o conjunto de cordas que segura o pedregulho. Ao chegar:*
 
