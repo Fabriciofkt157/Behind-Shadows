@@ -2,7 +2,7 @@
 titulo: Reencontro no PUB
 template: simple
 icone: fa-scroll
-ordem: 4
+ordem: 5
 horario: '21:00'
 ---
 
