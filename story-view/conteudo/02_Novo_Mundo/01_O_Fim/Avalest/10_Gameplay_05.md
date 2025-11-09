@@ -6,9 +6,6 @@ ordem: 8
 horario: '20:00'
 ---
 
-
-## A Missão: Vila Abandonada
-
 O cenário é uma antiga vila destruída, agora habitada por sombras e desabrigados. O esquadrão de 6 pessoas se reúne.
 
 **General:** *Escutem: Essa área foi tomada por Avadest, há indícios de sombras habitando essa região. Não ataquem se não forem atacados, essas pessoas também estão tentando sobreviver.*
@@ -49,11 +46,11 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
 **(Se visto pela primeira vez):** 
 
-* *Deni puxa Mike de volta* 
+* *Deni puxa Mike de volta / Mike puxa Deni de volta* 
 
-**Deni:** *Quase ...* 
+* **Deni/Mike:** *Quase ...* 
 
-**Mike:** *Valeu!*
+* **Mike/Deni:** *Valeu!*
 
 **Ao dissipar a 1ª sombra:** 
 
@@ -109,11 +106,11 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
 * **Mike:** *(assustado)* 
 
-* **Rit:** *Deni! ... Ele não precisava saber disso ...* 
+* **Rit:** *Deni! ... Ele não precisava saber disso.* 
 
 * **General:** *Deixa essa parte comigo e o Rit, Mike.*
 
-* **General:** *Certo. Vamos lá. Mike e Deni, vocês dois vão pela direita. Vão dar cobertura e surpreender a cobertura deles. ... Dispersar!*
+* **General:** *Certo. Vamos lá. Mike e Deni, vocês dois vão pela direita. Vão dar cobertura e surpreender a cobertura deles. Dispersar!*
 
 ### Parte 3: A Cobertura
 
@@ -137,13 +134,13 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
 **Mike:** *(tédio) tá, vamo' ver no que vai dar.*
 
-*(Se o jogador for correndo):*
+*Se o jogador for correndo:*
 
-**Deni:** *É. Ele vai meter o sarrafo.*
+* **Deni:** *É. Ele vai meter o sarrafo.*
 
-*(Se o jogador for furtivo):*
+*Se o jogador for furtivo:*
 
-**Deni:** *Tá legal, vamos com calma então.*
+* **Deni:** *Tá legal, vamos com calma então.*
 
 ### Parte 4: A Primeira Dupla
 
