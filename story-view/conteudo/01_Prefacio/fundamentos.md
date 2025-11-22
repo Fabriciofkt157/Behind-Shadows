@@ -30,6 +30,29 @@ Indispensável para conjurar magias em Median. Cada magia possui um custo de man
 * É um item armazenado no inventário do jogador, onde cada slot armazena 100 unidades.
 * É representada visualmente por uma barra vertical azul à esquerda da barra de vida (quando aplicável).
 
+### Barra de amizade (afinidade)
+Representa o nível de afinidade momentânea entre os personagens em uma equipe.
+* A barra de amizade é exclusiva para cada relação entre dois personagens.
+* Os pontos para aumentar a barra são obtidos através de presentes, missões opcionais e ao controlar o personagem ativo seguindo a sugestão de outro personagem.
+
+---
+
+## Teclas e combinações
+
+* CIMA/BAIXO/ESQ/DIR: teclas de movimento, geralmente os botões na tela do usuário, WASD ou setas.
+
+* ATK: tecla para ataque simples, geralmente o botão ATK na tela do usuário ou 'Q'
+* DEF: tecla para defesa simples, geralmente o botão DEF na tela do usuário ou 'R'
+* MAG: tecla para magia simples, geralmente o botão MAG na tela do usuário ou 'F'
+
+*A combinação de duas ou mais teclas forma os ataques e defesas compostos:*
+*NOTA: cada personagem possui suas próprias combinações de teclas para combos, essas combinações estão descritas nas fichas de personagem.*
+
+### Ataque Decisivo:
+* CIMA + BAIXO + ATK + ATK + ATK (ou versão simplificada: DEF + ATK ao mesmo tempo): Inicia um Quick Time Event: Ataque Decisivo — ataque de dano extremo com alto custo de stamina e mana, além da barra de amizade de todos os personagens da equipe. 
+* O dano de Ataque Decisivo varia de acordo com o nível individual dos personagens, nível de afinidade e a quantidade de acertos no minigame. 
+* As teclas do minigame são aleatórias para cada uso de Ataque Decisivo.
+
 ---
 
 ## Efeitos de Status do Personagem

@@ -28,6 +28,10 @@ Resistência à redução de vida ao ser atingido por um golpe inimigo.
 Indispensável para conjurar magias em Median. Cada magia possui um custo de mana variável.
 [=> Ver mais em: #fundamentos]
 
+### Ataque Decisivo
+Ataque de dano extremo com alto custo de stamina e mana, além da barra de amizade de todos os personagens da equipe.
+[=> Ver mais em: #fundamentos]
+
 ## Personagens e Entidades
 ### Homem Misterioso
 > A entidade principal que pode viajar entre as realidades, responsável por fragmentar e reformular as almas.

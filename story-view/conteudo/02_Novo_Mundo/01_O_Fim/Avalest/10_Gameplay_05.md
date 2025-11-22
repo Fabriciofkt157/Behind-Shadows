@@ -211,6 +211,7 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 #### Minigame: Sobrevivência
 
 *Um minigame de QTE (Quick Time Event) começa, exigindo que o jogador pressione sequências de botões para Mike e Deni.*
+*Em qualquer caso onde um dos dois personagens é derrubado, um minigame é iniciado para o outro personagem resgatar o personagem caído.*
 
 **1. Ação de Mike (Primeiro Ataque):**
 
@@ -253,7 +254,6 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 * **Sucesso:** Deni rola e desvia de um golpe.
 
 * **Falha:** A espada acerta a clavícula de Deni (dano crítico). Deni desmaia.
-* *(Se Mike também falhou, é Fim de Jogo (cena de falha na missão: Rit resgata os dois)).*
 
 **3. Ação de Mike (Combo de Esquiva - se sobreviveu ao primeiro ataque):**
 
@@ -266,3 +266,30 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 * **Esquiva 3 (Baixo + ATK):** Mike se abaixa e dá uma rasteira.
 
 * **Falha na Esquiva 3:** Mike é cortado e chutado (dano alto). Ele deve rolar (Esquerda ou Direita) para desviar de um golpe fatal no chão. (Falha: dano crítico, Mike é derrubado).
+
+**Fim do Minigame** 
+
+* *Personagem derrubado foi o Mike:*
+
+* **Deni:** *Que drogra, Mike! Segura aí, você consegue.*
+
+* *Minigame de resgate é iniciado*
+
+* *Personagem derrubado foi o Deni:*
+
+* **Mike:** *O que ... você ... está fazendo no chão?*
+
+* **Mike:** *Você acha que um banana vai conseguir te salvar?*
+
+* **Mike:** *Eu te salvo, mas você vai me ensinar a usar esse treco verde. Ah, você vai.*
+
+* *Minigame de resgate é iniciado*
+
+**Minigame de resgate:**
+
+* *NOTA: o minigame é o mesmo para ambos os personagens, mudando apenas os personagens na cena.*
+
+* *Mike/Deni começa a correr em direção ao parceiro caído. 3 Observadores cercam o caminho de Mike/Deni.*
+
+* *A ação na cena se inicia quando Mike/Deni começa a correr em direção aos observadores. O jogador deve pressionar a sequência de teclas CIMA + BAIXO + ATK + ATK + ATK (Ataque Decisivo)
+

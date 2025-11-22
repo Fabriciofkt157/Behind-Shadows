@@ -24,4 +24,13 @@ Este documento reúne todas as escrituras do jogo, abrangendo desde a história 
 ### Nomenclaturas do códice
 - **Falas paralelas:** São falas sequenciais que acontecem enquanto o jogador controla o personagem atual. É muito comum em personagens que pensam verbalmente, ou seja, falam em voz alta o que estão pensando — Alan é um exemplo. É possível que em certas cenas as "falas paralelas" sejam implícitas, ou seja, não é dito claramente que são, mas dado o contexto, são falas paralelas e não cutscenes.
 
+### Estruturas do códice
+- **Estrutura de falas comuns:** Existem cutscenes comuns entre personagens, as falas nessas cutscenes são retradas através de '/'. Exemplo:
+
+* A fala abaixo é a união de 2 falas separadas:
+
+* "Mike: Aguenta aí, Deni!" + "Deni: Aguenta aí, Mike!" = "Mike/Deni: Aguenta aí, Deni/Mike!"
+
+*Essa estrutura foi adotada para evitar linhas fúteis nos roteiros do jogo, mas na exibição do jogo em si, essas falas serão desmembradas.*
+
 
