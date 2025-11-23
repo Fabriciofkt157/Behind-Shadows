@@ -293,3 +293,10 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
 * *A ação na cena se inicia quando Mike/Deni começa a correr em direção aos observadores. O jogador deve pressionar a sequência de teclas CIMA + BAIXO + ATK + ATK + ATK (Ataque Decisivo)
 
+* Para Mike:
+* *Mike corre e pula em direção ao observador da esquerda e crava sua espada na clavícula do observador.*
+* *A cena mostra Mike olhando "frio" para os outros dois. No outro instante, Mike está sendo agarrado pelo observador da direita.*
+* *Mike se solta levemente e imediatamente começa a estrangular o observador. O observador restante derruba Mike chutando uma de suas pernas e o espanca.*
+* *A cena termina com Rit atingindo o observador com seu machado e levando Mike em seus ombros.*
+* *O fim dessa cena tem como consequência o estado traumatizado ao personagem Mike.
+

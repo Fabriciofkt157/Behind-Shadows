@@ -55,6 +55,10 @@ Representa o nível de afinidade momentânea entre os personagens em uma equipe.
 
 ---
 
+## Eventos
+### Eventos de Pensamento (EdP)
+Consiste em uma tomada de decisão do jogador quando um personagem estiver desenvolvendo uma linha de raciocínio. personagens com pensamento descritivo (pensam falando o que estão pensando; Alan é um exemplo) tem a tendência 70% maior de acionarem um EdP.
+
 ## Efeitos de Status do Personagem
 
 * **Sonolência:** A velocidade de movimento é reduzida em 25%, os ataques causam 30% menos dano e ataques surpresa contra o personagem são 40% mais efetivos.
@@ -97,6 +101,23 @@ A fome é um status progressivo com 5 níveis de intensidade.
         * Redução geral de 40% em todas as estatísticas (ataque, defesa, velocidade).
         * Se desmaiar, acorda com o efeito de `Sonolência`, fraqueza e metade da vida restante.
 
+
+### Estados de personagem
+Ao passar por alguma situação, seja na narrativa ou durante o gameplay livre, o personagem ativo pode passar a apresentar efeitos colaterais.
+
+#### Traumatizado
+Após passar por determinados eventos na narrativa, os personagens podem ficar com efeito "traumatizado". Isso implica em mudanças de comportamento ao longo dos dias (descritas abaixo). 
+Para remover o estado traumatizado, o jogador deve resolver ao menos 3 dos subestados abaixo:
+
+* Reservado/Quieto: passa a não responder a maioria das perguntas bobas, deixa de fazer piadas (para personagens aplicáveis, ex: Mike e Deni) durante missões longas e tende a responder grosseiramente quando perguntam como ele está. Pode ser resolvido fazendo com que o persogem afetado converse com personagens que não costuma conversar ou com um Melhor Amigo (exemplo: Mike pode falar com Raika (não costuma falar com ela) ou procurar Alan (mesmo quando Alan não compõe a equipe)).
+
+* Luto: tendência de permanecer triste em memória ao trauma. Ao perder um amigo, por exemplo, o personagem passa a evitar atividades que antes o deixavam feliz por não achar justo estar sorrindo quando seu amigo não está mais ali. Luto só pode ser resolvido ao fazer o personagem chegar a uma conclusão que justifique o fim do luto; Alan conversa sozinho, uma das formas de acabar com o luto dele é fazendo atividades rotineiras (como cortar árvores e caçar) e responder corretamente aos Eventos de Pensamento do personagem.
+
+* Negação: o personagem afetado tende a continuar sua rotina normalmente, como se o fato não tivesse ocorrido. Como consequência, o personagem apresenta sinais de estresse, como maior taxa de erro em ataques e esquivas, stamina reduzida (entre 15 e 40%, a depender do fator de estresse) e eventuais surtos de raiva (o personagem grita e ataca violentamente qualquer inimigo ao seu alcance (sem o controle do jogador)). Negação é resolvida passivamente, em outras palavras, a única forma de resolver é deixando o personagem se estressar e descarregar em algo/alguém.
+
+* Sensibilidade: tocar no assunto relacionado ao trauma faz com que o personagem chore (exceto Alan, que apenas choraminga (escorre uma leve lágrima ou fala "mole", mas permanece estável)). Sensibilidade só pode ser resolvida falando com uma pessoa muito próxima, um Melhor Amigo ou alguém também com efeito traumatizado ativo.
+
+Resolver os subestados, mesmo que não os 4, reduz o tempo em que traumatizado permanece ativo. Efeito traumatizado tem duração padrão de 14 dias (ou tempo correspondente em outras realidades fora de Median), tendo redução progressiva de 20 a 35% para cada subestado resolvido (redução progressiva = tempo restante - 20% - 25% - 30% ...). Isso significa que mesmo resolvendo 3 subestados, o personagem ainda permanece com os efeitos de traumatizado, porém severamente reduzidos. Traumatizado tem duração mínima de 3 dias.
 ---
 
 ## Mecânicas de Jogo e Narrativa
@@ -117,3 +138,4 @@ Todos os personagens precisam dormir, exceto Alan e o Homem Misterioso.
 >     * **Tirar um cochilo:** o tempo avança 4 horas. O personagem pode passar a noite acordado, mas ficará sonolento 6 horas depois.
 >     * **Dormir:** o tempo avança 8 horas.
 > * Algumas missões são noturnas, exigindo que o jogador se planeje para dormir antes do horário da missão.
+
