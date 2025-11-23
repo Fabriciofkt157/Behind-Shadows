@@ -133,10 +133,10 @@ Todos os personagens precisam dormir, exceto Alan e o Homem Misterioso.
 * Após o tempo de imunidade, o personagem tem uma probabilidade de ficar sonolento (1/8 de chance × número de horas sem dormir).
 * O mesmo personagem pode ficar até 3 dias sem dormir. Caso passe disso, ele desmaia e fica com o efeito de `Sonolência` por 2 dias.
 
-> #### Ações ao Dormir
-> * **Dormir à noite (entre 21h e 23h):** as horas avançam automaticamente até as 8h do dia seguinte.
-> * **Dormir de dia (entre 8h e 21h):** o jogador pode escolher entre duas opções:
->     * **Tirar um cochilo:** o tempo avança 4 horas. O personagem pode passar a noite acordado, mas ficará sonolento 6 horas depois.
->     * **Dormir:** o tempo avança 8 horas.
-> * Algumas missões são noturnas, exigindo que o jogador se planeje para dormir antes do horário da missão.
+#### Ações ao Dormir
+* **Dormir à noite (entre 21h e 23h):** as horas avançam automaticamente até as 8h do dia seguinte.
+* **Dormir de dia (entre 8h e 21h):** o jogador pode escolher entre duas opções:
+    * **Tirar um cochilo:** o tempo avança 4 horas. O personagem pode passar a noite acordado, mas ficará sonolento 6 horas depois.
+    * **Dormir:** o tempo avança 8 horas.
+* Algumas missões são noturnas, exigindo que o jogador se planeje para dormir antes do horário da missão.
 
