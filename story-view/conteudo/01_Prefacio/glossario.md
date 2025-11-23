@@ -11,7 +11,6 @@ São falas sequenciais que acontecem enquanto o jogador controla o personagem at
 [=> Ver mais em: #home]
 
 ## Sobre o Jogo
-
 ### Vida
 Representa o quanto o personagem é capaz de aguentar antes de desmaiar. Os pontos de vida sofrem alteração de acordo com a realidade em que o personagem está.
 [=> Ver mais em: #fundamentos]
@@ -55,18 +54,18 @@ Ataque de dano extremo com alto custo de stamina e mana, além da barra de amiza
 [=> Ver mais em: #03_grupos]
 
 ## Itens colecionáveis
-## Jornal "Diferente"
+### Jornal "Diferente"
 > Uma revista pornográfica. — O conteúdo dessa revista não é exibido no jogo.
 [=> Ver mais em: #escrituras]
 
-## pergaminho nível 1
+### pergaminho nível 1
 > Ao encontrar algum, um tutorial para técnicas de batalha ou fabricação de itens é exibido. 
 [=> Ver mais em: #escrituras]
 
-## Caderno De Adeus
+### Caderno De Adeus
 > Conjunto de escrituras deixado por alguém que irá morrer ou pensa que isso pode acontecer. É um gesto comum entre pessoas que viajam para muito longe de suas casas.
 [=> Ver mais em: #escrituras]
 
-## CDA1
+### CDA1
 > Primeiro Caderno de Adeus que o jogador pode encontrar. Trata-se do caderno do cadáver que Alan encontrou no início da caverna, nele, o homem diz que prefere a morte do que a corrupção pelas Sombras.
 [=> Ver mais em: #escrituras]

@@ -37,7 +37,7 @@ Quando um ser vivo é **fragmentado pelo Homem Misterioso**, sua integridade é 
 | **Eards** | `98% / 2%` | Realidade primária de Alan e Mike (a Terra). A baixa energia impede o retorno fácil dos fragmentados. |
 | **Median** | `50% / 50%` | Realidade de destino inicial. O reino principal onde a história se passa é **Avalest**. |
 | **Aquins** | `25% / 75%` | Mundo construído tendo a água como princípio. |
-| **Submundo** | `2% / 98%` | Destino para almas corrompidas, oposta a Eards. Habitada por **Onis e demônios**, com civilizações complexas. |
+| **Submundo** | `2% / 98%` | As vezes chamada de **Mundo Invertido**, é o destino para almas corrompidas, oposta a Eards. Habitada por **Onis e demônios**, com civilizações complexas. |
 | **Nature** | Variável | Realidade onde plantas são a raça dominante e a energia vital é abundante. Lar de **Bruxas e elfos**. |
 | **Assolyam** | N/A | Mundo cyberpunk dominado por máquinas e tomado pelas Sombras. Serve como fonte armamentista para o Exército das Sombras. |
 | **Neutor** | `70% / 30%` | Também chamado de **Dracônico**. Mundo montanhoso dominado por dragões, com alta incidência de *Dungeons*. |
