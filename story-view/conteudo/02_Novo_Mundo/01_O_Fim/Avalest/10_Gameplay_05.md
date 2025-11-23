@@ -300,3 +300,6 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 * *A cena termina com Rit atingindo o observador com seu machado e levando Mike em seus ombros.*
 * *O fim dessa cena tem como consequência o estado traumatizado ao personagem Mike.
 
+* Para Deni:
+* *Deni usa toda sua mana para invocar a Serpente do Submundo (uma versão enfraquecida do Dragão do Submundo; Deni invoca a versão completa eventualmente nos próximos eventos do jogo)
+
