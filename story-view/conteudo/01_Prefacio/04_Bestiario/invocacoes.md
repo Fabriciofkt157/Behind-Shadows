@@ -40,3 +40,10 @@ Dia após dia, vendo novos condenados chegando no Submundo e sendo devorados ou 
 Alan foi um dos selecionados por Raika, bem como Merlin. Merlin é um mago que entrou no Submundo por vontade própria; Merlin acreditava que ele conseguiria extinguir a Sombra que o corrompe e assim descobrir uma forma de eliminar as Sombras de Median. Raika selecionou Merlin esperando que ele fosse apenas mais um soldado, no entanto, Merlin foi perspicaz ao ponto de descobrir sobre o Rei Dragão e se aliar diretamente a ele. A partir de agora, Merlin passa a ser o porta voz do Dragão do Submundo.
 
 Seguindo os acontecimentos da história, Alan não possui habilidade alguma para derrotar o Guardião dos Portões do Submundo. O resultado da luta de Alan contra o Guardião foi, na verdade, uma forma de ocultar o golpe que Raika, Merlin e o Rei Dragão efetuaram. Antes da luta com o Alan, todos os subordinados de Raika lutaram com o Guardião; inevitavelmente, o Guardião foi derrotado e Merlin usou um feitiço para controla-lo e fazê-lo abrir uma fenda para Median e em seguida lutar com Alan.
+
+A aliança entre o Dragão, Raika, Merlin e Alan foi firmada perante um acordo: proteção mutua. Esse acordo exige que todos os membros podem ser invocados caso um deles seja ameaçado. Alan não sabe sobre o acordo.
+
+Após Alan vencer a luta, Raika entrega um cristal de invocação para ele dizendo ser um artefato necessário para atravessar a fenda. No entanto, o verdadeiro propósito desse cristal é que Alan seja invocado devido ao acordo. 
+
+Ao voltar para Median, Raika diz para Alan que o cristal pode ser usado como uma arma, mas só deve ser feito em último caso.
+
