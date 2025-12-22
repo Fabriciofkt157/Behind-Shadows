@@ -82,9 +82,6 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     return `<a href="${url}" class="nav-button"><i class="fas fa-arrow-right"></i> ${text}</a>`;
   });
 
-  // --- INÍCIO DAS MODIFICAÇÕES ---
-
-  // Helper function para processar a sintaxe customizada de gameplay/cutscene
   const parseGameContent = (innerContent) => {
     const lines = innerContent.trim().split('\n');
     const parsed = lines.map(line => {
@@ -95,48 +92,40 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
       if (trimmedLine.startsWith('(') && trimmedLine.endsWith(')')) {
         return `<div class="gameplay-action">${trimmedLine.slice(1, -1)}</div>`;
       }
-      const falaMatch = line.match(/^(.+?):\s(.+)$/); // Usar 'line' para pegar falas indentadas
-      if (falaMatch && !trimmedLine.startsWith('-')) { // Não aplicar em headers de lista
+      const falaMatch = line.match(/^(.+?):\s(.+)$/); 
+      if (falaMatch && !trimmedLine.startsWith('-')) { 
         const personagem = falaMatch[1].trim();
         const fala = falaMatch[2].trim();
         return `<p class="gameplay-line"><strong>${personagem}:</strong> ${fala}</p>`;
       }
-      if (trimmedLine === '') return ''; // preservar linhas em branco
-      
-      // Se não for nada especial, apenas retorne a linha para o marked processar (importante para listas)
+      if (trimmedLine === '') return ''; 
       if (trimmedLine.startsWith('-')) {
         return line;
       }
 
       return `<p>${line}</p>`;
     });
-    // Junta as linhas e DEIXA o marked processar o resultado
-    // Isso garante que as listas de markdown (do <dialogo>) ainda funcionem
+
     return marked.parse(parsed.join('\n'));
   };
 
-  // Parser para <gameplay> blocks
   content = content.replace(/<gameplay(:.*?)?>([\s\S]*?)<\/gameplay>/g, (_, label, innerContent) => {
     const title = label ? `<h4 class="gameplay-title">${label.slice(1).trim()}</h4>` : '';
     const parsedContent = parseGameContent(innerContent);
     return `<section class="gameplay-block">${title}\n${parsedContent}</section>`;
   });
 
-  // NOVO Parser para <cutscene> blocks
   content = content.replace(/<cutscene(:.*?)?>([\s\S]*?)<\/cutscene>/g, (_, label, innerContent) => {
     const title = label ? `<h4 class="cutscene-title">${label.slice(1).trim()}</h4>` : '';
-    const parsedContent = parseGameContent(innerContent); // Usa o mesmo parser
+    const parsedContent = parseGameContent(innerContent);
     return `<section class="cutscene-block">${title}\n${parsedContent}</section>`;
   });
 
-  // NOVO Parser para <dialogo> blocks (que usa listas markdown)
   content = content.replace(/<dialogo(:.*?)?>([\s\S]*?)<\/dialogo>/g, (_, label, innerContent) => {
     const title = label ? `<h4 class="dialogo-title">${label.slice(1).trim()}</h4>` : '';
-    const parsedContent = marked.parse(innerContent); // Apenas usa o marked
+    const parsedContent = marked.parse(innerContent); 
     return `<section class="dialogo-block">${title}\n${parsedContent}</section>`;
   });
-
-  // --- FIM DAS MODIFICAÇÕES ---
 
   const id = path.basename(filePath, '.md');
 
@@ -152,11 +141,9 @@ async function processarArquivo(filePath, topicos, secaoPai = null) {
     subtitle: data.subtitulo || '',
     template: data.template || (secaoPai?.template ?? 'simple'),
     icon: data.icone || secaoPai?.icon || 'fa-book',
-    contentHtml: marked.parse(content) // O marked processa o HTML final
+    contentHtml: marked.parse(content)
   };
 }
-
-// ... (Restante do arquivo 'build.js' sem alterações) ...
 
 async function processarDiretorio(dir) {
   const secoes = [];
