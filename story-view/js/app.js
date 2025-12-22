@@ -247,13 +247,9 @@ function renderContent(itemId) {
     });
 
     mainContentEl.innerHTML = templateHtml;
-    
-    // --- ESTA É A CORREÇÃO ---
-    // O 'parentElement' (o <main>) é o container que tem o scroll.
     if (mainContentEl.parentElement) {
         mainContentEl.parentElement.scrollTop = 0;
     }
-    // --- FIM DA CORREÇÃO ---
     
     if (item.template === 'cutscene') {
         styleChatBubbles();
@@ -286,7 +282,6 @@ function initializeEventHandlers() {
         }
     });
 
-    // Este bloco (da correção anterior) continua necessário
     mainContentEl.addEventListener('click', e => {
         const target = e.target.closest('a');
         
