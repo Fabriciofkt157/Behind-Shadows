@@ -1,0 +1,29 @@
+@font-face {
+            font-family: 'Gagalin';
+            src: local('Gagalin'), 
+                 url('Gagalin-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0d0e15;
+    color: white;
+    overflow-x: hidden;
+}
+
+.font-gagalin {
+    font-family: 'Gagalin', sans-serif;
+    letter-spacing: 1px;
+}
+
+.fundo {
+    background-image: linear-gradient(to bottom, rgba(13, 14, 21, 0.3), rgba(13, 14, 21, 0.95)), url('back.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.glow-pink { box-shadow: 0 0 15px rgba(222, 59, 255, 0.2); }
+.glow-purple { box-shadow: 0 0 20px rgba(107, 100, 237, 0.3); }
+.glow-green { box-shadow: 0 0 15px rgba(65, 237, 108, 0.2); }
