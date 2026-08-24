@@ -11,7 +11,7 @@ origin: "Eards (realidade)"
 natural_de: "Eards (realidade)"
 parentesco: "Mike (melhor amigo / irmão (vida real)), Raika (cônjuge)"
 aliados: "Mike, Raika, Deni, Rit"
-image_url: "https://behind.fabriciofkt157.me/game-features/concept-arts/Alan_retrato.png"
+image_url: "https://fabriciofkt157.github.io/Behind-Shadows/game-features/concept-arts/Alan_retrato.png"
 ---
 
 ### Sobre
