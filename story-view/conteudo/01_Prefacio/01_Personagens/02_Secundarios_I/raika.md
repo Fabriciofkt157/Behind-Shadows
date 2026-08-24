@@ -11,7 +11,7 @@ origin: "Median (realidade)"
 natural_de: "Median (realidade)"
 parentesco: "Alan (cônjuge)"
 aliados: "Mike, Alan, Rit, Deni"
-image_url: "https://behind.fabriciofkt157.me/game-features/concept-arts/Raika_retrato.png"
+image_url: "https://fabriciofkt157.github.io/Behind-Shadows/game-features/concept-arts/Raika_retrato.png"
 ---
 
 ### Sobre
