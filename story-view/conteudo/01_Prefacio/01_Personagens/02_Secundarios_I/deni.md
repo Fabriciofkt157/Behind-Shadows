@@ -11,7 +11,7 @@ origin: "Median (realidade)"
 natural_de: "Median (realidade)"
 parentesco: "Rit (irmão), Mike (melhor amigo)"
 aliados: "Mike, Alan, Raika, Rit"
-image_url: "https://behind.fabriciofkt157.me/game-features/concept-arts/Deni_retrato.png"
+image_url: "https://fabriciofkt157.github.io/Behind-Shadows/game-features/concept-arts/Deni_retrato.png"
 ---
 
 ### Sobre
