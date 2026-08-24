@@ -229,7 +229,7 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 
     *Mike puxa sua espada e posiciona na direção do pescoço do observador com uma das mãos, enquanto isso, força ele contra a espada segurando-o pelo cabelo (ainda com a espada em seu abdômen).*
 
-    *minigame de vitória obrigatória (não é possível perde-lo, o jogo só continua após a vitória). Caso falhe, a tela de derrota é exibida e o jogo volta a partir do último ponto de controle (início da Parte 5)*
+    *Minigame de vitória obrigatória (não é possível perdê-lo, o jogo só continua após a vitória). Caso falhe, a tela de derrota é exibida e o jogo volta a partir do último ponto de controle (início da Parte 5))*
 
     *QTE, onde i começa em 0 e avança 1 para cada sequência de DEF + ATK (alternados) e perde 1 para cada sequência errada. Quando i = 25 * multiplicador de dificuldade: vitória no minigame. Ao vencer o minigame, a seguinte cena é exibida:*
 
@@ -298,8 +298,9 @@ O cenário é uma antiga vila destruída, agora habitada por sombras e desabriga
 * *A cena mostra Mike olhando "frio" para os outros dois. No outro instante, Mike está sendo agarrado pelo observador da direita.*
 * *Mike se solta levemente e imediatamente começa a estrangular o observador. O observador restante derruba Mike chutando uma de suas pernas e o espanca.*
 * *A cena termina com Rit atingindo o observador com seu machado e levando Mike em seus ombros.*
-* *O fim dessa cena tem como consequência o estado traumatizado ao personagem Mike.
+* *O fim dessa cena tem como consequência o estado traumatizado ao personagem Mike.*
 
 * Para Deni:
-* *Deni usa toda sua mana para invocar a Serpente do Submundo (uma versão enfraquecida do Dragão do Submundo; Deni invoca a versão completa eventualmente nos próximos eventos do jogo)
+* *Deni usa toda sua mana para invocar a Serpente do Submundo (uma versão enfraquecida do Dragão do Submundo; Deni invoca a versão completa eventualmente nos próximos eventos do jogo) que vaporiza todos os Observadores*
+* *Deni caído por exaustão*
 
